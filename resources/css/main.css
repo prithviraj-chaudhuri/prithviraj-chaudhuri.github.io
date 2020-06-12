@@ -140,3 +140,14 @@ html, body {
     font-weight: 100;
     display: inline-block;
 }
+
+.skills > button {
+    background-color: #324e6b;
+    border-color: #324e6b;
+    font-size: 15px;
+}
+
+.skills > button:hover {
+    background-color: #6687a9;
+    border-color: #6687a9;
+}
