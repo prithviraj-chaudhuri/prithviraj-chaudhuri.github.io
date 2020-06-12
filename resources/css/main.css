@@ -56,17 +56,44 @@ html, body {
     height: 100%;
 }
 
+.profile-sections > .cols {
+    padding: 0px;
+}
+
 .navigator {
-    height: 35px;
+    height: 50px;
     margin: 0px;
     padding: 0px;
     vertical-align: middle;
+    transition: 0.2s;
+    border-bottom-width: 1px;
+    border-bottom-style: groove;
+    border-bottom-color: #597da2;
+}
+
+.navigator:hover {
+    background-color: #103256;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .navigator > a {
-    padding: 10px;
+    margin: 10px;
     vertical-align: middle;
-    color: #5f7d9c;
+    color: #7d868e;
+    font-size: 20px;
+    font-weight: 100;
+    transition: 0.2s;
+}
+
+.navigator:hover > a {
+    margin: 20px;
+    vertical-align: middle;
+    color: #e8e8e8;
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 .main-content {
