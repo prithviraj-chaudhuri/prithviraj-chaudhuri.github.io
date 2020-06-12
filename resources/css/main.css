@@ -1,0 +1,74 @@
+html, body {
+    height: 100vh;
+}
+
+.row {
+    width: 100%
+}
+
+.container-fluid {
+    height: 100%;
+}
+
+.container-fluid > .row, .cols {
+    height: 100%
+}
+
+.side-bar {
+    padding: 0px;
+    background-color: #324e6b;
+    color: #ffffff;
+    height: 100%;
+    overflow: hidden;
+}
+
+.profile-pic {
+    text-align: center;
+}
+
+.profile-pic > img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.profile-info {
+    margin-left: 10px;
+}
+
+.profile-info > h1 {
+    font-size: 33px;
+    font-weight: 100;
+}
+
+.profile-info > h3 {
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.profile-sections {
+    margin-top: 60px;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #365473;
+    height: 100%;
+}
+
+.navigator {
+    height: 35px;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+}
+
+.navigator > a {
+    padding: 10px;
+    vertical-align: middle;
+    color: #5f7d9c;
+}
+
+.main-content {
+    padding: 0px;
+}
