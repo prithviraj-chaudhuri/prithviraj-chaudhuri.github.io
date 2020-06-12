@@ -71,13 +71,13 @@ html, body {
     border-bottom-color: #597da2;
 }
 
-.navigator:hover {
+.navigator:hover, .navigator.active {
     background-color: #103256;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.navigator > a {
+.navigator > span {
     margin: 10px;
     vertical-align: middle;
     color: #7d868e;
@@ -86,7 +86,7 @@ html, body {
     transition: 0.2s;
 }
 
-.navigator:hover > a {
+.navigator:hover > span, .navigator.active > span {
     margin: 20px;
     vertical-align: middle;
     color: #e8e8e8;
@@ -98,4 +98,12 @@ html, body {
 
 .main-content {
     padding: 0px;
+    overflow-y: auto;
+}
+
+.main-content > .page {
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
 }
