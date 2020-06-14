@@ -186,3 +186,15 @@ p, ul {
 .show_course:hover {
     text-decoration: none;
 }
+
+.contact {
+    color: #ceced0;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.contact:hover {
+    color: #a0a0ea;
+    text-decoration: none;
+    transition: 0.1s;
+}
