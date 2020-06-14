@@ -157,8 +157,22 @@ p, ul {
 }
 
 .skills > button:hover {
-    background-color: #6687a9;
-    border-color: #6687a9;
+    background-color: #324e6b;
+    border-color: #324e6b;
+    cursor: default;
+}
+
+.skills > button:active {
+    background-color: #324e6b !important;
+    border-color: #324e6b !important;
+    cursor: default;
+}
+
+.skills > button:focus {
+    background-color: #324e6b !important;
+    border-color: #324e6b !important;
+    cursor: default;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0) !important;
 }
 
 .education {
@@ -167,4 +181,8 @@ p, ul {
 
 .education>.org-name {
     font-size: 15px
+}
+
+.show_course:hover {
+    text-decoration: none;
 }
