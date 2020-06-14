@@ -1,0 +1,170 @@
+html, body {
+    height: 100vh;
+}
+
+p, ul {
+    font-size: 14px;
+}
+
+.row {
+    width: 100%
+}
+
+.container-fluid {
+    height: 100%;
+}
+
+.container-fluid > .row, .cols {
+    height: 100%
+}
+
+.side-bar {
+    padding: 0px;
+    background-color: #324e6b;
+    color: #ffffff;
+    height: 100%;
+    overflow: hidden;
+}
+
+.profile-pic {
+    text-align: center;
+}
+
+.profile-pic > img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.profile-info {
+    margin-left: 10px;
+}
+
+.profile-info > h1 {
+    font-size: 33px;
+    font-weight: 100;
+}
+
+.profile-info > h3 {
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.profile-sections {
+    margin-top: 60px;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #365473;
+    height: 100%;
+}
+
+.profile-sections > .cols {
+    padding: 0px;
+}
+
+.navigator {
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+    transition: 0.2s;
+    border-bottom-width: 1px;
+    border-bottom-style: groove;
+    border-bottom-color: #597da2;
+}
+
+.navigator:hover, .navigator.active {
+    background-color: #103256;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navigator > span {
+    margin: 10px;
+    vertical-align: middle;
+    color: #7d868e;
+    font-size: 20px;
+    font-weight: 100;
+    transition: 0.2s;
+}
+
+.navigator:hover > span, .navigator.active > span {
+    margin: 20px;
+    vertical-align: middle;
+    color: #e8e8e8;
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.main-content {
+    padding: 0px;
+    overflow-y: auto;
+}
+
+.main-content > .page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+.page-title {
+    padding:20px;
+    font-weight: 100;
+}
+
+.section-title {
+    font-weight: 100;
+}
+
+.buttons > button {
+    background-color: #324e6b;
+    border-color: #324e6b;
+}
+
+.buttons > button:hover {
+    background-color: #6687a9;
+    border-color: #6687a9;
+}
+
+.event {
+    border-radius: 2px;
+    box-shadow: 0px 0px 8px 0 rgba(0,0,0,0.2);
+}
+
+.event > .organization {
+    font-size: 20px;
+    font-weight: 300;
+    padding-right:50px;
+    display: inline-block;
+}
+
+.event > .time {
+    font-size: 20px;
+    font-weight: 100;
+    display: inline-block;
+}
+
+.skills > button {
+    background-color: #324e6b;
+    border-color: #324e6b;
+    font-size: 15px;
+    margin-top:10px;
+}
+
+.skills > button:hover {
+    background-color: #6687a9;
+    border-color: #6687a9;
+}
+
+.education {
+    font-size: 14px;
+}
+
+.education>.org-name {
+    font-size: 15px
+}
