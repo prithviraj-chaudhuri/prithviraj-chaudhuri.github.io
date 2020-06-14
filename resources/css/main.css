@@ -52,7 +52,7 @@ p, ul {
 }
 
 .profile-sections {
-    margin-top: 60px;
+    margin-top: 30px;
     width: 100%;
     margin-right: 0px;
     margin-left: 0px;
@@ -185,4 +185,68 @@ p, ul {
 
 .show_course:hover {
     text-decoration: none;
+}
+
+.contact {
+    color: #ceced0;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.contact:hover {
+    color: #a0a0ea;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+
+@media only screen and (max-width: 600px) {
+    html, body {
+        height: fit-content;
+    }
+
+    .container-fluid {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .side-bar {
+        padding: 0px;
+        background-color: #324e6b;
+        color: #ffffff;
+        height: fit-content;
+    }
+
+    .main-content {
+        overflow: default;
+    }
+
+    .main-row {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .main-content > .page {
+        width: 100%;
+        height: fit-content;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .profile-info {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .profile-sections {
+        display:none
+    }
+
+    .event > .time {
+        font-size: 17px;
+        font-weight: 100;
+        display: inline-block;
+        padding-left:15px;
+    }
 }
