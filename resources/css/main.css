@@ -2,6 +2,10 @@ html, body {
     height: 100vh;
 }
 
+p, ul {
+    font-size: 14px;
+}
+
 .row {
     width: 100%
 }
@@ -113,6 +117,10 @@ html, body {
     font-weight: 100;
 }
 
+.section-title {
+    font-weight: 100;
+}
+
 .buttons > button {
     background-color: #324e6b;
     border-color: #324e6b;
@@ -129,14 +137,14 @@ html, body {
 }
 
 .event > .organization {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
     padding-right:50px;
     display: inline-block;
 }
 
 .event > .time {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 100;
     display: inline-block;
 }
@@ -145,9 +153,18 @@ html, body {
     background-color: #324e6b;
     border-color: #324e6b;
     font-size: 15px;
+    margin-top:10px;
 }
 
 .skills > button:hover {
     background-color: #6687a9;
     border-color: #6687a9;
+}
+
+.education {
+    font-size: 14px;
+}
+
+.education>.org-name {
+    font-size: 15px
 }

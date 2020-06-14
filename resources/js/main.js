@@ -2,7 +2,8 @@ $(document).ready( function() {
 
     var active = window.location.href.split('#')[1];
     $('.navigator[data-href="'+active+'"').addClass('active');
-    scrollTo(active);
+    if (active)
+        scrollTo(active);
 
     
     $('.navigator').on('click', function() {
@@ -14,6 +15,10 @@ $(document).ready( function() {
         
         $('.navigator[data-href="'+page+'"').addClass('active');
         scrollTo(page);
+    });
+
+    $('.download-cv').on('click', function() {
+        window.open('./resources/assets/downloads/Prithviraj%20Chaudhuri%20Resume.pdf' , '_blank');
     });
 
     
