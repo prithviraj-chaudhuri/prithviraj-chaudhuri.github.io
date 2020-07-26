@@ -5,7 +5,8 @@ $(document).ready( function() {
     if (active)
         scrollTo(active);
 
-    
+    $('[data-toggle="tooltip"]').tooltip();
+
     $('.navigator').on('click', function() {
         var page = $(this).data('href');
         window.location.href = '#'+page;
