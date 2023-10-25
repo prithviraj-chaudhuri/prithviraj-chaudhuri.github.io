@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Prithviraj Chaudhuri</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,419 +11,156 @@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
         <script src="resources/js/main.js"></script>
 
-        
-    </head>
-    <body>
-        <div class="container-fluid">
-            <div class="main-row row">
-                <div class="cols col-lg-2 side-bar">
-                    <div class="row">
-                        <div class="col-lg-12 profile-pic">
-                            <img src="resources/assets/img/profile.jpeg" alt="Profile Picture">
+        <script id="page-body" type="text/x-jsrender">
+            <div class="container-fluid">
+                <div class="main-row row">
+                    <div class="cols col-lg-2 side-bar">
+                        <div class="row">
+                            <div class="col-lg-12 profile-pic">
+                                <img src="${content.contact.picture}" alt="Profile Picture">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 profile-info">
+                                <h1> ${content.contact.name} </h1>
+                                <h3> <a class="contact" href="mailto:${content.contact.email}">${content.contact.email}</a></h3>
+                                <h3> <a class="contact" target="_blank" href="${content.contact.linked_in}">Linkedin</a> </h3>
+                                <h3> ${content.contact.location} </h3>
+                            </div>
+                        </div>
+                        <div class="row profile-sections">
+                            <div class="cols col-lg-12">
+                                <div class="navigator" data-href="about"><span>About</span></div>
+                                <div class="navigator" data-href="experience"><span>Experience</span></div>
+                                <div class="navigator" data-href="projects"><span>Additional Projects</span></div>
+                                <div class="navigator" data-href="skills"><span>Skills</span></div>
+                                <!--div class="navigator" data-href="extracurricular"><span>Extra Curriculars</span></div-->
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-12 profile-info">
-                            <h1> Prithviraj Chaudhuri </h1>
-                            <h3> <a class="contact" href="mailto:p.chaudhuri1993@gmail.com">p.chaudhuri1993@gmail.com</a></h3>
-                            <h3> <a class="contact" target="_blank" href="https://www.linkedin.com/in/prithviraj-chaudhuri-455413b2/">Linkedin</a> </h3>
-                            <h3> Raleigh, North Carolina </h3>
+                    <div class="cols col-lg-10 main-content">
+                        <div class="row page" data-page="about">
+                            <div class="col-lg-12 page-content">
+                                <h1 class="page-title">About Me</h1>
+                                <hr/>
+                                <div class="col-lg-12">
+                                    <div class="col-lg-12">
+                                        <h5 class="section-title">Mission</h5>
+                                        <hr/>
+                                        <p>
+                                            ${content.about.mission}
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <h5 class="section-title">Educational Qualification</h4>
+                                        <hr/>
+                                        {{each(i, item) content.about.educational_qualification}}
+                                            <div class="col-lg-12 event">
+                                                <br/>
+                                                <h4 class="organization col-lg-6">${item.institute}</h4> <h4 class="time">${item.time}</h4> 
+                                                <br/>
+                                                <span class="major col-lg-4">${item.qualification}</span>
+                                                <span class="col-lg-4" style="display:inline-block">${item.score}</span>
+                                                <div class="col">
+                                                    <a class="show_course" data-toggle="collapse" href="#${item.id}" role="button" aria-expanded="false" aria-controls="${item.id}">Show Courses</a>
+                                                    <div class="collapse multi-collapse" id="${item.id}">
+                                                        <div class="card card-body">
+                                                            ${item.courses}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    <br/>
+                                                </p>
+                                            </div>
+                                        {{/each}}
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 buttons">
+                                    <button type="button" class="btn btn-primary btn-lg download-cv">Download Resume</button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row profile-sections">
-                        <div class="cols col-lg-12">
-                            <div class="navigator" data-href="about"><span>About</span></div>
-                            <div class="navigator" data-href="experience"><span>Experience</span></div>
-                            <div class="navigator" data-href="projects"><span>Additional Projects</span></div>
-                            <div class="navigator" data-href="skills"><span>Skills</span></div>
-                            <!--div class="navigator" data-href="extracurricular"><span>Extra Curriculars</span></div-->
-                        </div>
-                    </div>
-                </div>
-                <div class="cols col-lg-10 main-content">
-                    <div class="row page" data-page="about">
-                        <div class="col-lg-12 page-content">
-                            <h1 class="page-title">About Me</h1>
-                            <hr/>
+                        <div class="row page" data-page="experience">
                             <div class="col-lg-12">
-                                <div class="col-lg-12">
-                                    <h5 class="section-title">Mission</h5>
-                                    <hr/>
-                                    <p>
-                                        As a recent Graduate from North Carolina State University, with Masters of Computer Science, I am actively seeking a full time position as a <i>Software Developer</i>. 
-                                        My expertise lie in the fields of <i>Full Stack Development</i> and <i>Systems level programming</i>. 
-                                        Having worked on enterprise level application development for my previous employers, I have an in-depth knowledge of application programming standards and experience with the best practices used in the industry. 
-                                        I am particularly interested in new and upcoming platforms and technologies and constantly work towards keeping myself updated with the latest innovations in the field.
-                                    </p>
-                                </div>
-                                <div class="col-lg-12">
-                                    <h5 class="section-title">Educational Qualification</h4>
-                                    <hr/>
+                                <h1 class="page-title">Experience</h1>
+                                <hr/>
+                                {{each(i, item) content.experience}}
                                     <div class="col-lg-12 event">
                                         <br/>
-                                        <h4 class="organization col-lg-6">North Carolina State University</h4> <h4 class="time">August 2019 - May 2021</h4> 
+                                        <h4 class="organization col-lg-4">${item.title}</h4> <h4 class="time">${item.time}</h4> 
                                         <br/>
-                                        <span class="major col-lg-4">Masters in Computer Science</span>
-                                        <span class="col-lg-4" style="display:inline-block">GPA 3.92</span>
-                                        <div class="col">
-                                            <a class="show_course" data-toggle="collapse" href="#course_ncsu" role="button" aria-expanded="false" aria-controls="course_ncsu">Show Courses</a>
-                                            <div class="collapse multi-collapse" id="course_ncsu">
-                                                <div class="card card-body">
-                                                    Artificial Intelligence, Parallel Architectures, Parallel Systems, Automated Learning and Data Analysis, Compiler Construction, Independent Study on Educational Systems, Advanced Machine Learning, Real Time/Embedded Systems and Machine Learning for Autonomous driving
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <span class="col-lg-4">${item.role}</span>
                                         <p>
-                                            <br/>
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-12 event">
-                                        <br/>
-                                        <h4 class="organization col-lg-6">RCC Institute of Information Technology</h4> <h4 class="time">August 2012 – June 2016</h4> 
-                                        <br/>
-                                        <span class="major col-lg-4">Bachelor of Technology, Computer Science</span>
-                                        <span class="col-lg-4" style="display:inline-block">GPA 8.71/10</span>
-                                        <div class="col">
-                                            <a class="show_course" data-toggle="collapse" href="#course_rcc" role="button" aria-expanded="false" aria-controls="course_rcc">Show Courses</a>
-                                            <div class="collapse multi-collapse" id="course_rcc">
-                                                <div class="card card-body">
-                                                    Data Structures, DBMS, Object Oriented Programming, Operating Systems, Compiler Design, Microprocessors, Image Processing.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p>
-                                            <br/>
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-12 event">
-                                        <br/>
-                                        <h4 class="organization col-lg-6">South Point High School</h4> <h4 class="time">1997 - 2012</h4>
-                                        <br/>
-                                        <span class="major col-lg-4">Secondary and Higher Secondary</span>
-                                        <p>
-                                            <br/>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 buttons">
-                                <button type="button" class="btn btn-primary btn-lg download-cv">Download Resume</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row page" data-page="experience">
-                        <div class="col-lg-12">
-                            <h1 class="page-title">Experience</h1>
-                            <hr/>
-                            <div class="col-lg-12 event">
-                                <br/>
-                                <h4 class="organization col-lg-4">Red Hat</h4> <h4 class="time">June 2021 - Present</h4> 
-                                <br/>
-                                <span class="col-lg-4">Software Applications Engineer</span>
-                                <p>
-                                    <ul>
-                                        <li>
-                                            Implement new features on applications as per requirement, ensuring the implementations follow best software engineering practices and are optimal. Requirements can be both for front end and backend parts of the application using technologies like Java, Python, HTML, CSS, OpenShift etc.
-                                        </li>
-                                        <li>
-                                            Investigate and fix any defect or bug that gets highlighted, often in collaboration with other teams
-                                        </li>
-                                        <li>
-                                            Write and execute any adhoc bash or python scripts as and when required
-                                        </li>
-                                        <li>
-                                            Configure OpenShift containers and pipelines as required for new or existing applications
-                                        </li>
-                                        <li>
-                                            Migration of existing application from older OpenShift cluster to newer ones involving creation of updated CI/CD pipelines
-                                        </li>
-                                        <li>
-                                            Setting up Ansible playbooks to provision virtual hosts on OpenStack and automatically setup hosts to migrate applications off
-existing Hosts
-                                        </li>
-                                        <li>
-                                            Fixing thread issues and other inconsistencies with group management suite of applications
-                                        </li>
-                                        <li>
-                                            Built APIs for other applications to utilize services from applications hosted by the team
-                                        </li>
-                                        <li>
-                                            Developed UI front end and made backend modifications to add administrator functionalities on an existing application
-                                        </li>
-                                    </ul>
-                                    <br/>
-                                </p>
-                            </div>
-                            <div class="col-lg-12 event">
-                                <br/>
-                                <h4 class="organization col-lg-4">North Carolina State University</h4> <h4 class="time">January 2020 - May 2021</h4> 
-                                <br/>
-                                <span class="col-lg-4">Graduate Research Assistant at <a href="https://www.ieclab.org/">IEC Lab</a></span>
-                                <p>
-                                    <ul>
-                                        <li>
-                                            Implemented custom learning components on OpenEdx for better course construction and easy migration of courses
-                                        </li>
-                                        <li>
-                                            Integrated research projects to enable more intelligent and dynamic course generation in OpenEdx.
-                                        </li>
-                                        <li>
-                                            Created OpenEdx customizations to enable smarter import and export of course content between OpenEdx environments
-                                        </li>
-                                    </ul>
-                                    <br/>
-                                </p>
-                            </div>
-                            <div class="col-lg-12 event">
-                                <br/>
-                                <h4 class="organization col-lg-4">Red Hat</h4> <h4 class="time">May 2020 - August 2020</h4> 
-                                <br/>
-                                <span class="col-lg-4">Full Stack Web Developer Intern</span>
-                                <p>
-                                    <ul>
-                                        <li>
-                                            Used Java Spring Boot and Pug/Jade to implement bulk upload of data to resource management application
-                                        </li>
-                                        <li>
-                                            Enhanced search application to enable smart searching of employee records in the organization
-                                        </li>
-                                        <li>
-                                            Containerized applications to establish automated deployment using OpenShift and Jenkins
-                                        </li>
-                                        <li>
-                                            Designed and developed automated deployment driven by Jenkins and Git for faster delivery times and easy maintenance
-                                        </li>
-                                    </ul>
-                                    <br/>
-                                </p>
-                            </div>
-                            <div class="col-lg-12 event">
-                                <br/>
-                                <h4 class="organization col-lg-4">Tata Consultancy Services</h4> <h4 class="time">July 2016 - August 2019</h4> 
-                                <br/>
-                                <span class="col-lg-4">Systems Engineer</span>
-                                <p>
-                                    <ul>
-                                        <li>
-                                            Implemented Service Catalog on ServiceNow for end users to utilize ServiceNow ITSM modules using CMS
-                                        </li>
-                                        <li>
-                                            Integrated ServiceNow with external systems to streamline information flow
-                                        </li>
-                                        <li>
-                                            Automated tasks by translating manual processes to system and leveraging ServiceNow orchestration platform
-                                        </li>
-                                        <li>
-                                            Designed and developed a unified REST API integration application on ServiceNow to enable faster integration
-                                        </li>
-                                        <li>
-                                            Migrated Service Catalog hosted in CMS to Service Portal using Angular JS
-                                        </li>
-                                    </ul>
-                                    <br/>
-                                </p>
-                            </div>
-                            <div class="col-lg-12 event">
-                                <br/>
-                                <h4 class="organization col-lg-4">ObjectSol Technologies Pvt Ltd</h4> <h4 class="time">July 2016 - August 2019</h4> 
-                                <br/>
-                                <span class="col-lg-4">Intern</span>
-                                <p>
-                                    <ul>
-                                        <li>
-                                            Retrieved large counts of tweets from Twitter and stored in a single node Cassandra database
-                                        </li>
-                                        <li>
-                                            Classified Tweets in positive or negative sentiments with OpenNLP Java APIs
-                                        </li>
-                                        <li>
-                                            Leveraged StanfordNLP to find keywords in tweets to improve insights
-                                        </li>
-                                    </ul>
-                                    <br/>
-                                </p>
-                            </div>
-                            <div class="col-lg-12 event">
-                                <br/>
-                                <h4 class="organization col-lg-4">Glamoz.com</h4> <h4 class="time">July 2016 - August 2019</h4> 
-                                <br/>
-                                <span class="col-lg-4">Intern</span>
-                                <p>
-                                    <ul>
-                                        <li>
-                                            Created search algorithms for faster and contextual searches of various user profiles while interacting with backend databases
-                                        </li>
-                                        <li>
-                                            Utilized various jQuery plugins to enable users to edit pictures, upload videos etc
-                                        </li>
-                                        <li>
-                                            Incorporated Facebook and Google login options
-                                        </li>
-                                    </ul>
-                                    <br/>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row page" data-page="projects">
-                        <div class="col-lg-12">
-                            <h1 class="page-title">Additional Projects</h1>
-                            <hr/>
-                            <div class="col-lg-12 event">
-                                <br/>
-                                <h4 class="organization col-lg-4">Systems Projects</h4>
-                                <p>
-                                    <ul>
-                                        <li>
-                                            Improved performance of simulation algorithm by leveraging parallel device and multithreaded capabilities of CUDA, OpenACC, OpenMP and MPI. Optimized algorithm my carefully managing memory operations
-                                        </li>
-                                        <li>
-                                            Studied performance benefits of the same algorithm by leveraging parallel processing using CUDA, OpenACC, OpenMP and MPI
-                                        </li>
-                                        <li>
-                                            Used OpenMP to implement parallel sorting algorithms for evaluating performance benefits vs overheads
-                                        </li>
-                                    </ul>
-                                    <br/>
-                                </p>
-                            </div>
-                            <div class="col-lg-12 event">
-                                <br/>
-                                <h4 class="organization col-lg-4">Data Science Projects</h4>
-                                <p>
-                                    <ul>
-                                        <li>
-                                            Studied performance of various transformer networks,CNNsand word embeddingsin terms of Bleu Score and Cosine similarityon flickr9k dataset. Used python and tensorflow 2.1
-                                        </li>
-                                        <li>
-                                            Performed a study on Multimodal Classification performance (using Python TensorFlow) vs Single mode classification on Yelp dataset to prove whether multimodal performance is better than standard classification
-                                        </li>
-                                        <li>
-                                            Accomplished a Feature Selection algorithm leveraging mutual information and Laplacian scores to select relevant features (R, Matlab)
-                                        </li>
-                                        <li>
-                                            Sentiment Analysis of Tweets (Java, Cassandra, Natural Language Processing)
                                             <ul>
-                                                <li>
-                                                    Retrieved large counts of tweets from Twitter and stored in a single node Cassandra database
-                                                </li>
-                                                <li>
-                                                    Classified Tweets in positive or negative sentiments with OpenNLP Java APIs
-                                                </li>
-                                                <li>
-                                                    Leveraged StanfordNLP to find keywords in tweets to improve insights
-                                                </li>
+                                                {{each(i, project) item.projects}}
+                                                    <li>
+                                                        ${project}
+                                                    </li>
+                                                {{/each}}
                                             </ul>
-                                        </li>
-                                    </ul>
-                                    <br/>
-                                </p>
-                            </div>
-                            <div class="col-lg-12 event">
-                                <br/>
-                                <h4 class="organization col-lg-4">Undergraduate Web Developement Project</h4>
-                                <p>
-                                    <ul>
-                                        <li>
-                                            Created interactive and responsive websites for out annual festivals, enabling increases attention from other Undergraduate colleges
-                                        </li>
-                                        <li>
-                                            Designed and Developed registration portal for festival participants to enroll for events, restulting in streamlining and reduced delay in the process
-                                        </li>
-                                    </ul>
-                                    <br/>
-                                </p>
+                                            <br/>
+                                        </p>
+                                    </div>
+                                {{/each}}
                             </div>
                         </div>
-                    </div>
-                    <div class="row page" data-page="skills">
-                        <div class="col-lg-12">
-                            <h1 class="page-title">Skills</h1>
-                            <hr/>
-                            <div class="col-lg-12 event">
-                                <br/>
-                                <h4 class="organization col-lg-4">Full Stack Technologies</h4>
-                                <span class="col-lg-4"></span>
-                                <p class="skills">
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Proficient">HTML5</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Proficient">CSS3</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Proficient">jQuery</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Working knowledge">Angular</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Proficient">Python</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Proficient">JavaScript</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Proficient">Java</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Working knowledge">PHP</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Working knowledge">C#</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Working knowledge">ASP.NET</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Working knowledge">MySQL</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Working knowledge">PostgreSQL</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Working knowledge">Makefiles</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Proficient">Git</button>
-                                    <br/><br/>
-                                </p>
-                            </div>
-                            <div class="col-lg-12 event">
-                                <br/>
-                                <h4 class="organization col-lg-4">Systems</h4>
-                                <span class="col-lg-4"></span>
-                                <p class="skills">
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Working knowledge">OpenMP</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Working knowledge">MPI</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Working knowledge">CUDA</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Working knowledge">OpenMP</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Working knowledge">MPI</button>
-                                    <br/><br/>
-                                </p>
-                            </div>
-                            <div class="col-lg-12 event">
-                                <br/>
-                                <h4 class="organization col-lg-4">Data Analytics</h4>
-                                <span class="col-lg-4"></span>
-                                <p class="skills">
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Working knowledge">R</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Working knowledge">Matlab</button>
-                                    <br/><br/>
-                                </p>
-                            </div>
-                            <div class="col-lg-12 event">
-                                <br/>
-                                <h4 class="organization col-lg-4">Platforms and Frameworks</h4>
-                                <span class="col-lg-4"></span>
-                                <p class="skills">
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Proficient">ServiceNow</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Proficient">OpenEdx</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Working knowledge">Java Spring Boot</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Working knowledge">Mockito Testing</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Working knowledge">OpenShift</button>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Proficient">Docker</button>
-                                    <br/><br/>
-                                </p>
-                            </div>
-                            <div class="col-lg-12 event">
-                                <br/>
-                                <h4 class="organization col-lg-4">Certifications</h4>
-                                <span class="col-lg-4"></span>
-                                <p class="skills">
-                                    <button type="button" class="btn btn-primary btn-lg">Oracle Certified Java SE 7 Programmer</button>
-                                    <button type="button" class="btn btn-primary btn-lg">ServiceNow Certified System Administrator</button>
-                                    <button type="button" class="btn btn-primary btn-lg">EXIN Certified DevOps Master</button>
-                                    <button type="button" class="btn btn-primary btn-lg">ITIL Foundation Certified</button>
-                                    <button type="button" class="btn btn-primary btn-lg">TCS Internal E0 Angular JS Certified</button>
-                                    <br/><br/>
-                                </p>
+                        <div class="row page" data-page="projects">
+                            <div class="col-lg-12">
+                                <h1 class="page-title">Additional Projects</h1>
+                                <hr/>
+                                {{each(i, item) content.projects}}
+                                    <div class="col-lg-12 event">
+                                        <br/>
+                                        <h4 class="organization col-lg-4">${item.type}</h4>
+                                        <p>
+                                            <ul>
+                                                {{each(i, project) item.list}}
+                                                    <li>
+                                                        ${project}
+                                                    </li>
+                                                {{/each}}
+                                            </ul>
+                                            <br/>
+                                        </p>
+                                    </div>
+                                {{/each}}
                             </div>
                         </div>
-                    </div>
-                    <!--div class="row page" data-page="extracurricular">
-                        <div class="col-lg-12">
-                            <h1 class="page-title">Extracurriculars</h1>
-                            <hr/>
+                        <div class="row page" data-page="skills">
+                            <div class="col-lg-12">
+                                <h1 class="page-title">Skills</h1>
+                                <hr/>
+                                {{each(i, item) content.skills}}
+                                    <div class="col-lg-12 event">
+                                        <br/>
+                                        <h4 class="organization col-lg-4">${item.type}</h4>
+                                        <span class="col-lg-4"></span>
+                                        <p class="skills">
+                                            {{each(i, skills) item.list}}
+                                                <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Proficient">HTML5</button>
+                                            {{/each}}
+                                            <br/><br/>
+                                        </p>
+                                    </div>
+                                {{/each}}
+                            </div>
                         </div>
-                    </div-->
-                </div>  
+                        <!--div class="row page" data-page="extracurricular">
+                            <div class="col-lg-12">
+                                <h1 class="page-title">Extracurriculars</h1>
+                                <hr/>
+                            </div>
+                        </div-->
+                    </div>  
+                </div>
             </div>
-        </div>
+        </script>
+    </head>
+    <body id="body">
+        
     </body>
 </html>

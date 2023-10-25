@@ -1,5 +1,9 @@
 $(document).ready( function() {
 
+    $.getJSON('/resources/data/site-content.json', function(jd) {
+        $("#page-body").tmpl(jd).appendTo("#body");
+     });
+
     var active = window.location.href.split('#')[1];
     $('.navigator[data-href="'+active+'"').addClass('active');
     if (active)
