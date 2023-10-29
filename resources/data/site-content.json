@@ -1,0 +1,301 @@
+{
+    "content": {
+        "contact": {
+            "name": "Prithviraj Chaudhuri",
+            "email": "p.chaudhuri1993@gmail.com",
+            "linked_in": "https://www.linkedin.com/in/prithviraj-chaudhuri-455413b2/",
+            "location": "Raleigh, North Carolina",
+            "picture": "resources/assets/img/profile.jpeg"
+        },
+        "about": {
+            "mission": "As a recent Graduate from North Carolina State University, with Masters of Computer Science, I am actively seeking a full time position as a <i>Software Developer</i>. My expertise lie in the fields of <i>Full Stack Development</i> and <i>Systems level programming</i>. Having worked on enterprise level application development for my previous employers, I have an in-depth knowledge of application programming standards and experience with the best practices used in the industry. I am particularly interested in new and upcoming platforms and technologies and constantly work towards keeping myself updated with the latest innovations in the field.",
+            "educational_qualification": [
+                {
+                    "id": "course_ncsu",
+                    "qualification": "Masters in Computer Science",
+                    "institute": "North Carolina State University",
+                    "time": "August 2019 - May 2021",
+                    "score": "GPA 3.92",
+                    "courses": "Artificial Intelligence, Parallel Architectures, Parallel Systems, Automated Learning and Data Analysis, Compiler Construction, Independent Study on Educational Systems, Advanced Machine Learning, Real Time/Embedded Systems and Machine Learning for Autonomous driving"
+                },
+                {
+                    "id": "course_rcc",
+                    "qualification": "Bachelor of Technology, Computer Science",
+                    "institute": "RCC Institute of Information Technology",
+                    "time": "August 2012 – June 2016",
+                    "score": "GPA 8.71/10",
+                    "courses": "Data Structures, DBMS, Object Oriented Programming, Operating Systems, Compiler Design, Microprocessors, Image Processing"
+                },
+                {
+                    "id": "course_ncsu",
+                    "qualification": "Masters in Computer Science",
+                    "institute": "North Carolina State University",
+                    "time": "August 2019 - May 2021",
+                    "score": "GPA 3.92",
+                    "courses": null
+                }
+            ],
+            "resume": "./resources/assets/downloads/Prithviraj%20Chaudhuri%20Resume.pdf"
+        },
+        "experience": [
+            {
+                "title": "Red Hat, Inc.",
+                "time": "June 2021 - Present",
+                "role": "Senior Software Applications Engineer",
+                "projects": [
+                    "Continued work on all responsibilities as a Software Applications Engineer",
+                    "Took over and implemented customizations on custom marketing and sales platform in Adobe Experience Manager",
+                    "Worked on the migration of applications and hosts from legacy datacenters to OpenStack virtual machines and implemented loadbalancers and host groups using OpenStack CLI",
+                    "Implemented infrastructure on AWS EKS for lucidworks fusion as part of the migration process from on prem to cloud native installations",
+                    "Other responsibilities include performing code reviews, participating in discussions regarding technical solutions and troubleshooting critical issues in critical apps"
+                ]
+            },
+            {
+                "title": "Red Hat, Inc.",
+                "time": "June 2021 - July 2022",
+                "role": "Software Applications Engineer",
+                "projects": [
+                    "Implement new features on applications as per requirement, ensuring the implementations follow best software engineering practices and are optimal. Requirements can be both for front end and backend parts of the application using technologies like Java, Python, HTML, CSS, OpenShift etc.",
+                    "Investigate and fix any defect or bug that gets highlighted, often in collaboration with other teams",
+                    "Write and execute any adhoc bash or python scripts as and when required",
+                    "Configure OpenShift containers and pipelines as required for new or existing applications",
+                    "Migration of existing application from older OpenShift cluster to newer ones involving creation of updated CI/CD pipelines",
+                    "Setting up Ansible playbooks to provision virtual hosts on OpenStack and automatically setup hosts to migrate applications offexisting Hosts",
+                    "Fixing thread issues and other inconsistencies with group management suite of applications",
+                    "Built APIs for other applications to utilize services from applications hosted by the team",
+                    "Developed UI front end and made backend modifications to add administrator functionalities on an existing application"
+                ]
+            },
+            {
+                "title": "North Carolina State University",
+                "time": "January 2020 - May 2021",
+                "role": "Graduate Research Assistant at <a href='https://www.ieclab.org/'>IEC Lab</a>",
+                "projects": [
+                    "Implemented custom learning components on OpenEdx for better course construction and easy migration of courses",
+                    "Integrated research projects to enable more intelligent and dynamic course generation in OpenEdx.",
+                    "Created OpenEdx customizations to enable smarter import and export of course content between OpenEdx environments"
+                ]
+            },
+            {
+                "title": "Red Hat, Inc.",
+                "time": "May 2020 - August 2020",
+                "role": "Full Stack Web Developer Intern",
+                "projects": [
+                    "Used Java Spring Boot and Pug/Jade to implement bulk upload of data to resource management application",
+                    "Enhanced search application to enable smart searching of employee records in the organization",
+                    "Containerized applications to establish automated deployment using OpenShift and Jenkins",
+                    "Designed and developed automated deployment driven by Jenkins and Git for faster delivery times and easy maintenance"
+                ]
+            },
+            {
+                "title": "Tata Consultancy Services",
+                "time": "July 2016 - August 2019",
+                "role": "Systems Engineer",
+                "projects": [
+                    "Implemented Service Catalog on ServiceNow for end users to utilize ServiceNow ITSM modules using CMS",
+                    "Integrated ServiceNow with external systems to streamline information flow",
+                    "Automated tasks by translating manual processes to system and leveraging ServiceNow orchestration platform",
+                    "Designed and developed a unified REST API integration application on ServiceNow to enable faster integration",
+                    "Migrated Service Catalog hosted in CMS to Service Portal using Angular JS"
+                ]
+            },
+            {
+                "title": "ObjectSol Technologies Pvt Ltd.",
+                "time": "July 2016 - August 2016",
+                "role": "Intern",
+                "projects": [
+                    "Retrieved large counts of tweets from Twitter and stored in a single node Cassandra database",
+                    "Classified Tweets in positive or negative sentiments with OpenNLP Java APIs",
+                    "Leveraged StanfordNLP to find keywords in tweets to improve insights"
+                ]
+            },
+            {
+                "title": "Glamoz.com.",
+                "time": "August 2015 - December 2015",
+                "role": "Intern",
+                "projects": [
+                    "Created search algorithms for faster and contextual searches of various user profiles while interacting with backend databases",
+                    "Utilized various jQuery plugins to enable users to edit pictures, upload videos etc",
+                    "Incorporated Facebook and Google login options"
+                ]
+            }
+        ],
+        "projects": [
+            {
+                "type": "Systems Projects",
+                "list": [
+                    "Improved performance of simulation algorithm by leveraging parallel device and multithreaded capabilities of CUDA, OpenACC, OpenMP and MPI. Optimized algorithm my carefully managing memory operations",
+                    "Studied performance benefits of the same algorithm by leveraging parallel processing using CUDA, OpenACC, OpenMP and MPI",
+                    "Used OpenMP to implement parallel sorting algorithms for evaluating performance benefits vs overheads"
+                ]
+            },
+            {
+                "type": "Data Science Projects",
+                "list": [
+                    "Studied performance of various transformer networks,CNNsand word embeddingsin terms of Bleu Score and Cosine similarityon flickr9k dataset. Used python and tensorflow 2.1",
+                    "Performed a study on Multimodal Classification performance (using Python TensorFlow) vs Single mode classification on Yelp dataset to prove whether multimodal performance is better than standard classification",
+                    "Accomplished a Feature Selection algorithm leveraging mutual information and Laplacian scores to select relevant features (R, Matlab)",
+                    "Sentiment Analysis of Tweets (Java, Cassandra, Natural Language Processing)<ul><li>Retrieved large counts of tweets from Twitter and stored in a single node Cassandra database</li><li>Classified Tweets in positive or negative sentiments with OpenNLP Java APIs</li><li>Leveraged StanfordNLP to find keywords in tweets to improve insights</li></ul>"
+                ]
+            },
+            {
+                "type": "Web Developement Projects",
+                "list": [
+                    "Created interactive and responsive websites for out annual festivals, enabling increases attention from other Undergraduate colleges",
+                    "Designed and Developed registration portal for festival participants to enroll for events, restulting in streamlining and reduced delay in the process"
+                ]
+            }
+        ],
+        "skills": [
+            {
+                "type": "Full Stack Technologies",
+                "list": [
+                    {
+                        "level": "Proficient",
+                        "skill": "HTML5"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "CSS3"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "jQuery"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "Angular"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "Python"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "JavaScript"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "Java"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "PHP"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "C#"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "ASP.NET"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "MySQL"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "PostgreSQL"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "Makefiles"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "Git"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "Gitlab Pipelines"
+                    }
+                ]
+            },
+            {
+                "type": "Systems",
+                "list": [
+                    {
+                        "level": "working experience",
+                        "skill": "OpenMP"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "MPI"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "CUDA"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "OpenMP"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "MPI"
+                    }
+                ]
+            },
+            {
+                "type": "Data Analytics",
+                "list": [
+                    {
+                        "level": "working experience",
+                        "skill": "R"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "Matlab"
+                    }
+                ]
+            },
+            {
+                "type": "Platforms and Frameworks",
+                "list": [
+                    {
+                        "level": "Proficient",
+                        "skill": "ServiceNow"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "OpenEdx"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "Java Spring Boot"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "Mockito Testing"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "OpenShift"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "Docker"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "Kubernetes"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "OpenStack"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "Adobe Experience Manager"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "AWS"
+                    }
+                ]
+            }
+        ],
+        "extra": []
+    }
+}
