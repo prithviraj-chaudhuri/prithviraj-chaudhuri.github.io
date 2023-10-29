@@ -51,7 +51,7 @@
                                         <h5 class="section-title">Mission</h5>
                                         <hr/>
                                         <p>
-                                            ${content.about.mission}
+                                            {{html content.about.mission}}
                                         </p>
                                     </div>
                                     <div class="col-lg-12">
@@ -93,7 +93,7 @@
                                         <br/>
                                         <h4 class="organization col-lg-4">${item.title}</h4> <h4 class="time">${item.time}</h4> 
                                         <br/>
-                                        <span class="col-lg-4">${item.role}</span>
+                                        <span class="col-lg-4">{{html item.role}}</span>
                                         <p>
                                             <ul>
                                                 {{each(i, project) item.projects}}
@@ -120,7 +120,7 @@
                                             <ul>
                                                 {{each(i, project) item.list}}
                                                     <li>
-                                                        ${project}
+                                                        {{html project}}
                                                     </li>
                                                 {{/each}}
                                             </ul>

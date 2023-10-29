@@ -123,7 +123,7 @@
                     "Studied performance of various transformer networks,CNNsand word embeddingsin terms of Bleu Score and Cosine similarityon flickr9k dataset. Used python and tensorflow 2.1",
                     "Performed a study on Multimodal Classification performance (using Python TensorFlow) vs Single mode classification on Yelp dataset to prove whether multimodal performance is better than standard classification",
                     "Accomplished a Feature Selection algorithm leveraging mutual information and Laplacian scores to select relevant features (R, Matlab)",
-                    "<li>Sentiment Analysis of Tweets (Java, Cassandra, Natural Language Processing)<ul><li>Retrieved large counts of tweets from Twitter and stored in a single node Cassandra database</li><li>Classified Tweets in positive or negative sentiments with OpenNLP Java APIs</li><li>Leveraged StanfordNLP to find keywords in tweets to improve insights</li></ul></li>"
+                    "Sentiment Analysis of Tweets (Java, Cassandra, Natural Language Processing)<ul><li>Retrieved large counts of tweets from Twitter and stored in a single node Cassandra database</li><li>Classified Tweets in positive or negative sentiments with OpenNLP Java APIs</li><li>Leveraged StanfordNLP to find keywords in tweets to improve insights</li></ul>"
                 ]
             },
             {
