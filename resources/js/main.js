@@ -1,6 +1,6 @@
 $(document).ready( function() {
 
-    $.getJSON('/resources/data/site-content.json', function(jd) {
+    $.getJSON('https://raw.githubusercontent.com/prithviraj-chaudhuri/prithviraj-chaudhuri.github.io/master/resources/data/site-content.json', function(jd) {
         $("#page-body").tmpl(jd).appendTo("#body");
 
         var active = window.location.href.split('#')[1];
