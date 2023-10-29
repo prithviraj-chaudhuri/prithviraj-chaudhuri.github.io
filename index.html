@@ -140,8 +140,8 @@
                                         <h4 class="organization col-lg-4">${item.type}</h4>
                                         <span class="col-lg-4"></span>
                                         <p class="skills">
-                                            {{each(i, skill) item.list}}
-                                                <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="Proficient">${skill}</button>
+                                            {{each(i, skill_item) item.list}}
+                                                <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="${skill_item.level}">${skill_item.skill}</button>
                                             {{/each}}
                                             <br/><br/>
                                         </p>

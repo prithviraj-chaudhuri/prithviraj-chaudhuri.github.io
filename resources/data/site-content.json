@@ -41,6 +41,18 @@
             {
                 "title": "Red Hat, Inc.",
                 "time": "June 2021 - Present",
+                "role": "Senior Software Applications Engineer",
+                "projects": [
+                    "Continued work on all responsibilities as a Software Applications Engineer",
+                    "Took over and implemented customizations on custom marketing and sales platform in Adobe Experience Manager",
+                    "Worked on the migration of applications and hosts from legacy datacenters to OpenStack virtual machines and implemented loadbalancers and host groups using OpenStack CLI",
+                    "Implemented infrastructure on AWS EKS for lucidworks fusion as part of the migration process from on prem to cloud native installations",
+                    "Other responsibilities include performing code reviews, participating in discussions regarding technical solutions and troubleshooting critical issues in critical apps"
+                ]
+            },
+            {
+                "title": "Red Hat, Inc.",
+                "time": "June 2021 - July 2022",
                 "role": "Software Applications Engineer",
                 "projects": [
                     "Implement new features on applications as per requirement, ensuring the implementations follow best software engineering practices and are optimal. Requirements can be both for front end and backend parts of the application using technologies like Java, Python, HTML, CSS, OpenShift etc.",
@@ -138,48 +150,149 @@
             {
                 "type": "Full Stack Technologies",
                 "list": [
-                    "HTML5",
-                    "CSS3",
-                    "jQuery",
-                    "Angular",
-                    "Python",
-                    "JavaScript",
-                    "Java",
-                    "PHP",
-                    "C#",
-                    "ASP.NET",
-                    "MySQL",
-                    "PostgreSQL",
-                    "Makefiles",
-                    "Git"
+                    {
+                        "level": "Proficient",
+                        "skill": "HTML5"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "CSS3"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "jQuery"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "Angular"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "Python"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "JavaScript"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "Java"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "PHP"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "C#"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "ASP.NET"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "MySQL"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "PostgreSQL"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "Makefiles"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "Git"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "Gitlab Pipelines"
+                    }
                 ]
             },
             {
                 "type": "Systems",
                 "list": [
-                    "OpenMP",
-                    "MPI",
-                    "CUDA",
-                    "OpenMP",
-                    "MPI"
+                    {
+                        "level": "working experience",
+                        "skill": "OpenMP"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "MPI"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "CUDA"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "OpenMP"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "MPI"
+                    }
                 ]
             },
             {
                 "type": "Data Analytics",
                 "list": [
-                    "R",
-                    "Matlab"
+                    {
+                        "level": "working experience",
+                        "skill": "R"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "Matlab"
+                    }
                 ]
             },
             {
                 "type": "Platforms and Frameworks",
                 "list": [
-                    "ServiceNow",
-                    "OpenEdx",
-                    "Java Spring Boot",
-                    "Mockito Testing",
-                    "OpenShift",
-                    "Docker"
+                    {
+                        "level": "Proficient",
+                        "skill": "ServiceNow"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "OpenEdx"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "Java Spring Boot"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "Mockito Testing"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "OpenShift"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "Docker"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "Kubernetes"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "OpenStack"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "Adobe Experience Manager"
+                    },
+                    {
+                        "level": "Proficient",
+                        "skill": "AWS"
+                    }
                 ]
             }
         ],
