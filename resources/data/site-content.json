@@ -8,7 +8,7 @@
             "picture": "resources/assets/img/profile.jpeg"
         },
         "about": {
-            "mission": "As a recent Graduate from North Carolina State University, with Masters of Computer Science, I am actively seeking a full time position as a <i>Software Developer</i>. My expertise lie in the fields of <i>Full Stack Development</i> and <i>Systems level programming</i>. Having worked on enterprise level application development for my previous employers, I have an in-depth knowledge of application programming standards and experience with the best practices used in the industry. I am particularly interested in new and upcoming platforms and technologies and constantly work towards keeping myself updated with the latest innovations in the field.",
+            "mission": "I am a Senior Software Applications Engineer with a Master's in Computer Science. My journey includes impactful roles at Red Hat, Inc., North Carolina State University, and Tata Consultancy Services. Proficient in Full Stack and Systems-level Programming, I have excelled in implementing new features, conducting defect investigations, and deploying applications using technologies. Eager to contribute to cutting-edge projects, I am committed to elevating software engineering excellence in a Software Engineering roles.",
             "educational_qualification": [
                 {
                     "id": "course_ncsu",
@@ -25,14 +25,6 @@
                     "time": "August 2012 – June 2016",
                     "score": "GPA 8.71/10",
                     "courses": "Data Structures, DBMS, Object Oriented Programming, Operating Systems, Compiler Design, Microprocessors, Image Processing"
-                },
-                {
-                    "id": "course_ncsu",
-                    "qualification": "Masters in Computer Science",
-                    "institute": "North Carolina State University",
-                    "time": "August 2019 - May 2021",
-                    "score": "GPA 3.92",
-                    "courses": null
                 }
             ],
             "resume": "./resources/assets/downloads/Prithviraj%20Chaudhuri%20Resume.pdf"
@@ -40,30 +32,30 @@
         "experience": [
             {
                 "title": "Red Hat, Inc.",
-                "time": "October 2022 - Present",
+                "time": "June 2021 - Present",
                 "role": "Senior Software Applications Engineer",
                 "projects": [
+                    "Got promoted to Senior on October 2022.",
+                    "Implement new features on applications as per requirement, ensuring the implementations follow best software engineering practices and are optimal. Requirements can be both for frontend and backend parts of the application.",
+                    "Investigate and fix any defect or bug that gets highlighted, often in collaboration with other teams.",
+                    "Write and execute any adhoc bash or python scripts as and when required.",
+                    "Configure OpenShift containers and pipelines as required for new or existing applications.",
+                    "Write infrastructure configuration files in Ansible to build and deploy apps on OpenStack hosts as and when required.",
+                    "After being promoted to Senior Software Applications Engineer my responsibilities also involve peer reviewing work and involving myself with decisions regarding system architectures.",
                     "Continued work on all responsibilities as a Software Applications Engineer",
                     "Took over and implemented customizations on custom marketing and sales platform in Adobe Experience Manager",
                     "Worked on the migration of applications and hosts from legacy datacenters to OpenStack virtual machines and implemented loadbalancers and host groups using OpenStack CLI",
                     "Implemented infrastructure on AWS EKS for lucidworks fusion as part of the migration process from on prem to cloud native installations",
+                    "Used Java Spring Boot and angular to implement bulk upload of user data to resource management application.",
+                    "Migration of existing application from older OpenShift cluster to newer ones involving creation of updated CI/CD pipelines.",
+                    "Setting up Ansible playbooks to provision virtual hosts on OpenStack and automatically setup hosts to migrate applications off existing Hosts.",
+                    "Fixing thread issues and other inconsistencies with group management suite of applications.",
+                    "Built APIs for other applications to utilize services from applications hosted by the team.",
+                    "Developed UI front end and made backend modifications to add administrator functionalities on an existing application.",
+                    "Built integrations on Google Chat bot to interact with other internal application APIs for easier data availability by chat commands.",
+                    "Developed Gitlab CI/CD pipelines to automate functional testing running on an OpenStack host.",
+                    "Configured and modified AWS EKS cluster infrastructure for hosting vendor provided crawling and data pipelining application.",
                     "Other responsibilities include performing code reviews, participating in discussions regarding technical solutions and troubleshooting critical issues in critical apps"
-                ]
-            },
-            {
-                "title": "Red Hat, Inc.",
-                "time": "June 2021 - September 2022",
-                "role": "Software Applications Engineer",
-                "projects": [
-                    "Implement new features on applications as per requirement, ensuring the implementations follow best software engineering practices and are optimal. Requirements can be both for front end and backend parts of the application using technologies like Java, Python, HTML, CSS, OpenShift etc.",
-                    "Investigate and fix any defect or bug that gets highlighted, often in collaboration with other teams",
-                    "Write and execute any adhoc bash or python scripts as and when required",
-                    "Configure OpenShift containers and pipelines as required for new or existing applications",
-                    "Migration of existing application from older OpenShift cluster to newer ones involving creation of updated CI/CD pipelines",
-                    "Setting up Ansible playbooks to provision virtual hosts on OpenStack and automatically setup hosts to migrate applications offexisting Hosts",
-                    "Fixing thread issues and other inconsistencies with group management suite of applications",
-                    "Built APIs for other applications to utilize services from applications hosted by the team",
-                    "Developed UI front end and made backend modifications to add administrator functionalities on an existing application"
                 ]
             },
             {
@@ -71,6 +63,16 @@
                 "time": "January 2020 - May 2021",
                 "role": "Graduate Research Assistant at <a href='https://www.ieclab.org/'>IEC Lab</a>",
                 "projects": [
+                    "Implement customizations in OpenEdx as required.",
+                    "Modify research project implementations to make them easy to maintain and easily deployable using Docker and docker-compose.",
+                    "Occasionally refer to research papers used by the lab to implement projects to understand the correct working condition and make sure that they remain the same after modifications for hosting them on the servers.",
+                    "Integrate research projects with OpenEdx to create smart coursework modules.",
+                    "Configure servers and applications being hosted on them and automate functionalities for easier maintenance.",
+                    "Implemented custom learning components on OpenEdx for better course construction.",
+                    "Established automated course restructuring using existing student performance.",
+                    "Customized OpenEdx environments for automated deployment and migration of courses between environments.",
+                    "Developed Django administration panel to enable easy setup and configuration of applications across multiple servers.",
+                    "Automated deployment of applications across servers using Docker and docker-compose.",
                     "Implemented custom learning components on OpenEdx for better course construction and easy migration of courses",
                     "Integrated research projects to enable more intelligent and dynamic course generation in OpenEdx.",
                     "Created OpenEdx customizations to enable smarter import and export of course content between OpenEdx environments"
@@ -81,6 +83,14 @@
                 "time": "May 2020 - August 2020",
                 "role": "Full Stack Web Developer Intern",
                 "projects": [
+                    "Implement new features on applications as per requirement, ensuring the implementations follow best software engineering practices and are optimal. Requirements can be both for front end and backend parts of the application.",
+                    "Investigate and fix any defect or bug that gets highlighted, often in collaboration with other teams.",
+                    "Configure OpenShift containers and pipelines as required for new or existing applications.",
+                    "Used Java Spring Boot and Pug/Jade to implement bulk upload of data to resource management application.",
+                    "Enhanced search application to enable smart searching of employee records in the organization.",
+                    "Containerized applications to establish automated deployment using OpenShift and Jenkins.",
+                    "Designed and developed automated deployment driven by Jenkins and Git for faster delivery times and easy maintenance.",
+                    "Studied feasibility of deploying applications on multiple cloud platforms of OpenShift.",
                     "Used Java Spring Boot and Pug/Jade to implement bulk upload of data to resource management application",
                     "Enhanced search application to enable smart searching of employee records in the organization",
                     "Containerized applications to establish automated deployment using OpenShift and Jenkins",
@@ -92,6 +102,18 @@
                 "time": "July 2016 - August 2019",
                 "role": "Systems Engineer",
                 "projects": [
+                    "Understand client requirements and implement the best possible solutions accordingly",
+                    "Investigate, identify, and fix any defects in the platform",
+                    "Implement automations within the platform wherever possible",
+                    "Work on both Front-end UI and the backend logic",
+                    "Implement integrations between the platform and other applications mostly via REST or alternate mechanisms if needed",
+                    "Projects",
+                    "Implemented Service Catalog on ServiceNow for end users to utilize ServiceNow ITSM modules using CMS",
+                    "Integrated ServiceNow with external systems to streamline information flow",
+                    "Automated tasks by translating manual processes to system and leveraging ServiceNow orchestration platform",
+                    "Designed and developed a unified REST API integration application on ServiceNow to enable faster integration with other applications",
+                    "Migrated Service Catalog hosted in CMS to Service Portal using Angular JS",
+                    "Established asynchronous data exchange between ServiceNow and Microsoft Active Directory",                  
                     "Implemented Service Catalog on ServiceNow for end users to utilize ServiceNow ITSM modules using CMS",
                     "Integrated ServiceNow with external systems to streamline information flow",
                     "Automated tasks by translating manual processes to system and leveraging ServiceNow orchestration platform",
@@ -288,6 +310,10 @@
                     {
                         "level": "Proficient",
                         "skill": "Adobe Experience Manager"
+                    },
+                    {
+                        "level": "working experience",
+                        "skill": "Alfresco Document Management"
                     },
                     {
                         "level": "Proficient",
