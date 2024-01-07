@@ -65,14 +65,6 @@
                                                 <span class="major col-lg-4">${item.qualification}</span>
                                                 <span class="col-lg-4" style="display:inline-block">${item.score}</span>
                                                 <div class="col">
-                                                    <a class="show_course" data-toggle="collapse" href="#${item.id}" role="button" aria-expanded="false" aria-controls="${item.id}">Show Courses</a>
-                                                    <div class="collapse multi-collapse" id="${item.id}">
-                                                        <div class="card card-body">
-                                                            ${item.courses}
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
                                                     <ul>
                                                         {{each(i, project) item.projects}}
                                                             <li>
@@ -80,6 +72,14 @@
                                                             </li>
                                                         {{/each}}
                                                     </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <a class="show_course" data-toggle="collapse" href="#${item.id}" role="button" aria-expanded="false" aria-controls="${item.id}">Show Courses</a>
+                                                    <div class="collapse multi-collapse" id="${item.id}">
+                                                        <div class="card card-body">
+                                                            ${item.courses}
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <p>
                                                     <br/>
@@ -150,7 +150,7 @@
                                         <span class="col-lg-4"></span>
                                         <p class="skills">
                                             {{each(i, skill_item) item.list}}
-                                                <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="top" title="${skill_item.level}">${skill_item.skill}</button>
+                                                <button type="button" class="btn btn-primary btn-lg">${skill_item.skill}</button>
                                             {{/each}}
                                             <br/><br/>
                                         </p>
