@@ -27,7 +27,7 @@
                             <div class="col-lg-12 profile-info">
                                 <h1> ${content.contact.name} </h1>
                                 <h3> <a class="contact" href="mailto:${content.contact.email}">${content.contact.email}</a></h3>
-                                <h3> <a class="contact" target="_blank" href="${content.contact.linked_in}">Linkedin</a> </h3>
+                                <h3> Connect with me on <a class="contact" target="_blank" href="${content.contact.linked_in}">Linkedin</a> </h3>
                                 <h3> ${content.contact.location} </h3>
                             </div>
                         </div>
@@ -71,6 +71,15 @@
                                                             ${item.courses}
                                                         </div>
                                                     </div>
+                                                </div>
+                                                <div class="col">
+                                                    <ul>
+                                                        {{each(i, project) item.projects}}
+                                                            <li>
+                                                                ${project}
+                                                            </li>
+                                                        {{/each}}
+                                                    </ul>
                                                 </div>
                                                 <p>
                                                     <br/>
