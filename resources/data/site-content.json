@@ -16,7 +16,14 @@
                     "institute": "North Carolina State University",
                     "time": "August 2019 - May 2021",
                     "score": "GPA 3.92",
-                    "courses": "Artificial Intelligence, Parallel Architectures, Parallel Systems, Automated Learning and Data Analysis, Compiler Construction, Independent Study on Educational Systems, Advanced Machine Learning, Real Time/Embedded Systems and Machine Learning for Autonomous driving"
+                    "courses": "Artificial Intelligence, Parallel Architectures, Parallel Systems, Automated Learning and Data Analysis, Compiler Construction, Independent Study on Educational Systems, Advanced Machine Learning, Real Time/Embedded Systems and Machine Learning for Autonomous driving",
+                    "projects": [
+                        "Achieved successful customizations and research projects on the open-source online courseware hosting platform OpenEdx. Measured impact through enhanced functionality and user satisfaction, implementing services across multiple servers, and establishing a Django-powered dashboard for efficient configuration management.",
+                        "Accomplished the development of a Slack bot for classroom management, adhering to robust software engineering practices. Utilized DevOps tools such as Git, Travis CI, Docker, docker-compose, Makefiles, etc. Quantified success through streamlined communication and improved classroom efficiency.",
+                        "Executed an in-depth analysis of transformer networks, CNNs, and word embeddings on the flickr9k dataset. Evaluated performance based on Bleu Score and Cosine similarity for caption prediction of images, contributing valuable insights to the field of image captioning.",
+                        "Successfully conducted a comprehensive study on Multimodal Classification performance using Python TensorFlow, comparing it against Single mode classification on the Yelp dataset. Demonstrated the effectiveness of multimodal approaches over standard classification methods, emphasizing improved accuracy and classification results.",
+                        "Demonstrated the efficiency gains of parallel processing using CUDA, OpenACC, OpenMP, and MPI in comparison to standard single-thread processing. Achieved optimization in algorithmic performance, with measured improvements in execution time and resource utilization."
+                    ]
                 },
                 {
                     "id": "course_rcc",
@@ -24,7 +31,11 @@
                     "institute": "RCC Institute of Information Technology",
                     "time": "August 2012 – June 2016",
                     "score": "GPA 8.71/10",
-                    "courses": "Data Structures, DBMS, Object Oriented Programming, Operating Systems, Compiler Design, Microprocessors, Image Processing"
+                    "courses": "Data Structures, DBMS, Object Oriented Programming, Operating Systems, Compiler Design, Microprocessors, Image Processing",
+                    "projects": [
+                        "Executed the development and management of a suite of four web applications for the annual sports, technical, and cultural festivals of the College. Measured success by enhanced user engagement and seamless festival coordination.",
+                        "Established a new feature selection algorithm to boost supervised learning speeds on specific datasets. Quantified achievement through measured improvements in algorithmic efficiency and overall learning performance."
+                    ]
                 }
             ],
             "resume": "./resources/assets/downloads/Prithviraj%20Chaudhuri%20Resume.pdf"
