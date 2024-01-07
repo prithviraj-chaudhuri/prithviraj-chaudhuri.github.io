@@ -172,129 +172,57 @@
         ],
         "skills": [
             {
-                "type": "Full Stack Technologies",
+                "type": "Profecient",
                 "list": [
                     {
-                        "level": "Proficient",
-                        "skill": "HTML5"
+                        "skill": "HTML"
                     },
                     {
-                        "level": "Proficient",
-                        "skill": "CSS3"
+                        "skill": "CSS"
                     },
                     {
-                        "level": "Proficient",
-                        "skill": "jQuery"
-                    },
-                    {
-                        "level": "Proficient",
-                        "skill": "Angular"
-                    },
-                    {
-                        "level": "Proficient",
-                        "skill": "Python"
-                    },
-                    {
-                        "level": "Proficient",
                         "skill": "JavaScript"
                     },
                     {
-                        "level": "Proficient",
+                        "skill": "jQuery"
+                    },
+                    {
+                        "skill": "Angular"
+                    },
+                    {
+                        "skill": "React"
+                    },
+                    {
+                        "skill": "Python"
+                    },
+                    {
                         "skill": "Java"
                     },
                     {
-                        "level": "working experience",
-                        "skill": "PHP"
-                    },
-                    {
-                        "level": "working experience",
-                        "skill": "C#"
-                    },
-                    {
-                        "level": "working experience",
-                        "skill": "ASP.NET"
-                    },
-                    {
-                        "level": "working experience",
-                        "skill": "MySQL"
-                    },
-                    {
-                        "level": "working experience",
-                        "skill": "PostgreSQL"
-                    },
-                    {
-                        "level": "working experience",
-                        "skill": "Makefiles"
-                    },
-                    {
-                        "level": "working experience",
-                        "skill": "Git"
-                    },
-                    {
-                        "level": "working experience",
-                        "skill": "Gitlab Pipelines"
-                    }
-                ]
-            },
-            {
-                "type": "Systems",
-                "list": [
-                    {
-                        "level": "working experience",
-                        "skill": "OpenMP"
-                    },
-                    {
-                        "level": "working experience",
-                        "skill": "MPI"
-                    },
-                    {
-                        "level": "working experience",
-                        "skill": "CUDA"
-                    },
-                    {
-                        "level": "working experience",
-                        "skill": "OpenMP"
-                    },
-                    {
-                        "level": "working experience",
-                        "skill": "MPI"
-                    }
-                ]
-            },
-            {
-                "type": "Data Analytics",
-                "list": [
-                    {
-                        "level": "working experience",
-                        "skill": "R"
-                    },
-                    {
-                        "level": "working experience",
-                        "skill": "Matlab"
-                    }
-                ]
-            },
-            {
-                "type": "Platforms and Frameworks",
-                "list": [
-                    {
-                        "level": "Proficient",
-                        "skill": "ServiceNow"
-                    },
-                    {
-                        "level": "Proficient",
-                        "skill": "OpenEdx"
-                    },
-                    {
-                        "level": "working experience",
                         "skill": "Java Spring Boot"
                     },
                     {
-                        "level": "working experience",
-                        "skill": "Mockito Testing"
+                        "skill": "PostgreSQL"
                     },
                     {
-                        "level": "Proficient",
+                        "skill": "MySQL"
+                    },
+                    {
+                        "skill": "Makefiles"
+                    },
+                    {
+                        "skill": "Git"
+                    },
+                    {
+                        "skill": "Gitlab Pipelines"
+                    },
+                    {
+                        "skill": "ServiceNow"
+                    },
+                    {
+                        "skill": "OpenEdx"
+                    },
+                    {
                         "skill": "OpenShift"
                     },
                     {
@@ -302,24 +230,60 @@
                         "skill": "Docker"
                     },
                     {
-                        "level": "Proficient",
                         "skill": "Kubernetes"
                     },
                     {
-                        "level": "Proficient",
                         "skill": "OpenStack"
                     },
                     {
-                        "level": "Proficient",
                         "skill": "Adobe Experience Manager"
                     },
                     {
-                        "level": "working experience",
-                        "skill": "Alfresco Document Management"
+                        "skill": "AWS"
+                    }
+                ]
+            },
+            {
+                "type": "Intermediate",
+                "list": [
+                    {
+                        "skill": "PHP"
                     },
                     {
-                        "level": "Proficient",
-                        "skill": "AWS"
+                        "skill": "C#"
+                    },
+                    {
+                        "skill": "ASP.NET"
+                    },
+                    {
+                        "skill": "OpenMP"
+                    },
+                    {
+                        "skill": "MPI"
+                    },
+                    {
+                        "skill": "CUDA"
+                    },
+                    {
+                        "skill": "OpenMP"
+                    },
+                    {
+                        "skill": "MPI"
+                    },
+                    {
+                        "skill": "R"
+                    },
+                    {
+                        "skill": "Matlab"
+                    },
+                    {
+                        "skill": "Java Spring Boot"
+                    },
+                    {
+                        "skill": "Mockito Testing"
+                    },
+                    {
+                        "skill": "Alfresco Document Management"
                     }
                 ]
             }
