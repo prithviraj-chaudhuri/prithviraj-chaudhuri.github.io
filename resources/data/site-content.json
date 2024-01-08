@@ -45,102 +45,378 @@
                 "title": "Red Hat, Inc.",
                 "time": "June 2021 - Present",
                 "role": "Senior Software Applications Engineer",
-                "projects": [
+                "description": "My team maintains and develops a suite of applications used internally within the organization mainly catered towards managing content and logic around content. We build new features and solutions on top of those applications, ensure the solutions provided are optimal and follow best practices as well as resolve any bugs and defects in those applications.",
+                "responsibilities" : [
                     "Implement new features on applications as per requirement, ensuring the implementations follow best software engineering practices and are optimal. Requirements can be both for frontend and backend parts of the application.",
                     "Investigate and fix any defect or bug that gets highlighted, often in collaboration with other teams.",
                     "Write and execute any adhoc bash or python scripts as and when required.",
                     "Configure OpenShift containers and pipelines as required for new or existing applications.",
                     "Write infrastructure configuration files in Ansible to build and deploy apps on OpenStack hosts as and when required.",
-                    "After being promoted to Senior Software Applications Engineer my responsibilities also involve peer reviewing work and involving myself with decisions regarding system architectures.",
-                    "Took over and implemented customizations on custom marketing and sales platform in Adobe Experience Manager",
-                    "Worked on the migration of applications and hosts from legacy datacenters to OpenStack virtual machines and implemented loadbalancers and host groups using OpenStack CLI",
-                    "Implemented infrastructure on AWS EKS for lucidworks fusion as part of the migration process from on prem to cloud native installations",
-                    "Used Java Spring Boot and angular to implement bulk upload of user data to resource management application.",
-                    "Migration of existing application from older OpenShift cluster to newer ones involving creation of updated CI/CD pipelines.",
-                    "Setting up Ansible playbooks to provision virtual hosts on OpenStack and automatically setup hosts to migrate applications off existing Hosts.",
-                    "Fixing thread issues and other inconsistencies with group management suite of applications.",
-                    "Built APIs for other applications to utilize services from applications hosted by the team.",
-                    "Developed UI front end and made backend modifications to add administrator functionalities on an existing application.",
-                    "Built integrations on Google Chat bot to interact with other internal application APIs for easier data availability by chat commands.",
-                    "Developed Gitlab CI/CD pipelines to automate functional testing running on an OpenStack host.",
-                    "Configured and modified AWS EKS cluster infrastructure for hosting vendor provided crawling and data pipelining application."
+                    "After being promoted to Senior Software Applications Engineer my responsibilities also involve peer reviewing work and involving myself with decisions regarding system architectures."
+                ],
+                "projects": [
+                    {
+                        "description": "Develop, deploy and maintain site(s) and assets hosted on marketing and sales platform Adobe Experience Manager (AEM).",
+                        "tech_used": [
+                            "Java Sling",
+                            "JCR",
+                            "OSGI",
+                            "React"
+                        ],
+                        "highlights": [
+                            "Implemented custom container component for personalization of content in site pages",
+                            "Developed impersonation functionality for authors to confirm page and content permissions",
+                            "Generated custom events for Adobe Analytics for building analytics reports for admins and authors to monitor page click through and activity",
+                            "Enhanced UI and implemented bug fixes as required for improved usability",
+                            "Developed automated scripts to run deployments and trigger Adobe Cloud Manager pipelines for faster development",
+                            "Created custom metadata fields and client side metadata field logic to control metadata inputs by authors, which enabled better consistancy in content",
+                            "Developed detailed documentation and standardized processes for on boarding new devs on the project",
+                            "Customized login and enhanced user on boarding logic for better user manangement and access control throughout the system. This enabled third party users to be on boarded into the system and creat consistant experience between external and internal users of the organization"
+                        ]
+                    },
+                    {
+                        "description": "Migrate on prem implementation of Lucidworks fusion to on AWS EKS and maintain new installation",
+                        "tech_used": [
+                            "AWS",
+                            "EKS",
+                            "Kubernetes",
+                            "Helm"
+                        ],
+                        "highlights": [
+                            "Led deployment Lucidworks fusion on AWS EKS to stay up-to-date with newest version",
+                            "Coordinated with IT Cloud teams to ensure deployment followed proper compliance requirements and security protocols",
+                            "Troubleshooted instance via AWS and Kubernetes CLI and developed recovery scripts for corrupted pods for faster resolution times",
+                            "Performed POCs to enhance logging and monitoring to ensure relevant alerts and minimal cost impact",
+                            "Performed regular upgrade and debug sessions with vendor for installation"
+                        ]
+                    },
+                    {
+                        "description": "Migration of puppet managed RHEL-6 hosts to Ansible managed RHEL-9 OpenStack virtual machines",
+                        "tech_used": [
+                            "Ansible",
+                            "OpenStack",
+                            "Gitlab",
+                            "Linux",
+                            "OpenStack CLI"
+                        ],
+                        "highlights": [
+                            "Led the technical implementation of this project",
+                            "Constructed Ansible playbooks for building and deploying virtual machines on OpenStack in place puppet managed RHEL-6 hosts, to ensure security compliance and modern operating platform",
+                            "Ensured end user functionality remains the same as previous to minimize loss in productivity of non-technical users on the hosts",
+                            "Implemented custom Ansible roles and coordinated with Identity management teams to ensure access control and security guidelines are compliant",
+                            "Implemented loadbalancers and network configuration to use with VMs via the OpenStack CLI"
+                        ]
+                    },
+                    {
+                        "description": "Alfresco",
+                        "tech_used": [
+                            "Alfresco",
+                            "Java",
+                            "Javascript",
+                            "Docker",
+                            "docker-compose"
+                        ],
+                        "highlights": [
+                            "Implemented UI enhancements for custom reporting dashlet to improve reporting",
+                            "Added OpenShift custom liveness probes to monitor in pod memory usage and restart containers as required"
+                        ]
+                    },
+                    {
+                        "description": "Implementing Cypress Automated Testing frameworks in gitlab pipelines",
+                        "tech_used": [
+                            "Cypress",
+                            "Gitlab Pipelines",
+                            "OpenStack"
+                        ],
+                        "highlights": [
+                            "Led the technical implementation of this project",
+                            "Organizaed gitlab repository to build custom testing image for cypress to deploy to internal repositories",
+                            "Implemented Ansible playbook to generate and install prerequisites to create Automated Testing host on OpenStack",
+                            "Developed gitlab pipelines to trigger automated testing on OpenStack host to ensure automated testing requirements are fulfilled before deployment"
+                        ]
+                    },
+                    {
+                        "description": "Integrated Google Chat Bot with people display application",
+                        "tech_used": [
+                            "Quarkus",
+                            "Java",
+                            "REST APIs"
+                        ],
+                        "highlights": [
+                            "Implemented custom REST end-point on people display application behind OAuth authorization to ensure proper securtity compliance",
+                            "Developed google chat UI to consume above end-point and display people information from the organization"
+                        ]
+                    },
+                    {
+                        "description": "Customizations on in house Java applications for people and group management",
+                        "tech_used": [
+                            "Java Sprint Boot",
+                            "Angular JS",
+                            "PostgreSQL",
+                            "Python",
+                            "Gitlab",
+                            "OpenShift",
+                            "Docker"
+                        ],
+                        "highlights": [
+                            "Used Java Spring Boot and angular to implement bulk upload of user data to resource management application",
+                            "Troubleshoot and debug thread issues and other inconsistencies with group management suite of applications",
+                            "Built APIs for other applications to utilize services from applications hosted by the team",
+                            "Developed UI front end and made backend modifications to add administrator functionalities on an existing application",
+                            "Migrated application deployments between different OpenStack clusters and customized Gitlab Pipelines as required"
+                        ]
+                    },
+                    {
+                        "description": "Other ad-hoc jobs, integrations and responsibilities",
+                        "tech_used": [
+                            "Python",
+                            "Java"
+                            
+                        ],
+                        "highlights": [
+                            "Troubleshoot and coordinate with other teams to troubleshoot and debug jobs integrating data to and from other applications to our data stores",
+                            "Coordinating with Identity management to troubleshoot group creation and management requirements between LDAP, Google groups and our group manangement application",
+                            "Built ad-hoc python jobs to exchange data between Apache Active MQ and our applications, generate custom notifications from internal content websites etc."
+                        ]
+                    }
                 ]
             },
             {
                 "title": "North Carolina State University",
                 "time": "January 2020 - May 2021",
                 "role": "Graduate Research Assistant at <a href='https://www.ieclab.org/'>IEC Lab</a>",
+                "description": "As a Graduate Research Assistant my primary role in the research group was as a programmer. I was tasked with implementing customizations in OpenEdx (an open-source courseware hosting platform) and research projects that worked along with OpenEdx and building tools to manage these applications.",
+                "responsibilities" : [
+                    "Implement customizations in OpenEdx as required",
+                    "Modify research project implementations to make them easy to maintain and easily deployable using Docker and docker-compose",
+                    "Occasionally refer to research papers used by the lab to implement projects to understand the correct working condition and make sure that they remain the same after modifications for hosting them on the servers",
+                    "Integrate research projects with OpenEdx to create smart coursework modules",
+                    "Configure servers and applications being hosted on them and automate functionalities for easier maintenance"
+                ],
                 "projects": [
-                    "Implement customizations in OpenEdx as required.",
-                    "Modify research project implementations to make them easy to maintain and easily deployable using Docker and docker-compose.",
-                    "Occasionally refer to research papers used by the lab to implement projects to understand the correct working condition and make sure that they remain the same after modifications for hosting them on the servers.",
-                    "Integrate research projects with OpenEdx to create smart coursework modules.",
-                    "Configure servers and applications being hosted on them and automate functionalities for easier maintenance.",
-                    "Established automated course restructuring using existing student performance.",
-                    "Integrated research projects to enable more intelligent and dynamic course generation in OpenEdx.",
-                    "Customized OpenEdx environments for automated deployment and migration of courses between environments.",
-                    "Developed Django administration panel to enable easy setup and configuration of applications across multiple servers.",
-                    "Automated deployment of applications across servers using Docker and docker-compose.",
-                    "Implemented custom learning components on OpenEdx for better course construction and easy migration of courses",
-                    "Created OpenEdx customizations to enable smarter import and export of course content between OpenEdx environments"
+                    {
+                        "description": "Creation of custom components in OpenEdx for custom quizes",
+                        "tech_used": [
+                            "Django",
+                            "Python",
+                            "Docker",
+                            "docker-compose"
+                        ],
+                        "highlights": [
+                            "Created OpenEdx customizations to enable smarter import and export of course content between OpenEdx environments",
+                            "Implemented custom OpenEdx components for authoring and presenting custom quizes to students",
+                            "Built and integrated hint generation service with custom components to display personalized hints to students, based on research algorithms",
+                            "Integrated rule based authoring and tutoring UIs to be used as custom component with OpenEdx so that students can learn by teaching and then quiz themselves",
+                            "Integrated custom component to suggest new questions and modules based on students progress as a realization of reasearch papers"
+                        ]
+                    },{
+                        "description": "Development of management dashboard to control project hyper-parameters and states",
+                        "tech_used": [
+                            "Django",
+                            "Python",
+                            "Docker",
+                            "docker-compose",
+                            "Linux"
+                        ],
+                        "highlights": [
+                            "Optimized and refactored applications to enable them to be run on Docker Images for easier dev and production setup",
+                            "Configured Linux servers to host multiple applications and created detailed documentation for easier recovery and maintenance",
+                            "Created Django dashboard for monitoring states of all services and current parameters as well as restarting them as nessecary"
+                        ]
+                    }
+                    
                 ]
             },
             {
                 "title": "Red Hat, Inc.",
                 "time": "May 2020 - August 2020",
                 "role": "Full Stack Web Developer Intern",
-                "projects": [
+                "description": "I worked as a Full Stack Web Developer Intern for the IT Document Management & Collaboration team at Red Hat. The team maintains and develops a suite of applications used internally within the organization. As part of the team, we build new features and solutions on top of those applications, ensure the solutions provided are optimal and follow best practices as well as resolve any bugs and defects in those applications. My responsibilities within the team were as below.",
+                "responsibilities" : [
                     "Implement new features on applications as per requirement, ensuring the implementations follow best software engineering practices and are optimal. Requirements can be both for front end and backend parts of the application.",
-                    "Investigate and fix any defect or bug that gets highlighted, often in collaboration with other teams.",
-                    "Configure OpenShift containers and pipelines as required for new or existing applications.",
-                    "Used Java Spring Boot and Pug/Jade to implement bulk upload of data to resource management application.",
-                    "Enhanced search application to enable smart searching of employee records in the organization.",
-                    "Containerized applications to establish automated deployment using OpenShift and Jenkins.",
-                    "Designed and developed automated deployment driven by Jenkins and Git for faster delivery times and easy maintenance.",
-                    "Studied feasibility of deploying applications on multiple cloud platforms of OpenShift."
+                    "Investigate and fix any defect or bug that gets highlighted, often in collaboration with other teams",
+                    "Configure OpenShift containers and pipelines as required for new or existing applications"
+                ],
+                "projects": [
+                    {
+                        "description": "Containerizing data analytics application and deploying to OpenShift",
+                        "tech_used": [
+                            "OpenShift",
+                            "Gitlab Pipeline",
+                            "Docker",
+                            "Jenkins"
+                        ],
+                        "highlights": [
+                            "Containerized applications to establish automated deployment using OpenShift and Jenkins to enable faster deployment and upgrade capabilities"
+                        ]
+                    },
+                    {
+                        "description": "Customizations on in house Java applications for people and group management",
+                        "tech_used": [
+                            "Java Sprint Boot",
+                            "Angular JS",
+                            "PostgreSQL",
+                            "Python",
+                            "Gitlab",
+                            "OpenShift",
+                            "Docker"
+                        ],
+                        "highlights": [
+                            "Used Java Spring Boot and Pug/Jade to implement bulk upload of data to resource management application for better usability and group administration",
+                            "Enhanced search application to enable smart searching of employee records in the organization",
+                            "Designed and developed automated deployment driven by Jenkins and Git for faster delivery times and easy maintenance"
+                        ]
+                    }
                 ]
             },
             {
                 "title": "Tata Consultancy Services",
                 "time": "July 2016 - August 2019",
                 "role": "Systems Engineer",
-                "projects": [
+                "description": "I joined TATA Consultancy Services Limited (TCS) as an Assistant systems engineer - Trainee. I ended my employment in the company with the designation Systems Engineer. At Tata Consultancy Services Ltd (TCS), I worked in the role of a ServiceNow Developer. The team maintained and built new features and automations on a ServiceNow environment for a client. The team would develop and deliver solutions to the requirements as given by the client, also act as technical advisors to suggest innovative methods to solve business needs.",
+                "responsibilities" : [
                     "Understand client requirements and implement the best possible solutions accordingly",
                     "Investigate, identify, and fix any defects in the platform",
                     "Implement automations within the platform wherever possible",
                     "Work on both Front-end UI and the backend logic",
-                    "Implement integrations between the platform and other applications mostly via REST or alternate mechanisms if needed",
-                    "Implemented Service Catalog on ServiceNow for end users to utilize ServiceNow ITSM modules using CMS",
-                    "Integrated ServiceNow with external systems to streamline information flow",
-                    "Automated tasks by translating manual processes to system and leveraging ServiceNow orchestration platform",
-                    "Designed and developed a unified REST API integration application on ServiceNow to enable faster integration with other applications",
-                    "Migrated Service Catalog hosted in CMS to Service Portal using Angular JS",
-                    "Established asynchronous data exchange between ServiceNow and Microsoft Active Directory",                  
-                    "Implemented Service Catalog on ServiceNow for end users to utilize ServiceNow ITSM modules using CMS",
-                    "Integrated ServiceNow with external systems to streamline information flow",
-                    "Automated tasks by translating manual processes to system and leveraging ServiceNow orchestration platform",
-                    "Designed and developed a unified REST API integration application on ServiceNow to enable faster integration",
-                    "Migrated Service Catalog hosted in CMS to Service Portal using Angular JS"
+                    "Implement integrations between the platform and other applications mostly via REST or alternate mechanisms if needed"
+                ],
+                "projects": [
+                    {
+                        "description": "Implemented REST API Integrator with inbuilt asynchrounous and synchronous api hosting capabilities for low code REST API integration",
+                        "tech_used": [
+                            "ServiceNow",
+                            "Javascript",
+                            "REST"
+                        ],
+                        "highlights": [
+                            "Built a REST API integrator platform for simple integration with third party applications via REST",
+                            "Added capabilities to trigger webhooks and monitor statuses for asynchronous jobs",
+                            "Built feature to host asynchronous Web hooks as well to run jobs on the platform asynchronously",
+                            "Implemented features to map json object properties to table and implement transformations for inbound and outbound data",
+                            "Developed structured logging capabilities to audit and debug integration logs"
+                        ]
+                    },
+                    {
+                        "description": "Added Custom functionality to execute powershell command on Mid Server for SCOM",
+                        "tech_used": [
+                            "Powershell",
+                            "ServiceNow",
+                            "Mid Server"
+                        ],
+                        "highlights": [
+                            "Modified and designed solution for running jobs on Mid server on events occuring in ServiceNow",
+                            "Created table to keep track of messages processed asynchronously and call job on Mid Server"
+                        ]
+                    },
+                    {
+                        "description": "Implemented scheduled Exports and Imports between ServiceNow and other application",
+                        "tech_used": [
+                            "ServiceNow",
+                            "Mid Server"
+                        ],
+                        "highlights": [
+                            "Created custom scheduled imports from mid server via CSV files exported from other applications for user on boarding",
+                            "Developed transform maps to clean up import of user data from csv",
+                            "Implemented custom data exports for consumption of multiple applications from ServiceNow"
+                        ]
+                    },
+                    {
+                        "description": "Automations with ServiceNow Orchestration",
+                        "tech_used": [
+                            "ServiceNow",
+                            "Mid Server",
+                            "Orchestration"
+                        ],
+                        "highlights": [
+                            "Used orchestration framework to create custom workflow activities to run remote powershell commands on Mail Exchange and Active Directory commands",
+                            "Created Automation workflows for user onboarding within organization by integrating with Mail and Active Directory",
+                            "Designed and developed automation for creating and onboarding users to application providing secured folder spaces",
+                            "Automated server provisioning and decommision using orchestration activities for faster turn resolution time for standard operations"
+                        ] 
+                    },
+                    {
+                        "description": "Marketplace CMS and Service Portal",
+                        "tech_used": [
+                            "ServiceNow",
+                            "HTML",
+                            "CSS",
+                            "Javascript",
+                            "JEXL",
+                            "Angular"
+                        ],
+                        "highlights": [
+                            "Implemented Service Catalog on ServiceNow for end users to utilize ServiceNow ITSM modules using CMS",
+                            "Migrated Service Catalog hosted in CMS to Service Portal using Angular JS and custom widgets, developed for Service Portal"
+                        ]
+                    },
+                    {
+                        "description": "Other activities",
+                        "tech_used": [
+                            "ServiceNow",
+                            "HTML",
+                            "CSS",
+                            "Javascript",
+                            "JEXL",
+                            "Angular"
+                        ],
+                        "highlights": [
+                            "Maintained and enhanced existing and new integrations with ServiceNow",
+                            "Enhanced ITSM and Change modules in ServiceNow to accomodate customer needs and requirements",
+                            "Triage and troubleshoot issues in existing implementations and customizations in ServiceNow",
+                        ]
+                    }
                 ]
             },
             {
                 "title": "ObjectSol Technologies Pvt Ltd.",
                 "time": "July 2016 - August 2016",
                 "role": "Intern",
+                "description": "",
+                "responsibilities" : [
+                    
+                ],
                 "projects": [
-                    "Retrieved large counts of tweets from Twitter and stored in a single node Cassandra database",
-                    "Classified Tweets in positive or negative sentiments with OpenNLP Java APIs",
-                    "Leveraged StanfordNLP to find keywords in tweets to improve insights"
+                    {
+                        "description": "Sentiment Analysis of Tweets",
+                        "tech_used": [
+                            "Java",
+                            "Java Swing",
+                            "Cassandra",
+                            "REST APIs",
+                            "NLP"
+                        ],
+                        "highlights": [
+                            "Retrieved large counts of tweets from Twitter and stored in a single node Cassandra database",
+                            "Classified Tweets in positive or negative sentiments with OpenNLP Java APIs",
+                            "Leveraged StanfordNLP to find keywords in tweets to improve insights"
+                        ]
+                    }
                 ]
             },
             {
                 "title": "Glamoz.com.",
                 "time": "August 2015 - December 2015",
                 "role": "Intern",
+                "description": "",
+                "responsibilities" : [
+                    
+                ],
                 "projects": [
-                    "Created search algorithms for faster and contextual searches of various user profiles while interacting with backend databases",
-                    "Utilized various jQuery plugins to enable users to edit pictures, upload videos etc",
-                    "Incorporated Facebook and Google login options"
+                    {
+                        "description": "Developed e-commerce and social network websites",
+                        "tech_used": [
+                            "PHP",
+                            "HTML",
+                            "CSS",
+                            "PHP"
+                        ],
+                        "highlights": [
+                            "Created search algorithms for faster and contextual searches of various user profiles while interacting with backend databases",
+                            "Utilized various jQuery plugins to enable users to edit pictures, upload videos etc",
+                            "Incorporated Facebook and Google login options"
+                        ]
+                    }
                 ]
             }
         ],
