@@ -104,15 +104,37 @@
                                         <br/>
                                         <span class="col-lg-4">{{html item.role}}</span>
                                         <p>
-                                            <ul>
-                                                {{each(i, project) item.projects}}
+                                            ${item.description}
+                                            <ol>
+                                                {{each(i, resp) item.responsibilities}}
                                                     <li>
-                                                        ${project}
+                                                        ${resp}
                                                     </li>
                                                 {{/each}}
-                                            </ul>
-                                            <br/>
+                                            </ol>
                                         </p>
+                                        <div class="col">
+                                            <span class="col-lg-4">Projects</span>
+                                            {{each(i, project) item.projects}}
+                                                <div class="col">
+                                                    <h5>${project.description}</h5>
+                                                    <p class="skills">
+                                                        {{each(i, tech) item.tech_used}}
+                                                            <button type="button" class="btn btn-primary btn-lg">${tech}</button>
+                                                        {{/each}}
+                                                        <br/><br/>
+                                                    </p>
+                                                    <ul>
+                                                        {{each(i, highlight) item.highlights}}
+                                                            <li>
+                                                                ${highlight}
+                                                            </li>
+                                                        {{/each}}
+                                                    </ul>
+                                                </div>
+                                            {{/each}}
+                                            <br/>
+                                        </div>
                                     </div>
                                 {{/each}}
                             </div>
