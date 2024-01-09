@@ -46,7 +46,7 @@
                 "time": "June 2021 - Present",
                 "role": "Senior Software Applications Engineer",
                 "description": "My team maintains and develops a suite of applications used internally within the organization mainly catered towards managing content and logic around content. We build new features and solutions on top of those applications, ensure the solutions provided are optimal and follow best practices as well as resolve any bugs and defects in those applications.",
-                "responsibilities" : [
+                "responsibilities": [
                     "Implement new features on applications as per requirement, ensuring the implementations follow best software engineering practices and are optimal. Requirements can be both for frontend and backend parts of the application.",
                     "Investigate and fix any defect or bug that gets highlighted, often in collaboration with other teams.",
                     "Write and execute any adhoc bash or python scripts as and when required.",
@@ -171,7 +171,6 @@
                         "tech_used": [
                             "Python",
                             "Java"
-                            
                         ],
                         "highlights": [
                             "Troubleshoot and coordinate with other teams to troubleshoot and debug jobs integrating data to and from other applications to our data stores",
@@ -186,7 +185,7 @@
                 "time": "January 2020 - May 2021",
                 "role": "Graduate Research Assistant at <a href='https://www.ieclab.org/'>IEC Lab</a>",
                 "description": "As a Graduate Research Assistant my primary role in the research group was as a programmer. I was tasked with implementing customizations in OpenEdx (an open-source courseware hosting platform) and research projects that worked along with OpenEdx and building tools to manage these applications.",
-                "responsibilities" : [
+                "responsibilities": [
                     "Implement customizations in OpenEdx as required",
                     "Modify research project implementations to make them easy to maintain and easily deployable using Docker and docker-compose",
                     "Occasionally refer to research papers used by the lab to implement projects to understand the correct working condition and make sure that they remain the same after modifications for hosting them on the servers",
@@ -209,7 +208,8 @@
                             "Integrated rule based authoring and tutoring UIs to be used as custom component with OpenEdx so that students can learn by teaching and then quiz themselves",
                             "Integrated custom component to suggest new questions and modules based on students progress as a realization of reasearch papers"
                         ]
-                    },{
+                    },
+                    {
                         "description": "Development of management dashboard to control project hyper-parameters and states",
                         "tech_used": [
                             "Django",
@@ -224,7 +224,6 @@
                             "Created Django dashboard for monitoring states of all services and current parameters as well as restarting them as nessecary"
                         ]
                     }
-                    
                 ]
             },
             {
@@ -232,7 +231,7 @@
                 "time": "May 2020 - August 2020",
                 "role": "Full Stack Web Developer Intern",
                 "description": "I worked as a Full Stack Web Developer Intern for the IT Document Management & Collaboration team at Red Hat. The team maintains and develops a suite of applications used internally within the organization. As part of the team, we build new features and solutions on top of those applications, ensure the solutions provided are optimal and follow best practices as well as resolve any bugs and defects in those applications. My responsibilities within the team were as below.",
-                "responsibilities" : [
+                "responsibilities": [
                     "Implement new features on applications as per requirement, ensuring the implementations follow best software engineering practices and are optimal. Requirements can be both for front end and backend parts of the application.",
                     "Investigate and fix any defect or bug that gets highlighted, often in collaboration with other teams",
                     "Configure OpenShift containers and pipelines as required for new or existing applications"
@@ -274,7 +273,7 @@
                 "time": "July 2016 - August 2019",
                 "role": "Systems Engineer",
                 "description": "I joined TATA Consultancy Services Limited (TCS) as an Assistant systems engineer - Trainee. I ended my employment in the company with the designation Systems Engineer. At Tata Consultancy Services Ltd (TCS), I worked in the role of a ServiceNow Developer. The team maintained and built new features and automations on a ServiceNow environment for a client. The team would develop and deliver solutions to the requirements as given by the client, also act as technical advisors to suggest innovative methods to solve business needs.",
-                "responsibilities" : [
+                "responsibilities": [
                     "Understand client requirements and implement the best possible solutions accordingly",
                     "Investigate, identify, and fix any defects in the platform",
                     "Implement automations within the platform wherever possible",
@@ -333,7 +332,7 @@
                             "Created Automation workflows for user onboarding within organization by integrating with Mail and Active Directory",
                             "Designed and developed automation for creating and onboarding users to application providing secured folder spaces",
                             "Automated server provisioning and decommision using orchestration activities for faster turn resolution time for standard operations"
-                        ] 
+                        ]
                     },
                     {
                         "description": "Marketplace CMS and Service Portal",
@@ -373,9 +372,7 @@
                 "time": "July 2016 - August 2016",
                 "role": "Intern",
                 "description": "",
-                "responsibilities" : [
-                    
-                ],
+                "responsibilities": [],
                 "projects": [
                     {
                         "description": "Sentiment Analysis of Tweets",
@@ -399,9 +396,7 @@
                 "time": "August 2015 - December 2015",
                 "role": "Intern",
                 "description": "",
-                "responsibilities" : [
-                    
-                ],
+                "responsibilities": [],
                 "projects": [
                     {
                         "description": "Developed e-commerce and social network websites",

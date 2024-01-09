@@ -119,13 +119,13 @@
                                                 <div class="col">
                                                     <h5>${project.description}</h5>
                                                     <p class="skills">
-                                                        {{each(i, tech) item.tech_used}}
+                                                        {{each(i, tech) project.tech_used}}
                                                             <button type="button" class="btn btn-primary btn-lg">${tech}</button>
                                                         {{/each}}
                                                         <br/><br/>
                                                     </p>
                                                     <ul>
-                                                        {{each(i, highlight) item.highlights}}
+                                                        {{each(i, highlight) project.highlights}}
                                                             <li>
                                                                 ${highlight}
                                                             </li>
