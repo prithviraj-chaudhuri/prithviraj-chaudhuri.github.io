@@ -8,7 +8,7 @@
             "picture": "resources/assets/img/profile.jpeg"
         },
         "about": {
-            "mission": "I am a Senior Software Applications Engineer with a Master's in Computer Science. My journey includes impactful roles at Red Hat, Inc., North Carolina State University, and Tata Consultancy Services. Proficient in Full Stack and Systems-level Programming, I have excelled in implementing new features, conducting defect investigations, and deploying applications using varied technologies. Eager to contribute to cutting-edge projects, I am committed to elevating software engineering excellence in Software Engineering roles.",
+            "mission": "<p> I am a dynamic and highly skilled Senior Software Engineer ready to take on challenging roles with a full-stack focus. With a Master's degree in Computer Science and a GPA of 3.926 from North Carolina State University, I bring a diverse technical skill set that includes proficiency in Java, Python, HTML5, CSS3, JavaScript, and more. </p><p> My experience as a Senior Software Applications Engineer at Red Hat, Inc., reflects my ability to lead the development of robust and scalable applications. I have successfully implemented new features, resolved defects, and configured OpenShift containers, showcasing a strong commitment to best software engineering practices. My contributions extend to project management, where I have excelled in roles involving peer reviews, system architectures, and infrastructure configuration using Ansible. </p><p> In both industry and academic settings, I have demonstrated my adaptability and innovative thinking. As a Graduate Research Assistant at North Carolina State University, I implemented customizations in OpenEdx and conducted research projects, automating processes using Docker and docker-compose. My projects include developing a Slack bot for classroom management and studying the performance of machine learning models. </p><p> I am not just a technical expert; I am a proactive professional with a keen eye for detail. My dedication to excellence is evident in my work on ServiceNow at Tata Consultancy Services, where I played a crucial role in implementing solutions and integrations. </p><p> I am seeking Senior Software Engineer positions or higher, where my diverse technical background, project management skills, and commitment to delivering high-quality solutions can contribute to the success and innovation of your organization. I am excited about the opportunity to bring my expertise to a dynamic team and make a meaningful impact. </p>",
             "educational_qualification": [
                 {
                     "id": "course_ncsu",
@@ -16,7 +16,17 @@
                     "institute": "North Carolina State University",
                     "time": "August 2019 - May 2021",
                     "score": "GPA 3.92",
-                    "courses": "Artificial Intelligence, Parallel Architectures, Parallel Systems, Automated Learning and Data Analysis, Compiler Construction, Independent Study on Educational Systems, Advanced Machine Learning, Real Time/Embedded Systems and Machine Learning for Autonomous driving",
+                    "courses": [
+                        "Artificial Intelligence",
+                        "Parallel Architectures",
+                        "Parallel Systems",
+                        "Automated Learning and Data Analysis",
+                        "Compiler Construction",
+                        "Independent Study on Educational Systems",
+                        "Advanced Machine Learning",
+                        "Real Time/Embedded Systems",
+                        "Machine Learning for Autonomous Driving"
+                    ],
                     "projects": [
                         "Achieved successful customizations and research projects on the open-source online courseware hosting platform OpenEdx. Measured impact through enhanced functionality and user satisfaction, implementing services across multiple servers, and establishing a Django-powered dashboard for efficient configuration management.",
                         "Accomplished the development of a Slack bot for classroom management, adhering to robust software engineering practices. Utilized DevOps tools such as Git, Travis CI, Docker, docker-compose, Makefiles, etc. Quantified success through streamlined communication and improved classroom efficiency.",
@@ -31,7 +41,15 @@
                     "institute": "RCC Institute of Information Technology",
                     "time": "August 2012 – June 2016",
                     "score": "GPA 8.71/10",
-                    "courses": "Data Structures, DBMS, Object Oriented Programming, Operating Systems, Compiler Design, Microprocessors, Image Processing",
+                    "courses": [
+                        "Data Structures",
+                        "DBMS",
+                        "Object Oriented Programming",
+                        "Operating Systems",
+                        "Compiler Design",
+                        "Microprocessors",
+                        "Image Processing"
+                      ],
                     "projects": [
                         "Executed the development and management of a suite of four web applications for the annual sports, technical, and cultural festivals of the College. Measured success by enhanced user engagement and seamless festival coordination.",
                         "Established a new feature selection algorithm to boost supervised learning speeds on specific datasets. Quantified achievement through measured improvements in algorithmic efficiency and overall learning performance."
@@ -42,6 +60,7 @@
         },
         "experience": [
             {
+                "id": "rh_full",
                 "title": "Red Hat, Inc.",
                 "time": "June 2021 - Present",
                 "role": "Senior Software Applications Engineer",
@@ -181,6 +200,7 @@
                 ]
             },
             {
+                "id": "ncsu_part",
                 "title": "North Carolina State University",
                 "time": "January 2020 - May 2021",
                 "role": "Graduate Research Assistant at <a href='https://www.ieclab.org/'>IEC Lab</a>",
@@ -227,6 +247,7 @@
                 ]
             },
             {
+                "id": "rh_part",
                 "title": "Red Hat, Inc.",
                 "time": "May 2020 - August 2020",
                 "role": "Full Stack Web Developer Intern",
@@ -269,6 +290,7 @@
                 ]
             },
             {
+                "id": "tcs_full",
                 "title": "Tata Consultancy Services",
                 "time": "July 2016 - August 2019",
                 "role": "Systems Engineer",
@@ -368,6 +390,7 @@
                 ]
             },
             {
+                "id": "os_part",
                 "title": "ObjectSol Technologies Pvt Ltd.",
                 "time": "July 2016 - August 2016",
                 "role": "Intern",
@@ -392,6 +415,7 @@
                 ]
             },
             {
+                "id": "gl_part",
                 "title": "Glamoz.com.",
                 "time": "August 2015 - December 2015",
                 "role": "Intern",

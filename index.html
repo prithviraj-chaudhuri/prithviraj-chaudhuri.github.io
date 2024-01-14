@@ -33,8 +33,9 @@
                         </div>
                         <div class="row profile-sections">
                             <div class="cols col-lg-12">
-                                <div class="navigator" data-href="about"><span>About</span></div>
-                                <div class="navigator" data-href="experience"><span>Experience</span></div>
+                                <div class="navigator" data-href="about"><span>About Me</span></div>
+                                <div class="navigator" data-href="experience"><span>Work Experience</span></div>
+                                <div class="navigator" data-href="education"><span>Educational Qualification</span></div>
                                 <div class="navigator" data-href="projects"><span>Additional Projects</span></div>
                                 <div class="navigator" data-href="skills"><span>Skills</span></div>
                                 <!--div class="navigator" data-href="extracurricular"><span>Extra Curriculars</span></div-->
@@ -48,44 +49,9 @@
                                 <hr/>
                                 <div class="col-lg-12">
                                     <div class="col-lg-12">
-                                        <h5 class="section-title">Mission</h5>
-                                        <hr/>
                                         <p>
                                             {{html content.about.mission}}
                                         </p>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <h5 class="section-title">Educational Qualification</h4>
-                                        <hr/>
-                                        {{each(i, item) content.about.educational_qualification}}
-                                            <div class="col-lg-12 event">
-                                                <br/>
-                                                <h4 class="organization col-lg-6">${item.institute}</h4> <h4 class="time">${item.time}</h4> 
-                                                <br/>
-                                                <span class="major col-lg-4">${item.qualification}</span>
-                                                <span class="col-lg-4" style="display:inline-block">${item.score}</span>
-                                                <div class="col">
-                                                    <ul>
-                                                        {{each(i, project) item.projects}}
-                                                            <li>
-                                                                ${project}
-                                                            </li>
-                                                        {{/each}}
-                                                    </ul>
-                                                </div>
-                                                <div class="col">
-                                                    <a class="show_course" data-toggle="collapse" href="#${item.id}" role="button" aria-expanded="false" aria-controls="${item.id}">Show Courses</a>
-                                                    <div class="collapse multi-collapse" id="${item.id}">
-                                                        <div class="card card-body">
-                                                            ${item.courses}
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <p>
-                                                    <br/>
-                                                </p>
-                                            </div>
-                                        {{/each}}
                                     </div>
                                 </div>
                                 <div class="col-lg-12 buttons">
@@ -104,42 +70,85 @@
                                         <br/>
                                         <span class="col-lg-4">{{html item.role}}</span>
                                         <hr/>
-                                        <div class="col">
-                                            <p>
-                                                ${item.description}
-                                                <ul>
-                                                    {{each(i, resp) item.responsibilities}}
-                                                        <li>
-                                                            ${resp}
-                                                        </li>
-                                                    {{/each}}
-                                                </ul>
-                                            </p>
+                                        <p style="padding-left:15px">
+                                            ${item.description}
+                                        </p>
+                                        <ul>
+                                            {{each(i, resp) item.responsibilities}}
+                                                <li>
+                                                    ${resp}
+                                                </li>
+                                            {{/each}}
+                                        </ul>
+                                        <a class="show_course" data-toggle="collapse" href="#${item.id}" role="button" aria-expanded="false" aria-controls="${item.id}">Show Projects</a>
+                                        <hr/>
+                                        <div class="collapse multi-collapse" id="${item.id}">
+                                            <div class="card card-body">
+                                                <h5>Projects</h6>
+                                                <hr/>
+                                                {{each(i, project) item.projects}}
+                                                    <div class="col">
+                                                        <h5>${project.description}</h5>
+                                                        <ul>
+                                                            {{each(i, highlight) project.highlights}}
+                                                                <li>
+                                                                    ${highlight}
+                                                                </li>
+                                                            {{/each}}
+                                                        </ul>
+                                                        <p class="skills">
+                                                            {{each(i, tech) project.tech_used}}
+                                                                <span class="badge badge-secondary">${tech}</span>
+                                                            {{/each}}
+                                                        </p>
+                                                    </div>
+                                                    <hr/>
+                                                {{/each}}
+                                            </div>
                                         </div>
+                                        <p>
+                                            <br/>
+                                        </p>
+                                    </div>
+                                {{/each}}
+                            </div>
+                        </div>
+                        <div class="row page" data-page="education">
+                            <div class="col-lg-12">
+                                <h1 class="page-title">Educational Qualifications</h1>
+                                <hr/>
+                                {{each(i, item) content.about.educational_qualification}}
+                                    <div class="col-lg-12 event">
+                                        <br/>
+                                        <h4 class="organization col-lg-6">${item.institute}</h4> <h4 class="time">${item.time}</h4> 
+                                        <br/>
+                                        <span class="major col-lg-4">${item.qualification}</span>
+                                        <span class="col-lg-4" style="display:inline-block">${item.score}</span>
                                         <hr/>
                                         <div class="col">
-                                            <h6>Projects</h6>
-                                            {{each(i, project) item.projects}}
-                                                <div class="col">
-                                                    <span>${project.description}</span>
-                                                    <p class="skills">
-                                                        {{each(i, tech) project.tech_used}}
-                                                            <button type="button" class="btn btn-primary btn-lg">${tech}</button>
-                                                        {{/each}}
-                                                        <br/><br/>
-                                                    </p>
-                                                    <ul>
-                                                        {{each(i, highlight) project.highlights}}
-                                                            <li>
-                                                                ${highlight}
-                                                            </li>
-                                                        {{/each}}
-                                                    </ul>
-                                                </div>
-                                                <hr/>
-                                            {{/each}}
-                                            <br/>
+                                            <ul>
+                                                {{each(i, project) item.projects}}
+                                                    <li>
+                                                        ${project}
+                                                    </li>
+                                                {{/each}}
+                                            </ul>
                                         </div>
+                                        <div class="col">
+                                            <a class="show_course" data-toggle="collapse" href="#${item.id}" role="button" aria-expanded="false" aria-controls="${item.id}">Show Courses</a>
+                                            <div class="collapse multi-collapse" id="${item.id}">
+                                                <div class="card card-body">
+                                                    <p class="skills">
+                                                        {{each(i, course) item.courses}}
+                                                            <span class="badge badge-secondary">${course}</span>
+                                                        {{/each}}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <br/>
+                                        </p>
                                     </div>
                                 {{/each}}
                             </div>
@@ -152,6 +161,7 @@
                                     <div class="col-lg-12 event">
                                         <br/>
                                         <h4 class="organization col-lg-4">${item.type}</h4>
+                                        <hr/>
                                         <p>
                                             <ul>
                                                 {{each(i, project) item.list}}
@@ -174,6 +184,7 @@
                                     <div class="col-lg-12 event">
                                         <br/>
                                         <h4 class="organization col-lg-4">${item.type}</h4>
+                                        <hr/>
                                         <span class="col-lg-4"></span>
                                         <p class="skills">
                                             {{each(i, skill_item) item.list}}
@@ -197,6 +208,5 @@
         </script>
     </head>
     <body id="body">
-        This is test
     </body>
 </html>
