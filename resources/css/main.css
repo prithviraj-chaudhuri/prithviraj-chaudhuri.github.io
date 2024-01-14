@@ -137,7 +137,6 @@ p, ul {
 }
 
 .event > .organization {
-    font-size: 20px;
     font-weight: 300;
     padding-right:50px;
     display: inline-block;
@@ -154,6 +153,11 @@ p, ul {
     border-color: #324e6b;
     font-size: 15px;
     margin-top:10px;
+}
+
+.skills > span {
+    font-size: 15px;
+    margin: 5px;
 }
 
 .skills > button:hover {
