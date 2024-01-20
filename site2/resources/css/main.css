@@ -129,6 +129,21 @@ html, body {
     width: fit-content;
 }
 
+.about-me-text {
+    font-size: 22px;
+}
+
+.badge {
+    width: fit-content;
+    font-size: 15px;
+    padding: 15px;
+    margin: 5px;
+}
+
+.progress {
+    padding-left: 0px;
+}
+
 @media only screen and (max-width: 600px) {
     html, body {
         height: fit-content;
