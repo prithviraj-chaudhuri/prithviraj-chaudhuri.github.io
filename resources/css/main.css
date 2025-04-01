@@ -149,10 +149,11 @@ p, ul {
 }
 
 .skills > button {
-    background-color: #324e6b;
+    background-color: #ffffff;
     border-color: #324e6b;
     font-size: 15px;
     margin-top:10px;
+    color: #000000;
 }
 
 .skills > span {
@@ -161,22 +162,27 @@ p, ul {
 }
 
 .skills > button:hover {
-    background-color: #324e6b;
+    background-color: #ffffff;
     border-color: #324e6b;
-    cursor: default;
+    font-size: 15px;
+    margin-top:10px;
+    color: #000000;
 }
 
 .skills > button:active {
-    background-color: #324e6b !important;
-    border-color: #324e6b !important;
-    cursor: default;
+    background-color: #ffffff;
+    border-color: #324e6b;
+    font-size: 15px;
+    margin-top:10px;
+    color: #000000;
 }
 
 .skills > button:focus {
-    background-color: #324e6b !important;
-    border-color: #324e6b !important;
-    cursor: default;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0) !important;
+    background-color: #ffffff;
+    border-color: #324e6b;
+    font-size: 15px;
+    margin-top:10px;
+    color: #000000;
 }
 
 .education {
