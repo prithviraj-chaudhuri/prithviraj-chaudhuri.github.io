@@ -133,6 +133,7 @@ p, ul {
 
 .event {
     border-radius: 2px;
+    padding: 20px;
     box-shadow: 0px 0px 8px 0 rgba(0,0,0,0.2);
 }
 
@@ -149,10 +150,11 @@ p, ul {
 }
 
 .skills > button {
-    background-color: #324e6b;
+    background-color: #ffffff;
     border-color: #324e6b;
     font-size: 15px;
     margin-top:10px;
+    color: #000000;
 }
 
 .skills > span {
@@ -161,22 +163,27 @@ p, ul {
 }
 
 .skills > button:hover {
-    background-color: #324e6b;
+    background-color: #ffffff;
     border-color: #324e6b;
-    cursor: default;
+    font-size: 15px;
+    margin-top:10px;
+    color: #000000;
 }
 
 .skills > button:active {
-    background-color: #324e6b !important;
-    border-color: #324e6b !important;
-    cursor: default;
+    background-color: #ffffff;
+    border-color: #324e6b;
+    font-size: 15px;
+    margin-top:10px;
+    color: #000000;
 }
 
 .skills > button:focus {
-    background-color: #324e6b !important;
-    border-color: #324e6b !important;
-    cursor: default;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0) !important;
+    background-color: #ffffff;
+    border-color: #324e6b;
+    font-size: 15px;
+    margin-top:10px;
+    color: #000000;
 }
 
 .education {
@@ -203,6 +210,15 @@ p, ul {
     transition: 0.1s;
 }
 
+@media only screen and (max-width: 1500px) {
+    .side-bar {
+        padding: 0px;
+        background-color: #324e6b;
+        color: #ffffff;
+        height: fit-content;
+        min-width: 330px;
+    }
+}
 
 @media only screen and (max-width: 600px) {
     html, body {

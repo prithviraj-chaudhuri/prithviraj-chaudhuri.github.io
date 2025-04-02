@@ -4,11 +4,11 @@
             "name": "Prithviraj Chaudhuri",
             "email": "p.chaudhuri1993@gmail.com",
             "linked_in": "https://www.linkedin.com/in/prithviraj-chaudhuri-455413b2/",
-            "location": "Raleigh, North Carolina",
+            "location": "Toronto, Ontario",
             "picture": "resources/assets/img/profile.jpeg"
         },
         "about": {
-            "mission": "<p> I am a dynamic and highly skilled Senior Software Engineer ready to take on challenging roles with a full-stack focus. With a Master's degree in Computer Science and a GPA of 3.926 from North Carolina State University, I bring a diverse technical skill set that includes proficiency in Java, Python, HTML5, CSS3, JavaScript, and more. </p><p> My experience as a Senior Software Applications Engineer at Red Hat, Inc., reflects my ability to lead the development of robust and scalable applications. I have successfully implemented new features, resolved defects, and configured OpenShift containers, showcasing a strong commitment to best software engineering practices. My contributions extend to project management, where I have excelled in roles involving peer reviews, system architectures, and infrastructure configuration using Ansible. </p><p> In both industry and academic settings, I have demonstrated my adaptability and innovative thinking. As a Graduate Research Assistant at North Carolina State University, I implemented customizations in OpenEdx and conducted research projects, automating processes using Docker and docker-compose. My projects include developing a Slack bot for classroom management and studying the performance of machine learning models. </p><p> I am not just a technical expert; I am a proactive professional with a keen eye for detail. My dedication to excellence is evident in my work on ServiceNow at Tata Consultancy Services, where I played a crucial role in implementing solutions and integrations. </p><p> I am seeking Senior Software Engineer positions or higher, where my diverse technical background, project management skills, and commitment to delivering high-quality solutions can contribute to the success and innovation of your organization. I am excited about the opportunity to bring my expertise to a dynamic team and make a meaningful impact. </p>",
+            "mission": "<p>I am a dynamic and highly skilled Senior Software Engineer with a strong background in designing and developing large-scale, high-performance applications. With a Master's degree in Computer Science from North Carolina State University, I bring a deep understanding of complex system architectures and a full-stack engineering mindset.</p><p>At Red Hat, Inc., I have played a key role in building and optimizing enterprise-grade applications, driving major architectural decisions, and ensuring scalability and reliability. My expertise extends to configuring containerized environments with OpenShift, optimizing application performance, and enhancing system infrastructure through automation. My contributions span not only hands-on development but also leadership in peer reviews, system architecture, and infrastructure configuration using Ansible.</p><p>Beyond my industry experience, I have demonstrated a strong research-driven approach, having worked as a Graduate Research Assistant at North Carolina State University. Here, I implemented advanced customizations in OpenEdx and developed automation solutions leveraging containerization technologies. My projects included building intelligent automation solutions and analyzing machine learning models to improve system efficiency.</p><p>I have also worked extensively with enterprise content management frameworks such as Adobe Experience Manager (AEM), integrating them into large-scale systems and ensuring seamless functionality across various platforms. My experience spans full-stack development, infrastructure automation, and cloud-based deployments, making me well-equipped to handle complex engineering challenges.</p><p>I am seeking Senior Software Engineer positions or higher, where I can leverage my expertise in software architecture, large-scale system design, and enterprise frameworks to drive innovation and deliver impactful solutions. I thrive in dynamic environments and am eager to contribute to the success of forward-thinking teams.</p>",
             "educational_qualification": [
                 {
                     "id": "course_ncsu",
@@ -61,7 +61,7 @@
         "experience": [
             {
                 "id": "rh_full",
-                "title": "Red Hat, Inc.",
+                "title": "Red Hat",
                 "time": "June 2021 - Present",
                 "role": "Senior Software Applications Engineer",
                 "description": "My team maintains and develops a suite of applications used internally within the organization mainly catered towards managing content and logic around content. We build new features and solutions on top of those applications, ensure the solutions provided are optimal and follow best practices as well as resolve any bugs and defects in those applications.",
@@ -77,7 +77,7 @@
                     {
                         "description": "Develop, deploy and maintain site(s) and assets hosted on marketing and sales platform Adobe Experience Manager (AEM).",
                         "tech_used": [
-                            "Java Sling",
+                            "Apache Sling",
                             "JCR",
                             "OSGI",
                             "React"
@@ -467,74 +467,95 @@
         ],
         "skills": [
             {
-                "type": "Profecient",
+                "type": "Proficient",
                 "list": [
                     {
-                        "skill": "HTML"
+                        "skill": "Angular",
+                        "icon": "bi-code-slash"
                     },
                     {
-                        "skill": "CSS"
+                        "skill": "React",
+                        "icon": "bi-code-square"
                     },
                     {
-                        "skill": "JavaScript"
+                        "skill": "Python",
+                        "icon": "bi-file-earmark-code"
                     },
                     {
-                        "skill": "jQuery"
+                        "skill": "Java",
+                        "icon": "bi-cup-hot"
                     },
                     {
-                        "skill": "Angular"
+                        "skill": "Java Spring Boot",
+                        "icon": "bi-gear"
                     },
                     {
-                        "skill": "React"
+                        "skill": "PostgreSQL",
+                        "icon": "bi-database"
                     },
                     {
-                        "skill": "Python"
+                        "skill": "MySQL",
+                        "icon": "bi-database-fill"
                     },
                     {
-                        "skill": "Java"
+                        "skill": "Makefiles",
+                        "icon": "bi-file-text"
                     },
                     {
-                        "skill": "Java Spring Boot"
+                        "skill": "Git",
+                        "icon": "bi-git"
                     },
                     {
-                        "skill": "PostgreSQL"
+                        "skill": "Gitlab Pipelines",
+                        "icon": "bi-diagram-3"
                     },
                     {
-                        "skill": "MySQL"
+                        "skill": "ServiceNow",
+                        "icon": "bi-snow"
                     },
                     {
-                        "skill": "Makefiles"
+                        "skill": "OpenEdx",
+                        "icon": "bi-mortarboard"
                     },
                     {
-                        "skill": "Git"
+                        "skill": "OpenShift",
+                        "icon": "bi-hdd-network"
                     },
                     {
-                        "skill": "Gitlab Pipelines"
+                        "skill": "Docker",
+                        "icon": "bi-boxes"
                     },
                     {
-                        "skill": "ServiceNow"
+                        "skill": "Kubernetes",
+                        "icon": "bi-diagram-2"
                     },
                     {
-                        "skill": "OpenEdx"
+                        "skill": "OpenStack",
+                        "icon": "bi-clouds"
                     },
                     {
-                        "skill": "OpenShift"
+                        "skill": "Adobe Experience Manager",
+                        "icon": "bi-file-earmark-richtext"
                     },
                     {
-                        "level": "Proficient",
-                        "skill": "Docker"
+                        "skill": "AWS",
+                        "icon": "bi-cloud"
                     },
                     {
-                        "skill": "Kubernetes"
+                        "skill": "HTML",
+                        "icon": "bi-filetype-html"
                     },
                     {
-                        "skill": "OpenStack"
+                        "skill": "CSS",
+                        "icon": "bi-filetype-css"
                     },
                     {
-                        "skill": "Adobe Experience Manager"
+                        "skill": "JavaScript",
+                        "icon": "bi-filetype-js"
                     },
                     {
-                        "skill": "AWS"
+                        "skill": "jQuery",
+                        "icon": "bi-filetype-js"
                     }
                 ]
             },
@@ -542,43 +563,48 @@
                 "type": "Intermediate",
                 "list": [
                     {
-                        "skill": "PHP"
+                        "skill": "Java Spring Boot",
+                        "icon": "bi-gear"
                     },
                     {
-                        "skill": "C#"
+                        "skill": "Alfresco Document Management",
+                        "icon": "bi-folder"
                     },
                     {
-                        "skill": "ASP.NET"
+                        "skill": "OpenMP",
+                        "icon": "bi-cpu"
                     },
                     {
-                        "skill": "OpenMP"
+                        "skill": "MPI",
+                        "icon": "bi-cpu-fill"
                     },
                     {
-                        "skill": "MPI"
+                        "skill": "CUDA",
+                        "icon": "bi-gpu-card"
                     },
                     {
-                        "skill": "CUDA"
+                        "skill": "OpenMP",
+                        "icon": "bi-cpu"
                     },
                     {
-                        "skill": "OpenMP"
+                        "skill": "MPI",
+                        "icon": "bi-cpu-fill"
                     },
                     {
-                        "skill": "MPI"
+                        "skill": "R",
+                        "icon": "bi-file-earmark-bar-graph"
                     },
                     {
-                        "skill": "R"
+                        "skill": "PHP",
+                        "icon": "bi-filetype-php"
                     },
                     {
-                        "skill": "Matlab"
+                        "skill": "C#",
+                        "icon": "bi-hash"
                     },
                     {
-                        "skill": "Java Spring Boot"
-                    },
-                    {
-                        "skill": "Mockito Testing"
-                    },
-                    {
-                        "skill": "Alfresco Document Management"
+                        "skill": "ASP.NET",
+                        "icon": "bi-window"
                     }
                 ]
             }
