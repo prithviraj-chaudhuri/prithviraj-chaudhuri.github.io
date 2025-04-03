@@ -1,212 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Prithviraj Chaudhuri</title>
+        <title>Prithviraj Chaudhuri - Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!--Include Libraries-->
+        <!-- Include Libraries -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="resources/css/main.css">
         
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
         <script src="resources/js/main.js"></script>
 
-        <script id="page-body" type="text/x-jsrender">
-            <div class="container-fluid">
-                <div class="main-row row">
-                    <div class="cols col-lg-2 side-bar">
-                        <div class="row">
-                            <div class="col-lg-12 profile-pic">
-                                <img src="${content.contact.picture}" alt="Profile Picture">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12 profile-info">
-                                <h1> ${content.contact.name} </h1>
-                                <h3> <a class="contact" href="mailto:${content.contact.email}">${content.contact.email}</a></h3>
-                                <h3> Connect with me on <a class="contact" target="_blank" href="${content.contact.linked_in}">Linkedin</a> </h3>
-                                <h3> ${content.contact.location} </h3>
-                            </div>
-                        </div>
-                        <div class="row profile-sections">
-                            <div class="cols col-lg-12">
-                                <div class="navigator" data-href="about"><span>About Me</span></div>
-                                <div class="navigator" data-href="experience"><span>Work Experience</span></div>
-                                <div class="navigator" data-href="education"><span>Educational Qualification</span></div>
-                                <div class="navigator" data-href="projects"><span>Additional Projects</span></div>
-                                <div class="navigator" data-href="skills"><span>Skills</span></div>
-                                <!--div class="navigator" data-href="extracurricular"><span>Extra Curriculars</span></div-->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cols col-lg-10 main-content">
-                        <div class="row page" data-page="about">
-                            <div class="col-lg-12 page-content">
-                                <h1 class="page-title">About Me</h1>
-                                <hr/>
-                                <div class="col-lg-12">
-                                    <div class="col-lg-12">
-                                        <p>
-                                            {{html content.about.mission}}
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 buttons">
-                                    <button type="button" class="btn btn-primary btn-lg download-cv">Download Resume</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row page" data-page="experience">
-                            <div class="col-lg-12">
-                                <h1 class="page-title">Experience</h1>
-                                <hr/>
-                                {{each(i, item) content.experience}}
-                                    <div class="col-lg-12 event">
-                                        <br/>
-                                        <h4 class="organization col-lg-4">${item.title}</h4> <h4 class="time">${item.time}</h4> 
-                                        <br/>
-                                        <span class="col-lg-4">{{html item.role}}</span>
-                                        <hr/>
-                                        <p style="padding-left:15px">
-                                            ${item.description}
-                                        </p>
-                                        <ul>
-                                            {{each(i, resp) item.responsibilities}}
-                                                <li>
-                                                    ${resp}
-                                                </li>
-                                            {{/each}}
-                                        </ul>
-                                        <a class="show_course" data-toggle="collapse" href="#${item.id}" role="button" aria-expanded="false" aria-controls="${item.id}">Show Projects</a>
-                                        <hr/>
-                                        <div class="collapse multi-collapse" id="${item.id}">
-                                            <div class="card card-body">
-                                                <h5>Projects</h6>
-                                                <hr/>
-                                                {{each(i, project) item.projects}}
-                                                    <div class="col">
-                                                        <h5>${project.description}</h5>
-                                                        <ul>
-                                                            {{each(i, highlight) project.highlights}}
-                                                                <li>
-                                                                    ${highlight}
-                                                                </li>
-                                                            {{/each}}
-                                                        </ul>
-                                                        <p class="skills">
-                                                            {{each(i, tech) project.tech_used}}
-                                                                <span class="badge badge-secondary">${tech}</span>
-                                                            {{/each}}
-                                                        </p>
-                                                    </div>
-                                                    <hr/>
-                                                {{/each}}
-                                            </div>
-                                        </div>
-                                        <p>
-                                            <br/>
-                                        </p>
-                                    </div>
-                                {{/each}}
-                            </div>
-                        </div>
-                        <div class="row page" data-page="education">
-                            <div class="col-lg-12">
-                                <h1 class="page-title">Educational Qualifications</h1>
-                                <hr/>
-                                {{each(i, item) content.about.educational_qualification}}
-                                    <div class="col-lg-12 event">
-                                        <br/>
-                                        <h4 class="organization col-lg-6">${item.institute}</h4> <h4 class="time">${item.time}</h4> 
-                                        <br/>
-                                        <span class="major col-lg-4">${item.qualification}</span>
-                                        <span class="col-lg-4" style="display:inline-block">${item.score}</span>
-                                        <hr/>
-                                        <div class="col">
-                                            <ul>
-                                                {{each(i, project) item.projects}}
-                                                    <li>
-                                                        ${project}
-                                                    </li>
-                                                {{/each}}
-                                            </ul>
-                                        </div>
-                                        <div class="col">
-                                            <a class="show_course" data-toggle="collapse" href="#${item.id}" role="button" aria-expanded="false" aria-controls="${item.id}">Show Courses</a>
-                                            <div class="collapse multi-collapse" id="${item.id}">
-                                                <div class="card card-body">
-                                                    <p class="skills">
-                                                        {{each(i, course) item.courses}}
-                                                            <span class="badge badge-secondary">${course}</span>
-                                                        {{/each}}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p>
-                                            <br/>
-                                        </p>
-                                    </div>
-                                {{/each}}
-                            </div>
-                        </div>
-                        <div class="row page" data-page="projects">
-                            <div class="col-lg-12">
-                                <h1 class="page-title">Additional Projects</h1>
-                                <hr/>
-                                {{each(i, item) content.projects}}
-                                    <div class="col-lg-12 event">
-                                        <br/>
-                                        <h4 class="organization col-lg-4">${item.type}</h4>
-                                        <hr/>
-                                        <p>
-                                            <ul>
-                                                {{each(i, project) item.list}}
-                                                    <li>
-                                                        {{html project}}
-                                                    </li>
-                                                {{/each}}
-                                            </ul>
-                                            <br/>
-                                        </p>
-                                    </div>
-                                {{/each}}
-                            </div>
-                        </div>
-                        <div class="row page" data-page="skills">
-                            <div class="col-lg-12">
-                                <h1 class="page-title">Skills</h1>
-                                <hr/>
-                                {{each(i, item) content.skills}}
-                                    <div class="col-lg-12 event">
-                                        <br/>
-                                        <h4 class="organization col-lg-4">${item.type}</h4>
-                                        <hr/>
-                                        <span class="col-lg-4"></span>
-                                        <p class="skills">
-                                            {{each(i, skill_item) item.list}}
-                                                <button type="button" class="btn btn-primary btn-lg">${skill_item.skill}</button>
-                                            {{/each}}
-                                            <br/><br/>
-                                        </p>
-                                    </div>
-                                {{/each}}
-                            </div>
-                        </div>
-                        <!--div class="row page" data-page="extracurricular">
-                            <div class="col-lg-12">
-                                <h1 class="page-title">Extracurriculars</h1>
-                                <hr/>
-                            </div>
-                        </div-->
-                    </div>  
+        <style>
+            /* General Styling */
+            body {
+                background-color: #0c0c0c; /* Dark terminal background */
+                color: #d4d4d4; /* Light gray text */
+                font-family: "Courier New", Courier, monospace; /* Monospaced font for terminal look */
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                padding: 20px;
+            }
+
+            /* Header Section */
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 50px 0;
+                flex-wrap: wrap; /* Allows wrapping for smaller screens */
+            }
+            .header-text {
+                text-align: left;
+                max-width: 60%;
+            }
+            .header h1 {
+                font-size: 2.5rem;
+                margin-bottom: 10px;
+                color: #00ff00; /* Green text for terminal headings */
+            }
+            .header p {
+                font-size: 1.2rem;
+                color: #d4d4d4; /* Light gray for subtext */
+            }
+            .profile-picture {
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 3px solid #333; /* Dark gray border */
+            }
+
+            /* Section Styling */
+            .section h2 {
+                font-size: 1.8rem;
+                margin-bottom: 20px;
+                border-bottom: 1px solid #333; /* Dark gray underline */
+                padding-bottom: 10px;
+                color: #00ff00; /* Green for section headings */
+            }
+            .section p, .section li {
+                color: #d4d4d4; /* Light gray text */
+            }
+            .project h3, .experience h3, .education h3, .skill h3 {
+                font-size: 1.5rem;
+                margin-bottom: 5px;
+                color: #00ff00; /* Green for subheadings */
+            }
+            .project p, .experience p, .education p, .skill p {
+                color: #d4d4d4; /* Light gray text */
+            }
+
+            /* Links */
+            .contact a {
+                color: #00ff00; /* Green for links */
+                text-decoration: none;
+            }
+            .contact a:hover {
+                text-decoration: underline;
+            }
+
+            /* Terminal-like Borders */
+            .section {
+                border: 1px solid #333; /* Dark gray border for terminal-like sections */
+                padding: 15px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+            }
+
+            /* Media query for smaller screens */
+            @media (max-width: 768px) {
+                .header {
+                    flex-direction: column; /* Stack items vertically */
+                    text-align: center; /* Center-align text */
+                }
+                .header-text {
+                    max-width: 100%; /* Allow full width for text */
+                    text-align: center; /* Center-align text */
+                }
+                .profile-picture {
+                    margin-bottom: 20px; /* Add spacing below the image */
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header Section -->
+            <div class="header">
+                <div class="header-text">
+                    <h1>Prithviraj Chaudhuri</h1>
+                    <p>Full-Stack Developer | Problem Solver | Tech Enthusiast</p>
+                </div>
+                <img src="resources/assets/img/profile.jpeg" alt="Profile Picture" class="profile-picture">
+            </div>
+
+            <!-- About Me Section -->
+            <div class="section about">
+                <h2>About Me</h2>
+                <p>Hello! I'm Prithviraj, a passionate developer with experience in building web applications, solving complex problems, and creating efficient solutions. I love working with modern technologies and continuously learning to improve my skills.</p>
+            </div>
+
+            <!-- Work Experience Section -->
+            <div class="section experience">
+                <h2>Work Experience</h2>
+                <div class="experience">
+                    <h3>Software Engineer at TechCorp</h3>
+                    <p>Developed scalable web applications and APIs using React and Node.js. Collaborated with cross-functional teams to deliver high-quality software solutions.</p>
+                </div>
+                <div class="experience">
+                    <h3>Intern at DevSolutions</h3>
+                    <p>Assisted in building a customer management system using Django and PostgreSQL. Gained hands-on experience in full-stack development.</p>
                 </div>
             </div>
-        </script>
-    </head>
-    <body id="body">
+
+            <!-- Education Section -->
+            <div class="section education">
+                <h2>Education</h2>
+                <div class="education">
+                    <h3>Bachelor of Technology in Computer Science</h3>
+                    <p>XYZ University, 2020 - 2024</p>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div class="section projects">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio website to showcase my skills and projects. Built with HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="project">
+                    <h3>E-commerce Platform</h3>
+                    <p>An e-commerce platform with user authentication, product management, and payment integration. Built with React and Node.js.</p>
+                </div>
+            </div>
+
+            <!-- Additional Projects Section -->
+            <div class="section additional-projects">
+                <h2>Additional Projects</h2>
+                <div class="project">
+                    <h3>Blog Application</h3>
+                    <p>A blogging platform with a rich text editor, user profiles, and comment functionality. Built with Django and PostgreSQL.</p>
+                </div>
+                <div class="project">
+                    <h3>Weather App</h3>
+                    <p>A weather forecasting app using OpenWeatherMap API. Built with vanilla JavaScript and Bootstrap.</p>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="section skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Programming Languages: JavaScript, Python, Java</li>
+                    <li>Frameworks: React, Node.js, Django</li>
+                    <li>Databases: PostgreSQL, MongoDB</li>
+                    <li>Tools: Git, Docker, Jenkins</li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="section contact">
+                <h2>Contact</h2>
+                <p>Feel free to reach out to me via email or connect with me on LinkedIn:</p>
+                <p>Email: <a href="mailto:prithviraj@example.com">prithviraj@example.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/prithviraj-chaudhuri" target="_blank">linkedin.com/in/prithviraj-chaudhuri</a></p>
+            </div>
+        </div>
     </body>
 </html>
