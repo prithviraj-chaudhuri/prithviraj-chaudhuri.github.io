@@ -106,6 +106,36 @@
                     margin-bottom: 20px; /* Add spacing below the image */
                 }
             }
+
+            /* Typing Effect Styling */
+            .typing-container {
+                display: inline-block;
+                overflow: hidden;
+                white-space: nowrap;
+                border-right: 4px solid #00ff00; /* Thicker green cursor */
+                animation: typing 3s steps(30, end), blink 0.9s step-end infinite;
+                font-size: 1.2rem;
+                color: #d4d4d4; /* Light gray for subtext */
+                line-height: 1.2rem; /* Ensures cursor matches text height */
+            }
+
+            @keyframes typing {
+                from {
+                    width: 0;
+                }
+                to {
+                    width: 100%;
+                }
+            }
+
+            @keyframes blink {
+                50% {
+                    border-color: transparent;
+                }
+                100% {
+                    border-color: #00ff00;
+                }
+            }
         </style>
     </head>
     <body>
@@ -114,7 +144,7 @@
             <div class="header">
                 <div class="header-text">
                     <h1>Prithviraj Chaudhuri</h1>
-                    <p>Full-Stack Developer | Problem Solver | Tech Enthusiast</p>
+                    <p class="typing-container">Full-Stack Developer | Problem Solver | Tech Enthusiast</p>
                 </div>
                 <img src="resources/assets/img/profile.jpeg" alt="Profile Picture" class="profile-picture">
             </div>
