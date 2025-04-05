@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    overflow: hidden;
+    overflow: hidden; /* Disable scrolling */
 }
 
 /* Default Navbar Styling */
@@ -63,12 +63,22 @@ body {
 .content {
     flex: 1;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
 }
 
 .section {
     height: 100vh;
     padding: 20px;
     box-sizing: border-box;
+    flex: 0 0 100%; /* Each section takes up the full viewport height */
+    display: none; /* Hide all sections by default */
+}
+
+.section.active {
+    display: block; /* Show only the active section */
 }
 
 .header {

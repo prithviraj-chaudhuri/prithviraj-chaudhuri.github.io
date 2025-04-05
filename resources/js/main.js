@@ -62,9 +62,6 @@ $(document).ready(function () {
             if (currentIndex > 0) {
                 navigate(links, currentIndex, currentIndex - 1);
             }
-        } else if (event.key === 'Enter') {
-            // Navigate to the selected link
-            activeLink?.click();
         }
     });
 
@@ -114,4 +111,19 @@ $(document).ready(function () {
             newActiveLink.classList.add('active');
         }
     }
+
+    function showSection(sectionId) {
+        $('.section').removeClass('active'); // Hide all sections
+        $(`#${sectionId}`).addClass('active'); // Show the selected section
+    }
+
+    $('.navbar a').on('click', function (e) {
+        e.preventDefault(); // Prevent default anchor behavior
+        const targetId = $(this).attr('href').substring(1); // Get the target section ID
+        showSection(targetId); // Show the target section
+    });
+
+    // Show the first section by default
+    const initialSection = $('.navbar a.active').attr('href').substring(1);
+    showSection(initialSection);
 });
