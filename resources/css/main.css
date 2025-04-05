@@ -99,6 +99,7 @@ body {
 .section {
     border: none;
     padding: 15px;
+    padding-top: 50px;
     margin-bottom: 20px;
     border-radius: 0;
     position: relative;
