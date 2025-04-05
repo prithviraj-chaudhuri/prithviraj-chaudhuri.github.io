@@ -1,39 +1,44 @@
-$(document).ready( function() {
-
-    $.getJSON('https://raw.githubusercontent.com/prithviraj-chaudhuri/prithviraj-chaudhuri.github.io/master/resources/data/site-content.json', function(jd) {
+$(document).ready(function () {
+    $.getJSON('https://raw.githubusercontent.com/prithviraj-chaudhuri/prithviraj-chaudhuri.github.io/master/resources/data/site-content.json', function (jd) {
         $("#page-body").tmpl(jd).appendTo("#body");
 
         var active = window.location.href.split('#')[1];
-        $('.navigator[data-href="'+active+'"').addClass('active');
-        if (active)
-            scrollTo(active);
+        updateActiveLink(active);
+        if (active) scrollTo(active);
 
         $('[data-toggle="tooltip"]').tooltip();
 
-        $('.navigator').on('click', function() {
+        $('.navigator').on('click', function () {
             var page = $(this).data('href');
-            window.location.href = '#'+page;
+            window.location.href = '#' + page;
 
-            var fromPage  = $('.navigator.active');
-            fromPage.removeClass('active');
-            
-            $('.navigator[data-href="'+page+'"').addClass('active');
+            updateActiveLink(page);
             scrollTo(page);
         });
 
-        $('.download-cv').on('click', function() {
-            window.open('./resources/assets/downloads/Prithviraj%20Chaudhuri%20Resume.pdf' , '_blank');
+        $('.download-cv').on('click', function () {
+            window.open('./resources/assets/downloads/Prithviraj%20Chaudhuri%20Resume.pdf', '_blank');
         });
 
-        
         function scrollTo(page) {
-            $('.main-content').animate({
-                scrollTop: $('.main-content').scrollTop() - $('.main-content').offset().top + $('.page[data-page="'+page+'"]').position().top
-            }, 500);
+            $('.main-content').animate(
+                {
+                    scrollTop:
+                        $('.main-content').scrollTop() -
+                        $('.main-content').offset().top +
+                        $('.page[data-page="' + page + '"]').position().top,
+                },
+                500
+            );
         }
-     });
 
-    document.querySelectorAll('.navbar a').forEach(link => {
+        function updateActiveLink(hash) {
+            $('.navigator.active').removeClass('active');
+            $('.navigator[data-href="' + hash + '"]').addClass('active');
+        }
+    });
+
+    document.querySelectorAll('.navbar a').forEach((link) => {
         link.addEventListener('click', function () {
             document.querySelector('.navbar a.active')?.classList.remove('active');
             this.classList.add('active');
@@ -68,4 +73,32 @@ $(document).ready( function() {
         links[newIndex].click();
     }
 
+    $('.hamburger-menu').on('click', function () {
+        $('.collapsible').toggleClass('collapsed');
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hash = window.location.hash; // Get the hash from the URL
+    if (hash) {
+        const targetSection = document.querySelector(hash); // Find the section with the matching ID
+        if (targetSection) {
+            targetSection.scrollIntoView(); // Scroll to the section smoothly
+        }
+        updateActiveLink(hash.replace('#', ''));
+    }
+
+    // Update active link on hash change
+    window.addEventListener('hashchange', () => {
+        const newHash = window.location.hash.replace('#', '');
+        updateActiveLink(newHash);
+    });
+
+    function updateActiveLink(hash) {
+        document.querySelector('.navbar a.active')?.classList.remove('active');
+        const newActiveLink = document.querySelector(`.navbar a[href="#${hash}"]`);
+        if (newActiveLink) {
+            newActiveLink.classList.add('active');
+        }
+    }
 });
