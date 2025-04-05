@@ -127,7 +127,10 @@ body {
     color: #00ff00;
     font-size: 1.5rem;
     cursor: pointer;
-    margin: 10px;
+    position: fixed; /* Make it fixed */
+    top: 10px; /* Position at the top */
+    left: 10px; /* Position at the left */
+    z-index: 1000; /* Ensure it stays above all content */
 }
 
 .collapsible {
@@ -158,10 +161,23 @@ body {
 
     .collapsible {
         display: none;
+        position: fixed; /* Make the navbar fixed */
+        top: 0;
+        left: 0;
+        width: 250px; /* Set a fixed width */
+        height: 100%; /* Full height */
+        background-color: black; /* Match the body background */
+        z-index: 999; /* Ensure it stays below the hamburger menu */
+        overflow-y: auto; /* Allow scrolling if content overflows */
     }
 
     .collapsible.collapsed {
         display: flex;
+        flex-direction: column;
+    }
+
+    .navbar .navs a {
+        text-align: center; /* Center align links for smaller screens */
     }
 }
 

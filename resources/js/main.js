@@ -76,6 +76,19 @@ $(document).ready(function () {
     $('.hamburger-menu').on('click', function () {
         $('.collapsible').toggleClass('collapsed');
     });
+
+    $('.navbar .navs a').on('click', function () {
+        if (window.innerWidth <= 768) {
+            $('.collapsible').addClass('collapsed');
+        }
+    });
+
+    // Ensure the hamburger menu remains functional on scroll
+    $(window).on('scroll', function () {
+        if (window.innerWidth <= 768) {
+            $('.hamburger-menu').css('top', $(window).scrollTop() + 10 + 'px');
+        }
+    });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
