@@ -4,7 +4,9 @@ $(document).ready(function () {
 
         var active = window.location.href.split('#')[1];
         updateActiveLink(active);
-        if (active) scrollTo(active);
+        if (active) {
+            scrollTo(active);
+        }
 
         $('[data-toggle="tooltip"]').tooltip();
 
