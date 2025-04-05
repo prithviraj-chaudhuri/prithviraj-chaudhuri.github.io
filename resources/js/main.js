@@ -89,9 +89,7 @@ $(document).ready(function () {
             $('.hamburger-menu').css('top', $(window).scrollTop() + 10 + 'px');
         }
     });
-});
 
-document.addEventListener('DOMContentLoaded', () => {
     const hash = window.location.hash; // Get the hash from the URL
     if (hash) {
         const targetSection = document.querySelector(hash); // Find the section with the matching ID
