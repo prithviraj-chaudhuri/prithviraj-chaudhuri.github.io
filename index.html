@@ -12,151 +12,28 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="resources/js/main.js"></script>
-
-        <style>
-            /* General Styling */
-            body {
-                background-color: #0c0c0c; /* Dark terminal background */
-                color: #d4d4d4; /* Light gray text */
-                font-family: "Courier New", Courier, monospace; /* Monospaced font for terminal look */
-                margin: 0;
-                padding: 0;
-            }
-            .container {
-                padding: 20px;
-            }
-
-            /* Header Section */
-            .header {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 50px 0;
-                flex-wrap: wrap; /* Allows wrapping for smaller screens */
-            }
-            .header-text {
-                text-align: left;
-                max-width: 60%;
-            }
-            .header h1 {
-                font-size: 2.5rem;
-                margin-bottom: 10px;
-                color: #00ff00; /* Green text for terminal headings */
-            }
-            .header p {
-                font-size: 1.2rem;
-                color: #d4d4d4; /* Light gray for subtext */
-            }
-            .profile-picture {
-                width: 300px;
-                height: 300px;
-                border-radius: 50%;
-                object-fit: cover;
-                border: 3px solid #333; /* Dark gray border */
-            }
-
-            /* Section Styling */
-            .section h2 {
-                font-size: 1.8rem;
-                margin-bottom: 20px;
-                border-bottom: 1px solid #333; /* Dark gray underline */
-                padding-bottom: 10px;
-                color: #00ff00; /* Green for section headings */
-            }
-            .section p, .section li {
-                color: #d4d4d4; /* Light gray text */
-            }
-            .project h3, .experience h3, .education h3, .skill h3 {
-                font-size: 1.5rem;
-                margin-bottom: 5px;
-                color: #00ff00; /* Green for subheadings */
-            }
-            .project p, .experience p, .education p, .skill p {
-                color: #d4d4d4; /* Light gray text */
-            }
-
-            /* Links */
-            .contact a {
-                color: #00ff00; /* Green for links */
-                text-decoration: none;
-            }
-            .contact a:hover {
-                text-decoration: underline;
-            }
-
-            /* Terminal-like Borders */
-            .section {
-                border: 1px solid #333; /* Dark gray border for terminal-like sections */
-                padding: 15px;
-                margin-bottom: 20px;
-                border-radius: 5px;
-            }
-
-            /* Media query for smaller screens */
-            @media (max-width: 768px) {
-                .header {
-                    flex-direction: column; /* Stack items vertically */
-                    text-align: center; /* Center-align text */
-                }
-                .header-text {
-                    max-width: 100%; /* Allow full width for text */
-                    text-align: center; /* Center-align text */
-                }
-                .profile-picture {
-                    margin-bottom: 20px; /* Add spacing below the image */
-                }
-            }
-
-            /* Typing Effect Styling */
-            .typing-container {
-                display: inline-block;
-                overflow: hidden;
-                white-space: nowrap;
-                border-right: 4px solid #00ff00; /* Thicker green cursor */
-                animation: typing 3s steps(30, end), blink 0.9s step-end infinite;
-                font-size: 1.2rem;
-                color: #d4d4d4; /* Light gray for subtext */
-                line-height: 1.2rem; /* Ensures cursor matches text height */
-            }
-
-            @keyframes typing {
-                from {
-                    width: 0;
-                }
-                to {
-                    width: 100%;
-                }
-            }
-
-            @keyframes blink {
-                50% {
-                    border-color: transparent;
-                }
-                100% {
-                    border-color: #00ff00;
-                }
-            }
-        </style>
     </head>
     <body>
-        <div class="container">
-            <!-- Header Section -->
-            <div class="header">
-                <div class="header-text">
-                    <h1>Prithviraj Chaudhuri</h1>
-                    <p class="typing-container">Full-Stack Developer | Problem Solver | Tech Enthusiast</p>
-                </div>
-                <img src="resources/assets/img/profile.jpeg" alt="Profile Picture" class="profile-picture">
-            </div>
+        <!-- Left Navbar -->
+        <div class="navbar">
+            <a href="#about" class="active">About Me</a>
+            <a href="#experience">Work Experience</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
 
+        <!-- Content -->
+        <div class="content">
             <!-- About Me Section -->
-            <div class="section about">
+            <div id="about" class="section about">
                 <h2>About Me</h2>
                 <p>Hello! I'm Prithviraj, a passionate developer with experience in building web applications, solving complex problems, and creating efficient solutions. I love working with modern technologies and continuously learning to improve my skills.</p>
             </div>
 
             <!-- Work Experience Section -->
-            <div class="section experience">
+            <div id="experience" class="section experience">
                 <h2>Work Experience</h2>
                 <div class="experience">
                     <h3>Software Engineer at TechCorp</h3>
@@ -169,7 +46,7 @@
             </div>
 
             <!-- Education Section -->
-            <div class="section education">
+            <div id="education" class="section education">
                 <h2>Education</h2>
                 <div class="education">
                     <h3>Bachelor of Technology in Computer Science</h3>
@@ -178,7 +55,7 @@
             </div>
 
             <!-- Projects Section -->
-            <div class="section projects">
+            <div id="projects" class="section projects">
                 <h2>Projects</h2>
                 <div class="project">
                     <h3>Portfolio Website</h3>
@@ -204,7 +81,7 @@
             </div>
 
             <!-- Skills Section -->
-            <div class="section skills">
+            <div id="skills" class="section skills">
                 <h2>Skills</h2>
                 <ul>
                     <li>Programming Languages: JavaScript, Python, Java</li>
@@ -215,7 +92,7 @@
             </div>
 
             <!-- Contact Section -->
-            <div class="section contact">
+            <div id="contact" class="section contact">
                 <h2>Contact</h2>
                 <p>Feel free to reach out to me via email or connect with me on LinkedIn:</p>
                 <p>Email: <a href="mailto:prithviraj@example.com">prithviraj@example.com</a></p>
