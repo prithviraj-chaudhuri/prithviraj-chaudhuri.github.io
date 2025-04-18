@@ -1,59 +1,48 @@
 import * as React from "react"
 
-import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
 
 export default function Experience() {
     return (
         <Card className="">
             <CardHeader>
                 <CardTitle>Experience</CardTitle>
-                <CardDescription>Deploy your new project in one-click.</CardDescription>
             </CardHeader>
             <CardContent>
-                <form>
-                    <div className="grid w-full items-center gap-4">
-                        <div className="flex flex-col space-y-1.5">
-                            <Label htmlFor="name">Name</Label>
-                            <Input id="name" placeholder="Name of your project" />
-                        </div>
-                        <div className="flex flex-col space-y-1.5">
-                            <Label htmlFor="framework">Framework</Label>
-                            <Select>
-                                <SelectTrigger id="framework">
-                                    <SelectValue placeholder="Select" />
-                                </SelectTrigger>
-                                <SelectContent position="popper">
-                                    <SelectItem value="next">Next.js</SelectItem>
-                                    <SelectItem value="sveltekit">SvelteKit</SelectItem>
-                                    <SelectItem value="astro">Astro</SelectItem>
-                                    <SelectItem value="nuxt">Nuxt.js</SelectItem>
-                                </SelectContent>
-                            </Select>
+            <div className="space-y-8">
+                    <div className="relative">
+                        <div className="absolute h-full w-0.5 bg-gray-200 left-2"></div>
+                        <div className="relative flex items-start space-x-4">
+                            <div className="h-4 w-4 rounded-full bg-primary mt-1"></div>
+                            <div>
+                                <h3 className="font-bold">Apple</h3>
+                                <p className="text-sm text-muted-foreground">2022 - Present</p>
+                                <p className="mt-2">Software Engineer</p>
+                                <p className="text-sm text-muted-foreground">Working on Core ML and Foundation Models</p>
+                            </div>
                         </div>
                     </div>
-                </form>
+
+                    <div className="relative">
+                        <div className="absolute h-full w-0.5 bg-gray-200 left-2"></div>
+                        <div className="relative flex items-start space-x-4">
+                            <div className="h-4 w-4 rounded-full bg-primary mt-1"></div>
+                            <div>
+                                <h3 className="font-bold">Amazon</h3>
+                                <p className="text-sm text-muted-foreground">2020 - 2022</p>
+                                <p className="mt-2">Software Development Engineer</p>
+                                <p className="text-sm text-muted-foreground">Worked on Amazon Prime Video</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </CardContent>
-            <CardFooter className="flex justify-between">
-                <Button variant="outline">Cancel</Button>
-                <Button>Deploy</Button>
-            </CardFooter>
         </Card>
     );
 }

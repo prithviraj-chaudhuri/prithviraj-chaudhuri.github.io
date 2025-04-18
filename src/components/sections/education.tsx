@@ -1,59 +1,50 @@
 import * as React from "react"
 
-import { Button } from "@/components/ui/button"
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
 
 export default function Education() {
     return (
         <Card className="">
             <CardHeader>
                 <CardTitle>Education</CardTitle>
-                <CardDescription>Deploy your new project in one-click.</CardDescription>
             </CardHeader>
             <CardContent>
-                <form>
-                    <div className="grid w-full items-center gap-4">
-                        <div className="flex flex-col space-y-1.5">
-                            <Label htmlFor="name">Name</Label>
-                            <Input id="name" placeholder="Name of your project" />
-                        </div>
-                        <div className="flex flex-col space-y-1.5">
-                            <Label htmlFor="framework">Framework</Label>
-                            <Select>
-                                <SelectTrigger id="framework">
-                                    <SelectValue placeholder="Select" />
-                                </SelectTrigger>
-                                <SelectContent position="popper">
-                                    <SelectItem value="next">Next.js</SelectItem>
-                                    <SelectItem value="sveltekit">SvelteKit</SelectItem>
-                                    <SelectItem value="astro">Astro</SelectItem>
-                                    <SelectItem value="nuxt">Nuxt.js</SelectItem>
-                                </SelectContent>
-                            </Select>
-                        </div>
-                    </div>
-                </form>
+                <Accordion type="single" collapsible>
+                    <AccordionItem value="university">
+                        <AccordionTrigger>Bachelor of Technology (2020-2024)</AccordionTrigger>
+                        <AccordionContent>
+                            <div className="space-y-2">
+                                <p>VIT Vellore - Computer Science Engineering</p>
+                                <p>CGPA: 8.91/10</p>
+                                <p>Key Courses:</p>
+                                <ul className="list-disc list-inside">
+                                    <li>Data Structures and Algorithms</li>
+                                    <li>Operating Systems</li>
+                                    <li>Database Management Systems</li>
+                                    <li>Computer Networks</li>
+                                </ul>
+                            </div>
+                        </AccordionContent>
+                    </AccordionItem>
+                    
+                    <AccordionItem value="highschool">
+                        <AccordionTrigger>High School (2018-2020)</AccordionTrigger>
+                        <AccordionContent>
+                            <div className="space-y-2">
+                                <p>Delhi Public School - Science Stream</p>
+                                <p>Percentage: 95.6%</p>
+                                <p>Subjects: Physics, Chemistry, Mathematics, Computer Science</p>
+                            </div>
+                        </AccordionContent>
+                    </AccordionItem>
+                </Accordion>
             </CardContent>
-            <CardFooter className="flex justify-between">
-                <Button variant="outline">Cancel</Button>
-                <Button>Deploy</Button>
-            </CardFooter>
         </Card>
     );
 }

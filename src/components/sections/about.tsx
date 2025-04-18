@@ -4,55 +4,37 @@ import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
+import { Avatar, AvatarImage, AvatarFallback } from "@radix-ui/react-avatar"
 
 export default function About() {
     return (
         <Card className="">
             <CardHeader>
-                <CardTitle>About</CardTitle>
-                <CardDescription>Deploy your new project in one-click.</CardDescription>
+                <Avatar>
+                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" className="rounded-full" />
+                    <AvatarFallback>CN</AvatarFallback>
+                </Avatar>
             </CardHeader>
-            <CardContent>
-                <form>
-                    <div className="grid w-full items-center gap-4">
-                        <div className="flex flex-col space-y-1.5">
-                            <Label htmlFor="name">Name</Label>
-                            <Input id="name" placeholder="Name of your project" />
-                        </div>
-                        <div className="flex flex-col space-y-1.5">
-                            <Label htmlFor="framework">Framework</Label>
-                            <Select>
-                                <SelectTrigger id="framework">
-                                    <SelectValue placeholder="Select" />
-                                </SelectTrigger>
-                                <SelectContent position="popper">
-                                    <SelectItem value="next">Next.js</SelectItem>
-                                    <SelectItem value="sveltekit">SvelteKit</SelectItem>
-                                    <SelectItem value="astro">Astro</SelectItem>
-                                    <SelectItem value="nuxt">Nuxt.js</SelectItem>
-                                </SelectContent>
-                            </Select>
-                        </div>
+            <CardContent className="space-y-2">
+                <div className="text-left">
+                    <h2 className="text-2xl font-bold mb-2">Prithviraj Chaudhuri</h2>
+                    <p className="text-gray-600 mb-2">Senior Software Engineer</p>
+                    <p className="mb-4">
+                        Passionate about building scalable web applications and solving complex problems.
+                        Experienced in full-stack development with expertise in React, TypeScript, and Node.js.
+                    </p>
+                    <div className="space-y-1">
+                        <p>📍 Toronto, ON</p>
+                        <p>📧 <a href="mailto:p.chaudhuri1993@gmail.com">p.chaudhuri1993@gmail.com</a></p>
+                        <p>🔗 <a href="https://linkedin.com/in/prithviraj-chaudhuri" target="_blank" rel="noopener noreferrer">linkedin.com/in/prithviraj-chaudhuri</a></p>
                     </div>
-                </form>
+                </div>
             </CardContent>
             <CardFooter className="flex justify-between">
-                <Button variant="outline">Cancel</Button>
-                <Button>Deploy</Button>
+                <Button variant="outline">Download Resume</Button>
             </CardFooter>
         </Card>
     );

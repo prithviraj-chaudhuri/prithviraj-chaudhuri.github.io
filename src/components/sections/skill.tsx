@@ -23,37 +23,60 @@ export default function Skill() {
     return (
         <Card className="">
             <CardHeader>
-                <CardTitle>Skill</CardTitle>
-                <CardDescription>Deploy your new project in one-click.</CardDescription>
+                <CardTitle>Skills</CardTitle>
             </CardHeader>
             <CardContent>
-                <form>
-                    <div className="grid w-full items-center gap-4">
-                        <div className="flex flex-col space-y-1.5">
-                            <Label htmlFor="name">Name</Label>
-                            <Input id="name" placeholder="Name of your project" />
-                        </div>
-                        <div className="flex flex-col space-y-1.5">
-                            <Label htmlFor="framework">Framework</Label>
-                            <Select>
-                                <SelectTrigger id="framework">
-                                    <SelectValue placeholder="Select" />
-                                </SelectTrigger>
-                                <SelectContent position="popper">
-                                    <SelectItem value="next">Next.js</SelectItem>
-                                    <SelectItem value="sveltekit">SvelteKit</SelectItem>
-                                    <SelectItem value="astro">Astro</SelectItem>
-                                    <SelectItem value="nuxt">Nuxt.js</SelectItem>
-                                </SelectContent>
-                            </Select>
-                        </div>
+                <div className="flex flex-wrap gap-2">
+                    <div className="flex items-center gap-1.5 bg-black rounded-full px-3 py-1 text-sm font-medium">
+                        <i className="devicon-typescript-plain"></i>
+                        <span>TypeScript</span>
                     </div>
-                </form>
+                    <div className="flex items-center gap-1.5 bg-black rounded-full px-3 py-1 text-sm font-medium">
+                        <i className="devicon-react-original"></i>
+                        <span>React</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 bg-black rounded-full px-3 py-1 text-sm font-medium">
+                        <i className="devicon-nodejs-plain"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 bg-black rounded-full px-3 py-1 text-sm font-medium">
+                        <i className="devicon-python-plain"></i>
+                        <span>Python</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 bg-black rounded-full px-3 py-1 text-sm font-medium">
+                        <i className="devicon-java-plain"></i>
+                        <span>Java</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 bg-black rounded-full px-3 py-1 text-sm font-medium">
+                        <i className="devicon-cplusplus-plain"></i>
+                        <span>C++</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 bg-black rounded-full px-3 py-1 text-sm font-medium">
+                        <i className="devicon-docker-plain"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 bg-black rounded-full px-3 py-1 text-sm font-medium">
+                        <i className="devicon-kubernetes-plain"></i>
+                        <span>Kubernetes</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 bg-black rounded-full px-3 py-1 text-sm font-medium">
+                        <i className="devicon-amazonwebservices-original"></i>
+                        <span>AWS</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 bg-black rounded-full px-3 py-1 text-sm font-medium">
+                        <i className="devicon-git-plain"></i>
+                        <span>Git</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 bg-black rounded-full px-3 py-1 text-sm font-medium">
+                        <i className="devicon-tensorflow-original"></i>
+                        <span>TensorFlow</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 bg-black rounded-full px-3 py-1 text-sm font-medium">
+                        <i className="devicon-postgresql-plain"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
             </CardContent>
-            <CardFooter className="flex justify-between">
-                <Button variant="outline">Cancel</Button>
-                <Button>Deploy</Button>
-            </CardFooter>
         </Card>
     );
 }
