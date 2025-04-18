@@ -21,7 +21,7 @@ export default function About() {
             <CardContent className="space-y-2">
                 <div className="text-left">
                     <h2 className="text-2xl font-bold mb-2">Prithviraj Chaudhuri</h2>
-                    <p className="text-gray-600 mb-2">Senior Software Engineer</p>
+                    <p className="text-muted-foreground mb-2">Senior Software Engineer</p>
                     <p className="mb-4">
                         Passionate about building scalable web applications and solving complex problems.
                         Experienced in full-stack development with expertise in React, TypeScript, and Node.js.

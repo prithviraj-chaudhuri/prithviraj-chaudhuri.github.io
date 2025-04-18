@@ -15,7 +15,7 @@ export default function Education() {
                 <CardTitle>Education</CardTitle>
             </CardHeader>
             <CardContent>
-                <Accordion type="single" collapsible>
+                <Accordion type="multiple" >
                     <AccordionItem value="university">
                         <AccordionTrigger>Bachelor of Technology (2020-2024)</AccordionTrigger>
                         <AccordionContent>
