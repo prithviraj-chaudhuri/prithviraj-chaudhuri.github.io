@@ -9,17 +9,13 @@ export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center min-h-screen">
       <div className="grid gap-4 p-8 max-w-[1500px] mx-auto md:grid-cols-3">
-        <div className="md:col-span-1">
+        <div className="grid gap-4 md:col-span-1">
           <About />
-          <div className="mt-4">
-        <Skill />
-          </div>
+          <Skill />
         </div>
-        <div className="md:col-span-2">
+        <div className="grid gap-4 md:col-span-2 content-start">
           <Experience />
-          <div className="mt-4">
-        <Education />
-          </div>
+          <Education />
         </div>
       </div>
     </section>

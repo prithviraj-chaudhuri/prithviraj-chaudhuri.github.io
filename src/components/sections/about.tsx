@@ -13,9 +13,9 @@ export default function About() {
     return (
         <Card className="">
             <CardHeader>
-                <Avatar>
-                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" className="rounded-full" />
-                    <AvatarFallback>CN</AvatarFallback>
+                <Avatar className="max-h-[350px] max-w-[320px] w-full h-auto mx-auto">
+                    <AvatarImage src="/images/profile.jpeg" alt="Prithviraj Chaudhuri" className="rounded-full object-cover w-full h-full" />
+                    <AvatarFallback className="text-4xl">PC</AvatarFallback>
                 </Avatar>
             </CardHeader>
             <CardContent className="space-y-2">
@@ -34,7 +34,10 @@ export default function About() {
                 </div>
             </CardContent>
             <CardFooter className="flex justify-between">
-                <Button variant="outline">Download Resume</Button>
+                <Button
+                    variant="outline">
+                    Download Resume
+                </Button>
             </CardFooter>
         </Card>
     );
