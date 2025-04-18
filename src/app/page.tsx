@@ -6,17 +6,19 @@ import Education from "@/components/sections/education"
 import Skill from "@/components/sections/skill"
 import Project from "@/components/sections/projects"
 
+import siteContent from "../../public/data/site-content.json"
+
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center min-h-screen">
       <div className="grid gap-4 p-8 max-w-[1500px] mx-auto md:grid-cols-3 md:mt-20">
         <div className="grid gap-4 md:col-span-1 content-start">
-          <About />
+          <About data={siteContent.content.contact}/>
           <Skill />
         </div>
         <div className="grid gap-4 md:col-span-2 content-start">
           <Experience />
-          <Education />
+          <Education data={siteContent.content.about.educational_qualification}/>
           <Project />
         </div>
       </div>
