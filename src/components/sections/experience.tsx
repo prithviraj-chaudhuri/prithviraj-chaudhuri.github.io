@@ -86,15 +86,31 @@ export default function Experience({ data = defaultExperienceData }: ExperienceP
             <CardContent>
                 <div className="space-y-8">
                     {data.map((experience, index) => (
-                        <div key={index} className="relative">
-                            <div className="absolute h-full w-0.5 bg-gray-200 left-2"></div>
-                            <div className="relative flex items-start space-x-4">
-                                <div className="h-4 w-4 rounded-full bg-primary mt-1"></div>
-                                <div>
-                                    <h3 className="font-bold">{experience.title}</h3>
-                                    <p className="text-sm text-muted-foreground">{experience.time}</p>
-                                    <p className="mt-2">{experience.title}</p>
-                                    {/* <p className="text-sm text-muted-foreground">{experience.description}</p> */}
+                        <div key={index} className="relative pb-8">
+                            {index < data.length - 1 && (
+                                <div className="absolute left-5 top-5 h-full w-0.5 bg-border"></div>
+                            )}
+                            <div className="flex gap-4">
+                                <div className="flex-shrink-0 mt-1">
+                                    <div className="h-10 w-10 rounded-md bg-primary/10 flex items-center justify-center">
+                                        <div className="h-4 w-4 rounded-sm bg-primary"></div>
+                                    </div>
+                                </div>
+                                <div className="flex-1">
+                                    <div className="flex items-center justify-between">
+                                        <h3 className="font-bold text-lg">{experience.title}</h3>
+                                        <span className="text-sm text-muted-foreground bg-muted px-2 py-1 rounded">{experience.time}</span>
+                                    </div>
+                                    <p className="text-muted-foreground font-medium mt-1">{experience.role}</p>
+                                    <p className="mt-2">{experience.description}</p>
+                                    <ul className="mt-3 space-y-1">
+                                        {experience.responsibilities.map((item, i) => (
+                                            <li key={i} className="text-sm flex gap-2">
+                                                <span className="text-muted-foreground">•</span>
+                                                <span>{item}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
                                 </div>
                             </div>
                         </div>
