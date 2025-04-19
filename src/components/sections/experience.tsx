@@ -81,7 +81,12 @@ export default function Experience({ data = defaultExperienceData }: ExperienceP
     return (
         <Card className="">
             <CardHeader>
-                <CardTitle>Experience</CardTitle>
+                <CardTitle className="text-3xl font-bold tracking-tight border-b pb-2 mb-1">
+                    <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                        Experience
+                    </span>
+                </CardTitle>
+                <CardDescription className="text-muted-foreground mt-2">My professional journey and work history</CardDescription>
             </CardHeader>
             <CardContent>
                 <div className="space-y-8">
@@ -92,8 +97,8 @@ export default function Experience({ data = defaultExperienceData }: ExperienceP
                             )}
                             <div className="flex gap-4">
                                 <div className="flex-shrink-0 mt-1">
-                                    <div className="h-10 w-10 rounded-md bg-primary/10 flex items-center justify-center">
-                                        <div className="h-4 w-4 rounded-sm bg-primary"></div>
+                                    <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center relative">
+                                        <div className="h-3 w-3 rounded-sm bg-primary"></div>
                                     </div>
                                 </div>
                                 <div className="flex-1">
@@ -103,14 +108,14 @@ export default function Experience({ data = defaultExperienceData }: ExperienceP
                                     </div>
                                     <p className="text-muted-foreground font-medium mt-1">{experience.role}</p>
                                     <p className="mt-2">{experience.description}</p>
-                                    <ul className="mt-3 space-y-1">
+                                    {/* <ul className="mt-3 space-y-1">
                                         {experience.responsibilities.map((item, i) => (
                                             <li key={i} className="text-sm flex gap-2">
                                                 <span className="text-muted-foreground">•</span>
                                                 <span>{item}</span>
                                             </li>
                                         ))}
-                                    </ul>
+                                    </ul> */}
                                 </div>
                             </div>
                         </div>

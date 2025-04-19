@@ -5,6 +5,7 @@ import {
     Card,
     CardContent,
     CardHeader,
+    CardDescription,
     CardTitle,
 } from "@/components/ui/card"
 
@@ -75,12 +76,17 @@ export default function Education({ data = defaultData }: EducationProps) {
     return (
         <Card className="">
             <CardHeader>
-                <CardTitle>Education</CardTitle>
+                <CardTitle className="text-3xl font-bold tracking-tight border-b pb-2 mb-1">
+                    <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                        Education
+                    </span>
+                </CardTitle>
+                <CardDescription className="text-muted-foreground mt-2">My credentials</CardDescription>
             </CardHeader>
             <CardContent>
                 <Accordion type="multiple" >
                     {data.map((item) => (
-                        <AccordionItem key={item.id} value={item.id}>
+                        <AccordionItem key={item.id} value={item.id || ""}>
                             <AccordionTrigger>{item.title} ({item.period})</AccordionTrigger>
                             <AccordionContent>
                                 <div className="space-y-2">

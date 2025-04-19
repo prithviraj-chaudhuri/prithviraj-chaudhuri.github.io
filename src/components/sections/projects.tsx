@@ -5,6 +5,7 @@ import {
   Card,
   CardContent,
   CardHeader,
+  CardDescription,
   CardTitle,
 } from "@/components/ui/card"
 
@@ -48,7 +49,12 @@ export default function Project({ data = defaultProjectsData }: ProjectProps) {
     return (
         <Card className="">
             <CardHeader>
-                <CardTitle>Projects</CardTitle>
+                <CardTitle className="text-3xl font-bold tracking-tight border-b pb-2 mb-1">
+                  <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                    Projects
+                  </span>
+                </CardTitle>
+                <CardDescription className="text-muted-foreground mt-2">Some of my notable projects</CardDescription>
             </CardHeader>
             <CardContent>
                 <Accordion type="multiple" defaultValue={data.map((_, index) => `project${index}`)}>

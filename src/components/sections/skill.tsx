@@ -68,13 +68,14 @@ const skillsData: SkillCategory[] = [
 export default function Skill({ data = skillsData }: SkillProps) {
     return (
         <Card className="">
-            <CardHeader>
-                <CardTitle>Skills</CardTitle>
-            </CardHeader>
             <CardContent>
                 {data.map((category) => (
                     <div key={category.type} className="mb-4">
-                        <h3 className="text-lg font-medium mb-2">{category.type}</h3>
+                        <div className="border-b border-border pb-2 mb-2">
+                            <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                                {category.type}
+                            </span>
+                        </div>
                         <div className="flex flex-wrap gap-2">
                             {category.list?.map((item, index) => (
                                 <div key={index} className="flex items-center gap-1.5 bg-black rounded-full px-3 py-1 text-sm font-medium">
