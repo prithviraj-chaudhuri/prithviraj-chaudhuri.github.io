@@ -7,7 +7,9 @@ import {
   CardHeader,
   CardDescription,
   CardTitle,
-} from "@/components/ui/card"
+} from "@/components/ui/card";
+
+import { FilesIcon } from "lucide-react";
 
 interface ProjectCategory {
     type?: string;
@@ -49,10 +51,11 @@ export default function Project({ data = defaultProjectsData }: ProjectProps) {
     return (
         <Card className="">
             <CardHeader>
-                <CardTitle className="text-3xl font-bold tracking-tight border-b pb-2 mb-1">
-                  <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                    Projects
-                  </span>
+                <CardTitle className="text-2xl tracking-tight border-b pb-2 mb-1">
+                    <div className="flex items-center gap-x-2">
+                        <FilesIcon className="inline-block h-8 w-8 text-primary" />
+                        Projects
+                    </div>
                 </CardTitle>
                 <CardDescription className="text-muted-foreground mt-2">Some of my notable projects</CardDescription>
             </CardHeader>

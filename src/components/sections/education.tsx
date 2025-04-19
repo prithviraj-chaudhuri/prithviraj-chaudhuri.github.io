@@ -77,12 +77,10 @@ export default function Education({ data = defaultData }: EducationProps) {
     return (
         <Card className="">
             <CardHeader>
-                <CardTitle className="text-3xl font-bold tracking-tight border-b pb-2 mb-1">
+                <CardTitle className="text-2xl tracking-tight border-b pb-2 mb-1">
                     <div className="flex items-center gap-x-2">
                         <GraduationCap className="inline-block h-8 w-8 text-primary" />
-                        <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                            Education
-                        </span>
+                        Education
                     </div>
                 </CardTitle>
                 <CardDescription className="text-muted-foreground mt-2">My credentials</CardDescription>
@@ -99,8 +97,8 @@ export default function Education({ data = defaultData }: EducationProps) {
                             </AccordionTrigger>
                             <AccordionContent>
                                 <div className="space-y-2 text-sm"> 
-                                    <p className="font-semibold">{item.institution}</p>
-                                    <p>{item.grade}</p>
+                                    <p className="font-semibold text-foreground">{item.institution}</p>
+                                    <p className="font-semibold text-foreground/90">{item.grade}</p>
                                     {item.courses && (
                                         <>
                                             <p className="font-medium mt-2">Key Courses:</p>

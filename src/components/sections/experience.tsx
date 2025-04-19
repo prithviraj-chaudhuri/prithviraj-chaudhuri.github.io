@@ -7,6 +7,7 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
+import { Briefcase } from "lucide-react";
 
 interface Project {
     description: string;
@@ -81,15 +82,16 @@ export default function Experience({ data = defaultExperienceData }: ExperienceP
     return (
         <Card className="">
             <CardHeader>
-                <CardTitle className="text-3xl font-bold tracking-tight border-b pb-2 mb-1">
-                    <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                <CardTitle className="text-2xl tracking-tight border-b pb-2 mb-1">
+                    <div className="flex items-center gap-x-2">
+                        <Briefcase className="inline-block h-8 w-8 text-primary" />
                         Experience
-                    </span>
+                    </div>
                 </CardTitle>
                 <CardDescription className="text-muted-foreground mt-2">My professional journey and work history</CardDescription>
             </CardHeader>
             <CardContent>
-                <div className="space-y-8">
+                <div className="space-y-8 text-sm">
                     {data.map((experience, index) => (
                         <div key={index} className="relative pb-8">
                             {index < data.length - 1 && (
@@ -98,24 +100,19 @@ export default function Experience({ data = defaultExperienceData }: ExperienceP
                             <div className="flex gap-4">
                                 <div className="flex-shrink-0 mt-1">
                                     <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center relative">
-                                        <div className="h-3 w-3 rounded-sm bg-primary"></div>
+                                        <div className="h-2.5 w-2.5 rounded-sm bg-primary"></div>
                                     </div>
                                 </div>
                                 <div className="flex-1">
                                     <div className="flex items-center justify-between">
-                                        <h3 className="font-bold text-lg">{experience.title}</h3>
-                                        <span className="text-sm text-muted-foreground bg-muted px-2 py-1 rounded">{experience.time}</span>
+                                        <h3 className="font-bold text-base">{experience.title}</h3>
+                                        <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">{experience.time}</span>
                                     </div>
-                                    <p className="text-muted-foreground font-medium mt-1">{experience.role}</p>
-                                    <p className="mt-2">{experience.description}</p>
-                                    {/* <ul className="mt-3 space-y-1">
-                                        {experience.responsibilities.map((item, i) => (
-                                            <li key={i} className="text-sm flex gap-2">
-                                                <span className="text-muted-foreground">•</span>
-                                                <span>{item}</span>
-                                            </li>
-                                        ))}
-                                    </ul> */}
+                                    <p
+                                        className="text-muted-foreground font-medium mt-1"
+                                        dangerouslySetInnerHTML={{ __html: experience.role }}
+                                    />
+                                    <p className="mt-2 text-sm">{experience.description}</p>
                                 </div>
                             </div>
                         </div>
