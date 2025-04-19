@@ -1,170 +1,106 @@
+'use client'
+
 import * as React from "react"
+import { useState, useEffect } from "react"
+import { GitBranch, Calendar, ExternalLink } from "lucide-react"
 
 import {
     Card,
     CardContent,
     CardHeader,
     CardTitle,
+    CardFooter,
 } from "@/components/ui/card"
 
-interface SkillItem {
-    skill?: string;
-    icon?: string;
-}
 
-interface SkillCategory {
-    type?: string;
-    list?: SkillItem[];
-}
+export default function Github({ username }: { username: string }) {
+    const [contributions, setContributions] = useState<any[]>([]);
+    const [loading, setLoading] = useState(true);
 
-interface SkillProps {
-    data?: SkillCategory[];
-}
-
-const skillsData: SkillCategory[] = [
-    {
-        type: "Intermediate",
-        list: [
-            {
-                skill: "Java Spring Boot",
-                icon: "devicon-spring-plain"
-            },
-            {
-                skill: "Alfresco Document Management",
-                icon: "devicon-java-plain"
-            },
-            {
-                skill: "OpenMP",
-                icon: "devicon-c-plain"
-            },
-            {
-                skill: "MPI",
-                icon: "devicon-cplusplus-plain"
-            },
-            {
-                skill: "CUDA",
-                icon: "devicon-nvidia-plain"
-            },
-            {
-                skill: "R",
-                icon: "devicon-r-plain"
-            },
-            {
-                skill: "PHP",
-                icon: "devicon-php-plain"
-            },
-            {
-                skill: "C#",
-                icon: "devicon-csharp-plain"
-            },
-            {
-                skill: "ASP.NET",
-                icon: "devicon-dot-net-plain"
-            }
-        ]
-    }
-];
-
-function GitHubContributions({ username }: { username: string }) {
-    const [contributions, setContributions] = React.useState<any>(null);
-    const [loading, setLoading] = React.useState(true);
-    const [error, setError] = React.useState<string | null>(null);
-
-    React.useEffect(() => {
+    useEffect(() => {
+        // In a real implementation, you would fetch this data from GitHub API
         const fetchContributions = async () => {
             try {
-                // For client-side requests, you should use environment variables
-                // and a server-side API route to protect your token
-                // This is a simplified example - in production, use a backend endpoint
-                const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
-                
-                const query = `
-                    query {
-                        user(login: "${username}") {
-                            contributionsCollection {
-                                contributionCalendar {
-                                    totalContributions
-                                    weeks {
-                                        contributionDays {
-                                            contributionCount
-                                            date
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                `;
-
-                const response = await fetch('https://api.github.com/graphql', {
-                    method: 'POST',
-                    headers: {
-                        'Authorization': `Bearer ${token}`,
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ query }),
-                });
-
-                if (!response.ok) {
-                    throw new Error('Failed to fetch GitHub contributions');
+            setLoading(true);
+            
+            // Fetch user's events from GitHub API
+            const response = await fetch(`https://api.github.com/users/${username}/events?per_page=100`);
+            
+            if (!response.ok) {
+                throw new Error(`GitHub API error: ${response.status}`);
+            }
+            
+            const events = await response.json();
+            
+            // Group events by date and count them
+            const contributionMap = events.reduce((acc: Record<string, number>, event: any) => {
+                const date = event.created_at.split('T')[0];
+                if (!acc[date]) {
+                acc[date] = 0;
                 }
-
-                const data = await response.json();
-                setContributions(data.data.user.contributionsCollection.contributionCalendar);
-            } catch (err) {
-                setError(err instanceof Error ? err.message : 'Unknown error');
+                acc[date]++;
+                return acc;
+            }, {});
+            
+            // Convert to array and sort by date (newest first)
+            const contributionData = Object.entries(contributionMap)
+                .map(([date, count]) => ({ date, count }))
+                .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+                .slice(0, 5); // Limit to 5 days
+            
+            setContributions(contributionData);
+            } catch (error) {
+            console.error("Error fetching GitHub data:", error);
+            // Fallback to empty array if error occurs
+            setContributions([]);
             } finally {
-                setLoading(false);
+            setLoading(false);
             }
         };
 
         fetchContributions();
     }, [username]);
 
-    if (loading) return <div className="h-32 flex items-center justify-center">Loading contributions...</div>;
-    if (error) return <div className="text-red-500">Error loading GitHub contributions: {error}</div>;
-    if (!contributions) return <div>No contribution data available</div>;
-
-    return (
-        <div className="overflow-x-auto">
-            <div className="grid grid-flow-col gap-1 text-xs">
-                {contributions.weeks?.map((week: any, weekIndex: number) => (
-                    <div key={weekIndex} className="grid grid-flow-row gap-1">
-                        {week.contributionDays.map((day: any, dayIndex: number) => (
-                            <div
-                                key={dayIndex}
-                                title={`${day.date}: ${day.contributionCount} contributions`}
-                                className={`w-3 h-3 rounded-sm ${getColorForContributions(day.contributionCount)}`}
-                            />
-                        ))}
-                    </div>
-                ))}
-            </div>
-            <div className="text-xs mt-2 text-right">
-                Total contributions: {contributions.totalContributions}
-            </div>
-        </div>
-    );
-}
-
-function getColorForContributions(count: number): string {
-    if (count === 0) return "bg-gray-100 dark:bg-gray-800";
-    if (count < 5) return "bg-green-100 dark:bg-green-900";
-    if (count < 10) return "bg-green-300 dark:bg-green-700";
-    if (count < 15) return "bg-green-500 dark:bg-green-500";
-    return "bg-green-700 dark:bg-green-300";
-}
-
-export default function Github({ data = skillsData }: SkillProps) {
     return (
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             <Card className="col-span-full">
                 <CardHeader>
-                    <CardTitle>GitHub Contributions</CardTitle>
+                    <CardTitle className="flex items-center gap-2">
+                        <GitBranch className="h-5 w-5" />
+                        GitHub Contributions
+                    </CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <GitHubContributions username="prithviraj-chaudhuri" />
+                    {loading ? (
+                        <div className="flex justify-center py-6 text-sm">Loading activity...</div>
+                    ) : (
+                        <div className="space-y-4">
+                            {contributions.map((contribution, index) => (
+                                <div key={index} className="flex items-center gap-4 border-b pb-3">
+                                    <div className="flex h-9 w-9 items-center justify-center rounded-full bg-muted">
+                                        <Calendar className="h-4 w-4" />
+                                    </div>
+                                    <div>
+                                        <p className="text-sm font-small">{contribution.date}</p>
+                                        <p className="text-xs text-muted-foreground">
+                                            {contribution.count} contribution{contribution.count !== 1 ? 's' : ''}
+                                        </p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    )}
                 </CardContent>
+                <CardFooter className="justify-end">
+                    <a 
+                        href={`https://github.com/${username}`} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="flex items-center text-sm text-blue-600 hover:underline"
+                    >
+                        View GitHub Profile <ExternalLink className="ml-1 h-4 w-4" />
+                    </a>
+                </CardFooter>
             </Card>
         </div>
     );

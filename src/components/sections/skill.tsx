@@ -1,11 +1,12 @@
-import * as React from "react"
+import * as React from "react";
 
 import {
     Card,
     CardContent,
     CardHeader,
     CardTitle,
-} from "@/components/ui/card"
+} from "@/components/ui/card";
+import { Wrench } from "lucide-react";
 
 interface SkillItem {
     skill?: string;
@@ -67,7 +68,14 @@ const skillsData: SkillCategory[] = [
 
 export default function Skill({ data = skillsData }: SkillProps) {
     return (
+        
         <Card className="">
+            <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                    <Wrench className="h-5 w-5" />
+                    Skills
+                </CardTitle>
+            </CardHeader>
             <CardContent>
                 {data.map((category) => (
                     <div key={category.type} className="mb-4">
@@ -78,7 +86,7 @@ export default function Skill({ data = skillsData }: SkillProps) {
                         </div>
                         <div className="flex flex-wrap gap-2">
                             {category.list?.map((item, index) => (
-                                <div key={index} className="flex items-center gap-1.5 bg-black rounded-full px-3 py-1 text-sm font-medium">
+                                <div key={index} className="flex items-center gap-1.5 bg-black rounded-full px-3 py-1 text-sm font-small">
                                     {item.icon && <i className={item.icon}></i>}
                                     <span>{item.skill}</span>
                                 </div>
