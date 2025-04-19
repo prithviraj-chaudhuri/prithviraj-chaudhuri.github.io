@@ -9,17 +9,17 @@ import {
 } from "@/components/ui/card"
 
 interface EducationItem {
-    id: string;
-    title: string;
-    institution: string;
-    period: string;
-    grade: string;
+    id?: string;
+    title?: string;
+    institution?: string;
+    period?: string;
+    grade?: string;
     courses?: string[];
     projects?: string[];
 }
 
 interface EducationProps {
-    data: EducationItem[];
+    data?: EducationItem[];
 }
 
 const defaultData: EducationItem[] = [

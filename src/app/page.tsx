@@ -14,12 +14,12 @@ export default function Home() {
       <div className="grid gap-4 p-8 max-w-[1500px] mx-auto md:grid-cols-3 md:mt-20">
         <div className="grid gap-4 md:col-span-1 content-start">
           <About data={siteContent.content.contact}/>
-          <Skill />
+          <Skill data={siteContent.content.skills}/>
         </div>
         <div className="grid gap-4 md:col-span-2 content-start">
-          <Experience />
-          <Education data={siteContent.content.about.educational_qualification}/>
-          <Project />
+          <Experience data={siteContent.content.experience}/>
+          <Education data={siteContent.content.educational_qualification}/>
+          <Project data={siteContent.content.projects}/>
         </div>
       </div>
     </section>
