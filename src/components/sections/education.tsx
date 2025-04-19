@@ -8,6 +8,7 @@ import {
     CardDescription,
     CardTitle,
 } from "@/components/ui/card"
+import { GraduationCap } from "lucide-react";
 
 interface EducationItem {
     id?: string;
@@ -77,9 +78,12 @@ export default function Education({ data = defaultData }: EducationProps) {
         <Card className="">
             <CardHeader>
                 <CardTitle className="text-3xl font-bold tracking-tight border-b pb-2 mb-1">
-                    <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                        Education
-                    </span>
+                    <div className="flex items-center gap-x-2">
+                        <GraduationCap className="inline-block h-8 w-8 text-primary" />
+                        <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                            Education
+                        </span>
+                    </div>
                 </CardTitle>
                 <CardDescription className="text-muted-foreground mt-2">My credentials</CardDescription>
             </CardHeader>
@@ -87,15 +91,20 @@ export default function Education({ data = defaultData }: EducationProps) {
                 <Accordion type="multiple" >
                     {data.map((item) => (
                         <AccordionItem key={item.id} value={item.id || ""}>
-                            <AccordionTrigger>{item.title} ({item.period})</AccordionTrigger>
+                            <AccordionTrigger>
+                                {item.title}
+                                <span className="text-sm text-muted-foreground bg-muted px-2 py-1 rounded ml-auto">
+                                    {item.period}
+                                </span>
+                            </AccordionTrigger>
                             <AccordionContent>
-                                <div className="space-y-2">
-                                    <p>{item.institution}</p>
+                                <div className="space-y-2 text-sm"> 
+                                    <p className="font-semibold">{item.institution}</p>
                                     <p>{item.grade}</p>
                                     {item.courses && (
                                         <>
-                                            <p>Key Courses:</p>
-                                            <ul className="list-disc list-inside">
+                                            <p className="font-medium mt-2">Key Courses:</p>
+                                            <ul className="list-disc list-inside ml-4">
                                                 {item.courses.map((course, index) => (
                                                     <li key={index}>{course}</li>
                                                 ))}
@@ -104,8 +113,8 @@ export default function Education({ data = defaultData }: EducationProps) {
                                     )}
                                     {item.projects && item.projects.length > 0 && (
                                         <>
-                                            <p>Projects:</p>
-                                            <ul className="list-disc list-inside">
+                                            <p className="font-medium mt-2">Projects:</p>
+                                            <ul className="list-disc list-inside ml-4">
                                                 {item.projects.map((project, index) => (
                                                     <li key={index}>{project}</li>
                                                 ))}

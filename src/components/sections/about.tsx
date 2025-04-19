@@ -7,7 +7,7 @@ import {
     CardHeader,
 } from "@/components/ui/card"
 import { Avatar, AvatarImage, AvatarFallback } from "@radix-ui/react-avatar"
-import { MapPin, Mail, Linkedin } from "lucide-react"
+import { MapPin, Mail, Linkedin, ExternalLink } from "lucide-react"
 
 interface AboutProps {
     data?: {
@@ -56,11 +56,25 @@ export default function About({ data = defaultData }: AboutProps) {
                         </p>
                         <p className="flex items-center gap-2">
                             <Mail size={16} className="text-muted-foreground" /> 
-                            <a href={`mailto:${data.email}`} className="hover:underline">{data.email}</a>
+                            <a href={`mailto:${data.email}`} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="flex items-center text-sm text-blue-600 hover:underline"
+                            >
+                                {data.email}
+                                <ExternalLink className="ml-1 h-4 w-4" />
+                            </a>
                         </p>
                         <p className="flex items-center gap-2">
                             <Linkedin size={16} className="text-muted-foreground" /> 
-                            <a href={`https://${data.linkedin}`} target="_blank" rel="noopener noreferrer" className="hover:underline">{data.linkedin}</a>
+                            <a href={`https://${data.linkedin}`} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="flex items-center text-sm text-blue-600 hover:underline"
+                            >
+                                {data.linkedin}
+                                <ExternalLink className="ml-1 h-4 w-4" />
+                            </a>
                         </p>
                     </div>
                 </div>
