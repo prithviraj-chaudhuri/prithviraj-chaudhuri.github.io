@@ -85,7 +85,7 @@ export default function Education({ data = defaultData }: EducationProps) {
                 <CardDescription className="text-muted-foreground mt-2">My credentials</CardDescription>
             </CardHeader>
             <CardContent>
-                <Accordion type="multiple" >
+                <Accordion type="multiple">
                     {data.map((item) => (
                         <AccordionItem key={item.id} value={item.id || ""}>
                             <AccordionTrigger>

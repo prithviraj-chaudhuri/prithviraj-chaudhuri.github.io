@@ -58,7 +58,7 @@ export default function Project({ data = defaultProjectsData }: ProjectProps) {
                 <CardDescription className="text-muted-foreground mt-2">Some of my notable projects</CardDescription>
             </CardHeader>
             <CardContent>
-                <Accordion type="multiple" defaultValue={data.map((_, index) => `project${index}`)}>
+                <Accordion type="multiple">
                     {data.map((category, categoryIndex) => (
                         <AccordionItem key={categoryIndex} value={`project${categoryIndex}`}>
                             <AccordionTrigger>
