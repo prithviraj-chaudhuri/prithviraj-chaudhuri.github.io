@@ -78,7 +78,7 @@ export default function Skill({ data = skillsData }: SkillProps) {
                 {data.map((category) => (
                     <div key={category.type} className="mb-4">
                         <div className="border-b border-border pb-2 mb-2">
-                            <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                            <span className="bg-clip-text">
                                 {category.type}
                             </span>
                         </div>
