@@ -84,7 +84,7 @@ export default function Skill({ data = skillsData }: SkillProps) {
                         </div>
                         <div className="flex flex-wrap gap-2">
                             {category.list?.map((item, index) => (
-                                <div key={index} className="flex items-center gap-1.5 bg-black rounded-full px-3 py-1 text-sm font-small">
+                                <div key={index} className="flex items-center gap-1.5 text-sm bg-muted px-2 py-1 rounded">
                                     {item.icon && <i className={item.icon}></i>}
                                     <span>{item.skill}</span>
                                 </div>

@@ -90,7 +90,7 @@ export default function Education({ data = defaultData }: EducationProps) {
                         <AccordionItem key={item.id} value={item.id || ""}>
                             <AccordionTrigger>
                                 <h3 className="font-bold text-base">{item.title}</h3>
-                                <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded ml-auto">
+                                <span className="text-xs bg-muted px-2 py-1 rounded ml-auto">
                                     {item.period}
                                 </span>
                             </AccordionTrigger>

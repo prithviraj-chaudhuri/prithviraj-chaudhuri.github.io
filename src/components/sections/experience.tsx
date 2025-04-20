@@ -113,7 +113,7 @@ export default function Experience({ data = defaultExperienceData }: ExperienceP
                                 <div className="flex-1">
                                     <div className="flex items-center justify-between">
                                         <h3 className="font-bold text-base">{experience.title}</h3>
-                                        <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">{experience.time}</span>
+                                        <span className="text-xs bg-muted px-2 py-1 rounded">{experience.time}</span>
                                     </div>
                                     <p
                                         className="text-muted-foreground font-medium mt-1"
