@@ -61,7 +61,9 @@ export default function Project({ data = defaultProjectsData }: ProjectProps) {
                 <Accordion type="multiple" defaultValue={data.map((_, index) => `project${index}`)}>
                     {data.map((category, categoryIndex) => (
                         <AccordionItem key={categoryIndex} value={`project${categoryIndex}`}>
-                            <AccordionTrigger>{category.type}</AccordionTrigger>
+                            <AccordionTrigger>
+                                <h3 className="font-bold text-base">{category.type}</h3>
+                            </AccordionTrigger>
                             <AccordionContent>
                                 <div className="space-y-2">
                                     {category.list?.map((project, projectIndex) => (

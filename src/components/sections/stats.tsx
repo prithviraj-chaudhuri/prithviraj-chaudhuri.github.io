@@ -31,11 +31,13 @@ export default async function Github({ username }: { username: string }) {
                                     <div className="flex h-9 w-9 items-center justify-center rounded-full bg-muted">
                                         <Calendar className="h-4 w-4" />
                                     </div>
-                                    <div>
-                                        <p className="text-sm font-medium">{contribution.date}</p>
-                                        <p className="text-xs text-muted-foreground">
-                                            {contribution.count} contribution{contribution.count !== 1 ? 's' : ''}
-                                        </p>
+                                    <div className="flex-1">
+                                        <div className="flex justify-between items-center w-full">
+                                            <p className="text-sm font-medium">{contribution.count} contribution{contribution.count !== 1 ? 's' : ''}</p>
+                                            <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded ml-auto">
+                                                {contribution.date}
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             ))}

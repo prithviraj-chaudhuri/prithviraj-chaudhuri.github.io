@@ -89,8 +89,8 @@ export default function Education({ data = defaultData }: EducationProps) {
                     {data.map((item) => (
                         <AccordionItem key={item.id} value={item.id || ""}>
                             <AccordionTrigger>
-                                {item.title}
-                                <span className="text-sm text-muted-foreground bg-muted px-2 py-1 rounded ml-auto">
+                                <h3 className="font-bold text-base">{item.title}</h3>
+                                <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded ml-auto">
                                     {item.period}
                                 </span>
                             </AccordionTrigger>
