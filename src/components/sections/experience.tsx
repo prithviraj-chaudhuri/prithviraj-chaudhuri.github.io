@@ -89,13 +89,13 @@ export default function Experience({ data = defaultExperienceData }: ExperienceP
     return (
         <Card className="">
             <CardHeader>
-                <CardTitle className="text-2xl tracking-tight border-b pb-2 mb-1">
+                <CardTitle className="text-2xl tracking-tight">
                     <div className="flex items-center gap-x-2">
                         <Briefcase className="inline-block h-8 w-8 text-primary" />
                         Experience
                     </div>
                 </CardTitle>
-                <CardDescription className="text-muted-foreground mt-2">My professional journey and work history</CardDescription>
+                <CardDescription className="text-muted-foreground mt-2"></CardDescription>
             </CardHeader>
             <CardContent>
                 <div className="space-y-8 text-sm">
@@ -113,7 +113,7 @@ export default function Experience({ data = defaultExperienceData }: ExperienceP
                                 <div className="flex-1">
                                     <div className="flex items-center justify-between">
                                         <h3 className="font-bold text-base">{experience.title}</h3>
-                                        <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">{experience.time}</span>
+                                        <span className="text-xs bg-muted px-2 py-1 rounded">{experience.time}</span>
                                     </div>
                                     <p
                                         className="text-muted-foreground font-medium mt-1"

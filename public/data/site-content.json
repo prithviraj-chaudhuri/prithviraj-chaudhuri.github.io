@@ -470,12 +470,12 @@
                 "type": "Proficient",
                 "list": [
                     {
-                        "skill": "Angular",
-                        "icon": "devicon-angularjs-plain"
+                        "skill": "Adobe Experience Manager",
+                        "icon": "devicon-javascript-plain"
                     },
                     {
-                        "skill": "React",
-                        "icon": "devicon-react-original"
+                        "skill": "OpenShift",
+                        "icon": "devicon-redhat-plain"
                     },
                     {
                         "skill": "Python",
@@ -490,6 +490,14 @@
                         "icon": "devicon-spring-plain"
                     },
                     {
+                        "skill": "Angular",
+                        "icon": "devicon-angularjs-plain"
+                    },
+                    {
+                        "skill": "React",
+                        "icon": "devicon-react-original"
+                    },
+                    {
                         "skill": "PostgreSQL",
                         "icon": "devicon-postgresql-plain"
                     },
@@ -498,12 +506,16 @@
                         "icon": "devicon-mysql-plain"
                     },
                     {
-                        "skill": "Makefiles",
-                        "icon": "devicon-bash-plain"
+                        "skill": "AWS",
+                        "icon": "devicon-amazonwebservices-original"
                     },
                     {
                         "skill": "Git",
                         "icon": "devicon-git-plain"
+                    },
+                    {
+                        "skill": "Makefiles",
+                        "icon": "devicon-bash-plain"
                     },
                     {
                         "skill": "Gitlab Pipelines",
@@ -518,10 +530,6 @@
                         "icon": "devicon-django-plain"
                     },
                     {
-                        "skill": "OpenShift",
-                        "icon": "devicon-redhat-plain"
-                    },
-                    {
                         "skill": "Docker",
                         "icon": "devicon-docker-plain"
                     },
@@ -532,14 +540,6 @@
                     {
                         "skill": "OpenStack",
                         "icon": "devicon-linux-plain"
-                    },
-                    {
-                        "skill": "Adobe Experience Manager",
-                        "icon": "devicon-javascript-plain"
-                    },
-                    {
-                        "skill": "AWS",
-                        "icon": "devicon-amazonwebservices-original"
                     },
                     {
                         "skill": "HTML",
@@ -563,8 +563,8 @@
                 "type": "Intermediate",
                 "list": [
                     {
-                        "skill": "Java Spring Boot",
-                        "icon": "devicon-spring-plain"
+                        "skill": "Next.js",
+                        "icon": "devicon-nextjs-plain"
                     },
                     {
                         "skill": "Alfresco Document Management",

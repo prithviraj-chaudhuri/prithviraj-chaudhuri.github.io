@@ -34,7 +34,7 @@ export default async function Github({ username }: { username: string }) {
                                     <div className="flex-1">
                                         <div className="flex justify-between items-center w-full">
                                             <p className="text-sm font-medium">{contribution.count} contribution{contribution.count !== 1 ? 's' : ''}</p>
-                                            <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded ml-auto">
+                                            <span className="text-xs bg-muted px-2 py-1 rounded ml-auto">
                                                 {contribution.date}
                                             </span>
                                         </div>
