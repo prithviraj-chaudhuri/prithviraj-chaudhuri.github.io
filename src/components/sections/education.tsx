@@ -1,5 +1,4 @@
-import * as React from "react"
-
+import * as React from "react";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import {
     Card,
@@ -7,7 +6,7 @@ import {
     CardHeader,
     CardDescription,
     CardTitle,
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 import { GraduationCap } from "lucide-react";
 
 interface EducationItem {

@@ -1,5 +1,4 @@
-import * as React from "react"
-
+import * as React from "react";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import {
   Card,
@@ -8,7 +7,6 @@ import {
   CardDescription,
   CardTitle,
 } from "@/components/ui/card";
-
 import { FilesIcon } from "lucide-react";
 
 interface ProjectCategory {

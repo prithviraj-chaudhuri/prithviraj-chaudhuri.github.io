@@ -1,12 +1,11 @@
-import * as React from "react"
-
+import * as React from "react";
 import {
     Card,
     CardContent,
     CardDescription,
     CardHeader,
     CardTitle,
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 import { Briefcase } from "lucide-react";
 
 interface Project {
