@@ -67,7 +67,6 @@ const skillsData: SkillCategory[] = [
 
 export default function Skill({ data = skillsData }: SkillProps) {
     return (
-        
         <Card className="">
             <CardHeader>
                 <CardTitle className="flex items-center gap-2">

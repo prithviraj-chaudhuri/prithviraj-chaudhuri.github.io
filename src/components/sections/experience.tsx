@@ -6,6 +6,14 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
+import { 
+    Sheet, 
+    SheetContent, 
+    SheetDescription, 
+    SheetHeader, 
+    SheetTitle, 
+    SheetTrigger 
+} from "../ui/sheet";
 import { Briefcase } from "lucide-react";
 
 interface Project {
@@ -112,6 +120,43 @@ export default function Experience({ data = defaultExperienceData }: ExperienceP
                                         dangerouslySetInnerHTML={{ __html: experience.role }}
                                     />
                                     <p className="mt-2 text-sm">{experience.description}</p>
+                                    {experience.projects && experience.projects.length > 0 && (
+                                        <div className="mt-3">
+                                            <Sheet>
+                                                <SheetTrigger>
+                                                    <span className="text-sm font-medium cursor-pointer text-blue-600 hover:underline">
+                                                        View Projects ({experience.projects.length})
+                                                    </span>
+                                                </SheetTrigger>
+                                                <SheetContent>
+                                                    <SheetHeader>
+                                                        <SheetTitle><br></br></SheetTitle>
+                                                        <SheetDescription asChild>
+                                                            <div className="h-[calc(100vh-8rem)] overflow-y-auto pr-4">
+                                                                {experience.projects.map((project, index) => (
+                                                                    <div key={index} className="mb-4 border-b pb-4 last:border-b-0 last:pb-0">
+                                                                        <h3 className="font-semibold text-foreground">{project.description}</h3>
+                                                                        <div className="mt-2 flex flex-wrap gap-1">
+                                                                            {project.tech_used.map((tech, techIndex) => (
+                                                                                <div key={techIndex} className="flex items-center gap-1.5 bg-secondary text-secondary-foreground rounded-full px-3 py-1 text-xs font-medium">
+                                                                                    <span>{tech}</span>
+                                                                                </div>
+                                                                            ))}
+                                                                        </div>
+                                                                        {/* <ul className="list-disc list-inside ml-4 mt-2 space-y-1 text-sm text-foreground">
+                                                                            {project.highlights.map((highlight, highlightIndex) => (
+                                                                                <li key={highlightIndex}>{highlight}</li>
+                                                                            ))}
+                                                                        </ul> */}
+                                                                    </div>
+                                                                ))}
+                                                            </div>
+                                                        </SheetDescription>
+                                                    </SheetHeader>
+                                                </SheetContent>
+                                            </Sheet>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         </div>
