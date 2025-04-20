@@ -76,13 +76,13 @@ export default function Education({ data = defaultData }: EducationProps) {
     return (
         <Card className="">
             <CardHeader>
-                <CardTitle className="text-2xl tracking-tight border-b pb-2 mb-1">
+                <CardTitle className="text-2xl tracking-tight">
                     <div className="flex items-center gap-x-2">
                         <GraduationCap className="inline-block h-8 w-8 text-primary" />
                         Education
                     </div>
                 </CardTitle>
-                <CardDescription className="text-muted-foreground mt-2">My credentials</CardDescription>
+                <CardDescription className="text-muted-foreground mt-2"></CardDescription>
             </CardHeader>
             <CardContent>
                 <Accordion type="multiple">

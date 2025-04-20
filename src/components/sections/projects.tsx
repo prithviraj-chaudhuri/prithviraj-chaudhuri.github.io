@@ -49,13 +49,13 @@ export default function Project({ data = defaultProjectsData }: ProjectProps) {
     return (
         <Card className="">
             <CardHeader>
-                <CardTitle className="text-2xl tracking-tight border-b pb-2 mb-1">
+                <CardTitle className="text-2xl tracking-tight">
                     <div className="flex items-center gap-x-2">
                         <FilesIcon className="inline-block h-8 w-8 text-primary" />
                         Projects
                     </div>
                 </CardTitle>
-                <CardDescription className="text-muted-foreground mt-2">Some of my notable projects</CardDescription>
+                <CardDescription className="text-muted-foreground mt-2"></CardDescription>
             </CardHeader>
             <CardContent>
                 <Accordion type="multiple">
