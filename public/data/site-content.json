@@ -203,7 +203,7 @@
                 "id": "ncsu_part",
                 "title": "North Carolina State University",
                 "time": "January 2020 - May 2021",
-                "role": "Graduate Research Assistant at <a href='https://www.ieclab.org/'>IEC Lab</a>",
+                "role": "Graduate Research Assistant at IEC Lab",
                 "description": "As a Graduate Research Assistant my primary role in the research group was as a programmer. I was tasked with implementing customizations in OpenEdx (an open-source courseware hosting platform) and research projects that worked along with OpenEdx and building tools to manage these applications.",
                 "responsibilities": [
                     "Implement customizations in OpenEdx as required",
@@ -454,7 +454,7 @@
                     "Studied performance of various transformer networks,CNNsand word embeddingsin terms of Bleu Score and Cosine similarityon flickr9k dataset. Used python and tensorflow 2.1",
                     "Performed a study on Multimodal Classification performance (using Python TensorFlow) vs Single mode classification on Yelp dataset to prove whether multimodal performance is better than standard classification",
                     "Accomplished a Feature Selection algorithm leveraging mutual information and Laplacian scores to select relevant features (R, Matlab)",
-                    "Sentiment Analysis of Tweets (Java, Cassandra, Natural Language Processing)<ul><li>Retrieved large counts of tweets from Twitter and stored in a single node Cassandra database</li><li>Classified Tweets in positive or negative sentiments with OpenNLP Java APIs</li><li>Leveraged StanfordNLP to find keywords in tweets to improve insights</li></ul>"
+                    "Sentiment Analysis of Tweets (Java, Cassandra, Natural Language Processing). Retrieved large counts of tweets from Twitter and stored in a single node Cassandra database. Classified Tweets in positive or negative sentiments with OpenNLP Java APIs. Leveraged StanfordNLP to find keywords in tweets to improve insights."
                 ]
             },
             {
