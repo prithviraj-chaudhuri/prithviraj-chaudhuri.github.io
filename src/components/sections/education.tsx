@@ -108,7 +108,7 @@ export default function Education({ data = defaultData }: EducationProps) {
                                             </ul>
                                         </>
                                     )}
-                                    {item.projects && item.projects.length > 0 && (
+                                    {/* {item.projects && item.projects.length > 0 && (
                                         <>
                                             <p className="font-medium mt-2">Projects:</p>
                                             <ul className="list-disc list-inside ml-4">
@@ -117,7 +117,7 @@ export default function Education({ data = defaultData }: EducationProps) {
                                                 ))}
                                             </ul>
                                         </>
-                                    )}
+                                    )} */}
                                 </div>
                             </AccordionContent>
                         </AccordionItem>
