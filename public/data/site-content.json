@@ -203,7 +203,7 @@
                 "id": "ncsu_part",
                 "title": "North Carolina State University",
                 "time": "January 2020 - May 2021",
-                "role": "Graduate Research Assistant at <a href='https://www.ieclab.org/'>IEC Lab</a>",
+                "role": "Graduate Research Assistant at IEC Lab",
                 "description": "As a Graduate Research Assistant my primary role in the research group was as a programmer. I was tasked with implementing customizations in OpenEdx (an open-source courseware hosting platform) and research projects that worked along with OpenEdx and building tools to manage these applications.",
                 "responsibilities": [
                     "Implement customizations in OpenEdx as required",
@@ -454,7 +454,7 @@
                     "Studied performance of various transformer networks,CNNsand word embeddingsin terms of Bleu Score and Cosine similarityon flickr9k dataset. Used python and tensorflow 2.1",
                     "Performed a study on Multimodal Classification performance (using Python TensorFlow) vs Single mode classification on Yelp dataset to prove whether multimodal performance is better than standard classification",
                     "Accomplished a Feature Selection algorithm leveraging mutual information and Laplacian scores to select relevant features (R, Matlab)",
-                    "Sentiment Analysis of Tweets (Java, Cassandra, Natural Language Processing)<ul><li>Retrieved large counts of tweets from Twitter and stored in a single node Cassandra database</li><li>Classified Tweets in positive or negative sentiments with OpenNLP Java APIs</li><li>Leveraged StanfordNLP to find keywords in tweets to improve insights</li></ul>"
+                    "Sentiment Analysis of Tweets (Java, Cassandra, Natural Language Processing). Retrieved large counts of tweets from Twitter and stored in a single node Cassandra database. Classified Tweets in positive or negative sentiments with OpenNLP Java APIs. Leveraged StanfordNLP to find keywords in tweets to improve insights."
                 ]
             },
             {
@@ -471,90 +471,112 @@
                 "list": [
                     {
                         "skill": "Adobe Experience Manager",
+                        "tag": "platforms",
                         "icon": "devicon-javascript-plain"
                     },
                     {
                         "skill": "OpenShift",
+                        "tag": "platforms",
                         "icon": "devicon-redhat-plain"
                     },
                     {
                         "skill": "Python",
+                        "tag": "programming_languages",
                         "icon": "devicon-python-plain"
                     },
                     {
                         "skill": "Java",
+                        "tag": "programming_languages",
                         "icon": "devicon-java-plain"
                     },
                     {
                         "skill": "Java Spring Boot",
+                        "tag": "frameworks",
                         "icon": "devicon-spring-plain"
                     },
                     {
                         "skill": "Angular",
+                        "tag": "frameworks",
                         "icon": "devicon-angularjs-plain"
                     },
                     {
                         "skill": "React",
+                        "tag": "frameworks",
                         "icon": "devicon-react-original"
                     },
                     {
                         "skill": "PostgreSQL",
+                        "tag": "other",
                         "icon": "devicon-postgresql-plain"
                     },
                     {
                         "skill": "MySQL",
+                        "tag": "other",
                         "icon": "devicon-mysql-plain"
                     },
                     {
                         "skill": "AWS",
+                        "tag": "platforms",
                         "icon": "devicon-amazonwebservices-original"
                     },
                     {
                         "skill": "Git",
+                        "tag": "other",
                         "icon": "devicon-git-plain"
                     },
                     {
                         "skill": "Makefiles",
+                        "tag": "other",
                         "icon": "devicon-bash-plain"
                     },
                     {
                         "skill": "Gitlab Pipelines",
+                        "tag": "other",
                         "icon": "devicon-gitlab-plain"
                     },
                     {
                         "skill": "ServiceNow",
+                        "tag": "platforms",
                         "icon": "devicon-nodejs-plain"
                     },
                     {
                         "skill": "OpenEdx",
+                        "tag": "platforms",
                         "icon": "devicon-django-plain"
                     },
                     {
                         "skill": "Docker",
+                        "tag": "platforms",
                         "icon": "devicon-docker-plain"
                     },
                     {
                         "skill": "Kubernetes",
+                        "tag": "platforms",
                         "icon": "devicon-kubernetes-plain"
                     },
                     {
                         "skill": "OpenStack",
+                        "tag": "platforms",
                         "icon": "devicon-linux-plain"
                     },
                     {
                         "skill": "HTML",
+                        "tag": "programming_languages",
                         "icon": "devicon-html5-plain"
                     },
                     {
                         "skill": "CSS",
+                        "tag": "programming_languages",
                         "icon": "devicon-css3-plain"
                     },
                     {
                         "skill": "JavaScript",
+                        "tag": "programming_languages",
                         "icon": "devicon-javascript-plain"
                     },
                     {
                         "skill": "jQuery",
+                        "tag": "frameworks",
                         "icon": "devicon-jquery-plain"
                     }
                 ]
@@ -564,46 +586,57 @@
                 "list": [
                     {
                         "skill": "Next.js",
+                        "tag": "frameworks",
                         "icon": "devicon-nextjs-plain"
                     },
                     {
                         "skill": "Alfresco Document Management",
+                        "tag": "platforms",
                         "icon": "devicon-java-plain"
                     },
                     {
                         "skill": "OpenMP",
+                        "tag": "other",
                         "icon": "devicon-c-plain"
                     },
                     {
                         "skill": "MPI",
+                        "tag": "other",
                         "icon": "devicon-cplusplus-plain"
                     },
                     {
                         "skill": "CUDA",
+                        "tag": "other",
                         "icon": "devicon-nvidia-plain"
                     },
                     {
                         "skill": "OpenMP",
+                        "tag": "other",
                         "icon": "devicon-c-plain"
                     },
                     {
                         "skill": "MPI",
+                        "tag": "other",
                         "icon": "devicon-cplusplus-plain"
                     },
                     {
                         "skill": "R",
+                        "tag": "programming_languages",
                         "icon": "devicon-r-plain"
                     },
                     {
                         "skill": "PHP",
+                        "tag": "programming_languages",
                         "icon": "devicon-php-plain"
                     },
                     {
                         "skill": "C#",
+                        "tag": "programming_languages",
                         "icon": "devicon-csharp-plain"
                     },
                     {
                         "skill": "ASP.NET",
+                        "tag": "frameworks",
                         "icon": "devicon-dot-net-plain"
                     }
                 ]
