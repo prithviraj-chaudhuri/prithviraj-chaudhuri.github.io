@@ -98,7 +98,7 @@ export default function Experience({ data = defaultExperienceData }: ExperienceP
                 <CardDescription className="text-muted-foreground mt-2"></CardDescription>
             </CardHeader>
             <CardContent>
-                <div className="space-y-8 text-sm">
+                <div className="text-sm">
                     {data.map((experience, index) => (
                         <div key={index} className="relative pb-8">
                             {index < data.length - 1 && (
@@ -117,15 +117,16 @@ export default function Experience({ data = defaultExperienceData }: ExperienceP
                                     </div>
                                     <p
                                         className="text-muted-foreground font-medium mt-1"
-                                        dangerouslySetInnerHTML={{ __html: experience.role }}
-                                    />
-                                    <p className="mt-2 text-sm">{experience.description}</p>
+                                    >
+                                        {experience.role}
+                                    </p>
+                                    {/* <p className="mt-2 text-sm">{experience.description}</p> */}
                                     {experience.projects && experience.projects.length > 0 && (
                                         <div className="mt-3">
                                             <Sheet>
                                                 <SheetTrigger>
                                                     <span className="text-sm font-medium cursor-pointer text-blue-600 hover:underline">
-                                                        View Projects ({experience.projects.length})
+                                                        View More
                                                     </span>
                                                 </SheetTrigger>
                                                 <SheetContent>
