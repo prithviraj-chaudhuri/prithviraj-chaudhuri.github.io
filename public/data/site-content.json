@@ -3,7 +3,7 @@
         "github_username": "prithviraj-chaudhuri",
         "contact": {
             "name": "Prithviraj Chaudhuri",
-            "title": "Senior Software Engineer",
+            "title": "Principal Software Applications Engineer",
             "bio":"Passionate about building scalable web applications and solving complex problems. Experienced in full-stack development with expertise in React, TypeScript, and Node.js",
             "location": "Toronto, Ontario",
             "email": "p.chaudhuri1993@gmail.com",
@@ -63,7 +63,7 @@
                 "id": "rh_full",
                 "title": "Red Hat",
                 "time": "June 2021 - Present",
-                "role": "Senior Software Applications Engineer",
+                "role": "Principal Software Applications Engineer",
                 "description": "My team maintains and develops a suite of applications used internally within the organization mainly catered towards managing content and logic around content. We build new features and solutions on top of those applications, ensure the solutions provided are optimal and follow best practices as well as resolve any bugs and defects in those applications.",
                 "responsibilities": [
                     "Implement new features on applications as per requirement, ensuring the implementations follow best software engineering practices and are optimal. Requirements can be both for frontend and backend parts of the application.",
@@ -385,55 +385,6 @@
                             "Maintained and enhanced existing and new integrations with ServiceNow",
                             "Enhanced ITSM and Change modules in ServiceNow to accomodate customer needs and requirements",
                             "Triage and troubleshoot issues in existing implementations and customizations in ServiceNow"
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": "os_part",
-                "title": "ObjectSol Technologies Pvt Ltd.",
-                "time": "July 2016 - August 2016",
-                "role": "Intern",
-                "description": "",
-                "responsibilities": [],
-                "projects": [
-                    {
-                        "description": "Sentiment Analysis of Tweets",
-                        "tech_used": [
-                            "Java",
-                            "Java Swing",
-                            "Cassandra",
-                            "REST APIs",
-                            "NLP"
-                        ],
-                        "highlights": [
-                            "Retrieved large counts of tweets from Twitter and stored in a single node Cassandra database",
-                            "Classified Tweets in positive or negative sentiments with OpenNLP Java APIs",
-                            "Leveraged StanfordNLP to find keywords in tweets to improve insights"
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": "gl_part",
-                "title": "Glamoz.com",
-                "time": "August 2015 - December 2015",
-                "role": "Intern",
-                "description": "",
-                "responsibilities": [],
-                "projects": [
-                    {
-                        "description": "Developed e-commerce and social network websites",
-                        "tech_used": [
-                            "PHP",
-                            "HTML",
-                            "CSS",
-                            "PHP"
-                        ],
-                        "highlights": [
-                            "Created search algorithms for faster and contextual searches of various user profiles while interacting with backend databases",
-                            "Utilized various jQuery plugins to enable users to edit pictures, upload videos etc",
-                            "Incorporated Facebook and Google login options"
                         ]
                     }
                 ]
