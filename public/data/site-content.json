@@ -4,7 +4,7 @@
         "contact": {
             "name": "Prithviraj Chaudhuri",
             "title": "Principal Software Applications Engineer",
-            "bio":"Passionate about building scalable web applications and solving complex problems. Experienced in full-stack development with expertise in React, TypeScript, and Node.js",
+            "bio":"I’m a software engineer passionate about transforming complex ideas into simple, reliable experiences. I love crafting systems that work well, grow smoothly, and keep me learning along the way.",
             "location": "Toronto, Ontario",
             "email": "p.chaudhuri1993@gmail.com",
             "linkedin": "https://www.linkedin.com/in/prithviraj-chaudhuri-455413b2/",
@@ -71,9 +71,23 @@
                     "Write and execute any adhoc bash or python scripts as and when required.",
                     "Configure OpenShift containers and pipelines as required for new or existing applications.",
                     "Write infrastructure configuration files in Ansible to build and deploy apps on OpenStack hosts as and when required.",
-                    "After being promoted to Senior Software Applications Engineer my responsibilities also involve peer reviewing work and involving myself with decisions regarding system architectures."
+                    "Peer review and architect software solutions the team delivers."
                 ],
                 "projects": [
+                    {
+                        "description": "Build and deploy solutions to accelarate AI adoption throughout the organization",
+                        "tech_used": [
+                            "LangGraph",
+                            "Langchain",
+                            "Gemini Enterprise",
+                            "Python"
+                        ],
+                        "highlights": [
+                            "Implemented text-to-sql bot to return user records from databases to users based on natural language query",
+                            "Designed solution to integrate AEM documents into Gemini enterprise to enable organization wide access to documents and data",
+                            "Review architecture of a RAG implementation for serving documents regarding brand standards with slack integrations"
+                        ]
+                    },
                     {
                         "description": "Develop, deploy and maintain site(s) and assets hosted on marketing and sales platform Adobe Experience Manager (AEM).",
                         "tech_used": [
@@ -421,6 +435,11 @@
                 "type": "Proficient",
                 "list": [
                     {
+                        "skill": "LangGraph",
+                        "tag": "frameworks",
+                        "icon": "devicon-python-plain"
+                    },
+                    {
                         "skill": "Adobe Experience Manager",
                         "tag": "platforms",
                         "icon": "devicon-javascript-plain"
@@ -429,6 +448,16 @@
                         "skill": "OpenShift",
                         "tag": "platforms",
                         "icon": "devicon-redhat-plain"
+                    },
+                    {
+                        "skill": "Kubernetes",
+                        "tag": "platforms",
+                        "icon": "devicon-kubernetes-plain"
+                    },
+                    {
+                        "skill": "Ansible",
+                        "tag": "platforms",
+                        "icon": "devicon-ansible-plain"
                     },
                     {
                         "skill": "Python",
@@ -444,16 +473,6 @@
                         "skill": "Java Spring Boot",
                         "tag": "frameworks",
                         "icon": "devicon-spring-plain"
-                    },
-                    {
-                        "skill": "Angular",
-                        "tag": "frameworks",
-                        "icon": "devicon-angularjs-plain"
-                    },
-                    {
-                        "skill": "React",
-                        "tag": "frameworks",
-                        "icon": "devicon-react-original"
                     },
                     {
                         "skill": "PostgreSQL",
@@ -476,14 +495,24 @@
                         "icon": "devicon-git-plain"
                     },
                     {
-                        "skill": "Makefiles",
-                        "tag": "other",
-                        "icon": "devicon-bash-plain"
-                    },
-                    {
                         "skill": "Gitlab Pipelines",
                         "tag": "other",
                         "icon": "devicon-gitlab-plain"
+                    },
+                    {
+                        "skill": "Angular",
+                        "tag": "frameworks",
+                        "icon": "devicon-angularjs-plain"
+                    },
+                    {
+                        "skill": "React",
+                        "tag": "frameworks",
+                        "icon": "devicon-react-original"
+                    },
+                    {
+                        "skill": "Makefiles",
+                        "tag": "other",
+                        "icon": "devicon-bash-plain"
                     },
                     {
                         "skill": "ServiceNow",
