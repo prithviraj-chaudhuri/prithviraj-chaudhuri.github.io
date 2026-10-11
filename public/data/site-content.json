@@ -11,6 +11,26 @@
             "avatar": "/images/profile.jpeg",
             "resume": "/downloads/Prithviraj%20Chaudhuri%20Resume.pdf"
         },
+        "site": {
+            "url": "https://prithviraj-chaudhuri.github.io",
+            "title": "Prithviraj Chaudhuri | Principal Software Applications Engineer",
+            "description": "Principal Software Applications Engineer with expertise in AI agents, enterprise applications, cloud infrastructure, AEM, OpenShift, Python, Java, and full-stack web development.",
+            "keywords": [
+                "Prithviraj Chaudhuri",
+                "Principal Software Applications Engineer",
+                "AI engineer",
+                "MCP",
+                "LangGraph",
+                "Gemini Enterprise",
+                "OpenShift",
+                "AEM",
+                "Python",
+                "Java",
+                "React",
+                "Cloud infrastructure",
+                "portfolio"
+            ]
+        },
         "educational_qualification": [
             {
                 "id": "course_ncsu",
@@ -406,27 +426,38 @@
         ],
         "projects": [
             {
+                "type": "AI & Agentic Systems",
+                "list": [
+                    "Built an enterprise-ready MCP server with DCR authentication and Redis backend to enable secure Google Workspace interactions and AI-driven access to organizational data.",
+                    "Developed Gemini Enterprise agents using MCP, A2A, and agent-defined tools to support no-code workflow automation and internal productivity use cases.",
+                    "Created Python-based RAG connectors for AEM and Google Drive content, enabling Gemini Enterprise to answer questions grounded in official documentation and brand assets.",
+                    "Implemented people-search and text-to-SQL agents with LangGraph, Gemini, and FastAPI to help users query records and business information through natural language prompts."
+                ]
+            },
+            {
                 "type": "Systems Projects",
                 "list": [
-                    "Improved performance of simulation algorithm by leveraging parallel device and multithreaded capabilities of CUDA, OpenACC, OpenMP and MPI. Optimized algorithm my carefully managing memory operations",
-                    "Studied performance benefits of the same algorithm by leveraging parallel processing using CUDA, OpenACC, OpenMP and MPI",
-                    "Used OpenMP to implement parallel sorting algorithms for evaluating performance benefits vs overheads"
+                    "Improved performance of simulation algorithm by leveraging parallel device and multithreaded capabilities of CUDA, OpenACC, OpenMP and MPI. Optimized algorithm my carefully managing memory operations.",
+                    "Studied performance benefits of the same algorithm by leveraging parallel processing using CUDA, OpenACC, OpenMP and MPI.",
+                    "Used OpenMP to implement parallel sorting algorithms for evaluating performance benefits versus overheads.",
+                    "Migrated legacy on-prem infrastructure to OpenStack and OpenShift using Linux images, Ansible playbooks, and deployment automation to modernize hosting and improve maintenance."
                 ]
             },
             {
                 "type": "Data Science Projects",
                 "list": [
-                    "Studied performance of various transformer networks,CNNsand word embeddingsin terms of Bleu Score and Cosine similarityon flickr9k dataset. Used python and tensorflow 2.1",
-                    "Performed a study on Multimodal Classification performance (using Python TensorFlow) vs Single mode classification on Yelp dataset to prove whether multimodal performance is better than standard classification",
-                    "Accomplished a Feature Selection algorithm leveraging mutual information and Laplacian scores to select relevant features (R, Matlab)",
-                    "Sentiment Analysis of Tweets (Java, Cassandra, Natural Language Processing). Retrieved large counts of tweets from Twitter and stored in a single node Cassandra database. Classified Tweets in positive or negative sentiments with OpenNLP Java APIs. Leveraged StanfordNLP to find keywords in tweets to improve insights."
+                    "Studied performance of various transformer networks, CNNs, and word embeddings in terms of BLEU score and cosine similarity on the Flickr9k dataset using Python and TensorFlow.",
+                    "Performed a study on multimodal classification performance versus single-mode classification on the Yelp dataset to validate the value of richer feature representations.",
+                    "Accomplished a feature-selection algorithm leveraging mutual information and Laplacian scores to select relevant features using R and MATLAB.",
+                    "Built sentiment analysis pipelines for tweet data using Java, Cassandra, and NLP libraries to classify positive and negative sentiment and extract actionable keywords."
                 ]
             },
             {
-                "type": "Web Developement Projects",
+                "type": "Web Development Projects",
                 "list": [
-                    "Created interactive and responsive websites for out annual festivals, enabling increases attention from other Undergraduate colleges",
-                    "Designed and Developed registration portal for festival participants to enroll for events, restulting in streamlining and reduced delay in the process"
+                    "Created interactive and responsive websites for annual college festivals, helping improve engagement and visibility across undergraduate institutions.",
+                    "Designed and developed a registration portal for festival participants to streamline enrollment, reduce delays, and simplify event coordination.",
+                    "Customized Adobe Experience Manager platforms with React, Java, and JCR to enhance asset workflows, personalization, and content authoring experiences."
                 ]
             }
         ],
@@ -436,6 +467,16 @@
                 "list": [
                     {
                         "skill": "LangGraph",
+                        "tag": "frameworks",
+                        "icon": "devicon-python-plain"
+                    },
+                    {
+                        "skill": "Google ADK",
+                        "tag": "frameworks",
+                        "icon": "devicon-googlecloud-plain"
+                    },
+                    {
+                        "skill": "FastAPI",
                         "tag": "frameworks",
                         "icon": "devicon-python-plain"
                     },
@@ -450,74 +491,19 @@
                         "icon": "devicon-redhat-plain"
                     },
                     {
-                        "skill": "Kubernetes",
-                        "tag": "platforms",
-                        "icon": "devicon-kubernetes-plain"
-                    },
-                    {
                         "skill": "Ansible",
                         "tag": "platforms",
                         "icon": "devicon-ansible-plain"
                     },
                     {
-                        "skill": "Python",
-                        "tag": "programming_languages",
-                        "icon": "devicon-python-plain"
-                    },
-                    {
-                        "skill": "Java",
-                        "tag": "programming_languages",
-                        "icon": "devicon-java-plain"
-                    },
-                    {
-                        "skill": "Java Spring Boot",
-                        "tag": "frameworks",
-                        "icon": "devicon-spring-plain"
-                    },
-                    {
-                        "skill": "PostgreSQL",
-                        "tag": "other",
-                        "icon": "devicon-postgresql-plain"
-                    },
-                    {
-                        "skill": "MySQL",
-                        "tag": "other",
-                        "icon": "devicon-mysql-plain"
-                    },
-                    {
-                        "skill": "AWS",
+                        "skill": "Gemini Enterprise",
                         "tag": "platforms",
-                        "icon": "devicon-amazonwebservices-original"
+                        "icon": "devicon-googlecloud-plain"
                     },
                     {
-                        "skill": "Git",
-                        "tag": "other",
-                        "icon": "devicon-git-plain"
-                    },
-                    {
-                        "skill": "Gitlab Pipelines",
-                        "tag": "other",
-                        "icon": "devicon-gitlab-plain"
-                    },
-                    {
-                        "skill": "Angular",
-                        "tag": "frameworks",
-                        "icon": "devicon-angularjs-plain"
-                    },
-                    {
-                        "skill": "React",
-                        "tag": "frameworks",
-                        "icon": "devicon-react-original"
-                    },
-                    {
-                        "skill": "Makefiles",
-                        "tag": "other",
-                        "icon": "devicon-bash-plain"
-                    },
-                    {
-                        "skill": "ServiceNow",
+                        "skill": "EKS",
                         "tag": "platforms",
-                        "icon": "devicon-nodejs-plain"
+                        "icon": "devicon-kubernetes-plain"
                     },
                     {
                         "skill": "OpenEdx",
@@ -525,9 +511,54 @@
                         "icon": "devicon-django-plain"
                     },
                     {
-                        "skill": "Docker",
+                        "skill": "ServiceNow",
                         "tag": "platforms",
-                        "icon": "devicon-docker-plain"
+                        "icon": "devicon-nodejs-plain"
+                    },
+                    {
+                        "skill": "Langfuse",
+                        "tag": "other",
+                        "icon": "devicon-python-plain"
+                    },
+                    {
+                        "skill": "MLflow",
+                        "tag": "other",
+                        "icon": "devicon-python-plain"
+                    },
+                    {
+                        "skill": "MySQL",
+                        "tag": "other",
+                        "icon": "devicon-mysql-plain"
+                    },
+                    {
+                        "skill": "PostgreSQL",
+                        "tag": "other",
+                        "icon": "devicon-postgresql-plain"
+                    },
+                    {
+                        "skill": "JCR",
+                        "tag": "other",
+                        "icon": "devicon-java-plain"
+                    },
+                    {
+                        "skill": "Redis",
+                        "tag": "other",
+                        "icon": "devicon-redis-plain"
+                    },
+                    {
+                        "skill": "GitLab CI/CD",
+                        "tag": "other",
+                        "icon": "devicon-gitlab-plain"
+                    },
+                    {
+                        "skill": "GitHub Actions",
+                        "tag": "other",
+                        "icon": "devicon-github-original"
+                    },
+                    {
+                        "skill": "Helm Charts",
+                        "tag": "other",
+                        "icon": "devicon-kubernetes-plain"
                     },
                     {
                         "skill": "Kubernetes",
@@ -535,29 +566,24 @@
                         "icon": "devicon-kubernetes-plain"
                     },
                     {
-                        "skill": "OpenStack",
+                        "skill": "Linux",
                         "tag": "platforms",
                         "icon": "devicon-linux-plain"
                     },
                     {
-                        "skill": "HTML",
-                        "tag": "programming_languages",
-                        "icon": "devicon-html5-plain"
+                        "skill": "Bash",
+                        "tag": "other",
+                        "icon": "devicon-bash-plain"
                     },
                     {
-                        "skill": "CSS",
-                        "tag": "programming_languages",
-                        "icon": "devicon-css3-plain"
+                        "skill": "APIs",
+                        "tag": "other",
+                        "icon": "devicon-nodejs-plain"
                     },
                     {
-                        "skill": "JavaScript",
-                        "tag": "programming_languages",
-                        "icon": "devicon-javascript-plain"
-                    },
-                    {
-                        "skill": "jQuery",
-                        "tag": "frameworks",
-                        "icon": "devicon-jquery-plain"
+                        "skill": "OpenStack",
+                        "tag": "platforms",
+                        "icon": "devicon-redhat-plain"
                     }
                 ]
             },
@@ -570,9 +596,34 @@
                         "icon": "devicon-nextjs-plain"
                     },
                     {
-                        "skill": "Alfresco Document Management",
-                        "tag": "platforms",
+                        "skill": "Quarkus",
+                        "tag": "frameworks",
                         "icon": "devicon-java-plain"
+                    },
+                    {
+                        "skill": "Docker",
+                        "tag": "platforms",
+                        "icon": "devicon-docker-plain"
+                    },
+                    {
+                        "skill": "Snowflake",
+                        "tag": "other",
+                        "icon": "devicon-database-plain"
+                    },
+                    {
+                        "skill": "MCP",
+                        "tag": "other",
+                        "icon": "devicon-python-plain"
+                    },
+                    {
+                        "skill": "A2A",
+                        "tag": "other",
+                        "icon": "devicon-python-plain"
+                    },
+                    {
+                        "skill": "R",
+                        "tag": "programming_languages",
+                        "icon": "devicon-r-plain"
                     },
                     {
                         "skill": "OpenMP",
@@ -588,36 +639,6 @@
                         "skill": "CUDA",
                         "tag": "other",
                         "icon": "devicon-nvidia-plain"
-                    },
-                    {
-                        "skill": "OpenMP",
-                        "tag": "other",
-                        "icon": "devicon-c-plain"
-                    },
-                    {
-                        "skill": "MPI",
-                        "tag": "other",
-                        "icon": "devicon-cplusplus-plain"
-                    },
-                    {
-                        "skill": "R",
-                        "tag": "programming_languages",
-                        "icon": "devicon-r-plain"
-                    },
-                    {
-                        "skill": "PHP",
-                        "tag": "programming_languages",
-                        "icon": "devicon-php-plain"
-                    },
-                    {
-                        "skill": "C#",
-                        "tag": "programming_languages",
-                        "icon": "devicon-csharp-plain"
-                    },
-                    {
-                        "skill": "ASP.NET",
-                        "tag": "frameworks",
-                        "icon": "devicon-dot-net-plain"
                     }
                 ]
             }
