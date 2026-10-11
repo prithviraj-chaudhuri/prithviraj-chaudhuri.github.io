@@ -1,69 +1,89 @@
 {
     "content": {
+        "github_username": "prithviraj-chaudhuri",
         "contact": {
             "name": "Prithviraj Chaudhuri",
+            "title": "Principal Software Applications Engineer",
+            "bio":"I’m a software engineer passionate about transforming complex ideas into simple, reliable experiences. I love crafting systems that work well, grow smoothly, and keep me learning along the way.",
+            "location": "Albany, New York, USA",
             "email": "p.chaudhuri1993@gmail.com",
-            "linked_in": "https://www.linkedin.com/in/prithviraj-chaudhuri-455413b2/",
-            "location": "Raleigh, North Carolina",
-            "picture": "resources/assets/img/profile.jpeg"
+            "linkedin": "https://www.linkedin.com/in/prithviraj-chaudhuri-455413b2/",
+            "avatar": "/images/profile.jpeg",
+            "resume": "/downloads/Prithviraj%20Chaudhuri%20Resume.pdf"
         },
-        "about": {
-            "mission": "<p> I am a dynamic and highly skilled Senior Software Engineer ready to take on challenging roles with a full-stack focus. With a Master's degree in Computer Science and a GPA of 3.926 from North Carolina State University, I bring a diverse technical skill set that includes proficiency in Java, Python, HTML5, CSS3, JavaScript, and more. </p><p> My experience as a Senior Software Applications Engineer at Red Hat, Inc., reflects my ability to lead the development of robust and scalable applications. I have successfully implemented new features, resolved defects, and configured OpenShift containers, showcasing a strong commitment to best software engineering practices. My contributions extend to project management, where I have excelled in roles involving peer reviews, system architectures, and infrastructure configuration using Ansible. </p><p> In both industry and academic settings, I have demonstrated my adaptability and innovative thinking. As a Graduate Research Assistant at North Carolina State University, I implemented customizations in OpenEdx and conducted research projects, automating processes using Docker and docker-compose. My projects include developing a Slack bot for classroom management and studying the performance of machine learning models. </p><p> I am not just a technical expert; I am a proactive professional with a keen eye for detail. My dedication to excellence is evident in my work on ServiceNow at Tata Consultancy Services, where I played a crucial role in implementing solutions and integrations. </p><p> I am seeking Senior Software Engineer positions or higher, where my diverse technical background, project management skills, and commitment to delivering high-quality solutions can contribute to the success and innovation of your organization. I am excited about the opportunity to bring my expertise to a dynamic team and make a meaningful impact. </p>",
-            "educational_qualification": [
-                {
-                    "id": "course_ncsu",
-                    "qualification": "Masters in Computer Science",
-                    "institute": "North Carolina State University",
-                    "time": "August 2019 - May 2021",
-                    "score": "GPA 3.92",
-                    "courses": [
-                        "Artificial Intelligence",
-                        "Parallel Architectures",
-                        "Parallel Systems",
-                        "Automated Learning and Data Analysis",
-                        "Compiler Construction",
-                        "Independent Study on Educational Systems",
-                        "Advanced Machine Learning",
-                        "Real Time/Embedded Systems",
-                        "Machine Learning for Autonomous Driving"
+        "site": {
+            "url": "https://prithviraj-chaudhuri.github.io",
+            "title": "Prithviraj Chaudhuri | Principal Software Applications Engineer",
+            "description": "Principal Software Applications Engineer with expertise in AI agents, enterprise applications, cloud infrastructure, AEM, OpenShift, Python, Java, and full-stack web development.",
+            "keywords": [
+                "Prithviraj Chaudhuri",
+                "Principal Software Applications Engineer",
+                "AI engineer",
+                "MCP",
+                "LangGraph",
+                "Gemini Enterprise",
+                "OpenShift",
+                "AEM",
+                "Python",
+                "Java",
+                "React",
+                "Cloud infrastructure",
+                "portfolio"
+            ]
+        },
+        "educational_qualification": [
+            {
+                "id": "course_ncsu",
+                "title": "Masters in Computer Science",
+                "institution": "North Carolina State University",
+                "period": "August 2019 - May 2021",
+                "grade": "GPA 3.92",
+                "courses": [
+                    "Artificial Intelligence",
+                    "Parallel Architectures",
+                    "Parallel Systems",
+                    "Automated Learning and Data Analysis",
+                    "Compiler Construction",
+                    "Independent Study on Educational Systems",
+                    "Advanced Machine Learning",
+                    "Real Time/Embedded Systems",
+                    "Machine Learning for Autonomous Driving"
+                ],
+                "projects": [
+                    "Achieved successful customizations and research projects on the open-source online courseware hosting platform OpenEdx. Measured impact through enhanced functionality and user satisfaction, implementing services across multiple servers, and establishing a Django-powered dashboard for efficient configuration management.",
+                    "Accomplished the development of a Slack bot for classroom management, adhering to robust software engineering practices. Utilized DevOps tools such as Git, Travis CI, Docker, docker-compose, Makefiles, etc. Quantified success through streamlined communication and improved classroom efficiency.",
+                    "Executed an in-depth analysis of transformer networks, CNNs, and word embeddings on the flickr9k dataset. Evaluated performance based on Bleu Score and Cosine similarity for caption prediction of images, contributing valuable insights to the field of image captioning.",
+                    "Successfully conducted a comprehensive study on Multimodal Classification performance using Python TensorFlow, comparing it against Single mode classification on the Yelp dataset. Demonstrated the effectiveness of multimodal approaches over standard classification methods, emphasizing improved accuracy and classification results.",
+                    "Demonstrated the efficiency gains of parallel processing using CUDA, OpenACC, OpenMP, and MPI in comparison to standard single-thread processing. Achieved optimization in algorithmic performance, with measured improvements in execution time and resource utilization."
+                ]
+            },
+            {
+                "id": "course_rcc",
+                "title": "Bachelor of Technology, Computer Science",
+                "institution": "RCC Institute of Information Technology",
+                "period": "August 2012 – June 2016",
+                "grade": "GPA 8.71/10",
+                "courses": [
+                    "Data Structures",
+                    "DBMS",
+                    "Object Oriented Programming",
+                    "Operating Systems",
+                    "Compiler Design",
+                    "Microprocessors",
+                    "Image Processing"
                     ],
-                    "projects": [
-                        "Achieved successful customizations and research projects on the open-source online courseware hosting platform OpenEdx. Measured impact through enhanced functionality and user satisfaction, implementing services across multiple servers, and establishing a Django-powered dashboard for efficient configuration management.",
-                        "Accomplished the development of a Slack bot for classroom management, adhering to robust software engineering practices. Utilized DevOps tools such as Git, Travis CI, Docker, docker-compose, Makefiles, etc. Quantified success through streamlined communication and improved classroom efficiency.",
-                        "Executed an in-depth analysis of transformer networks, CNNs, and word embeddings on the flickr9k dataset. Evaluated performance based on Bleu Score and Cosine similarity for caption prediction of images, contributing valuable insights to the field of image captioning.",
-                        "Successfully conducted a comprehensive study on Multimodal Classification performance using Python TensorFlow, comparing it against Single mode classification on the Yelp dataset. Demonstrated the effectiveness of multimodal approaches over standard classification methods, emphasizing improved accuracy and classification results.",
-                        "Demonstrated the efficiency gains of parallel processing using CUDA, OpenACC, OpenMP, and MPI in comparison to standard single-thread processing. Achieved optimization in algorithmic performance, with measured improvements in execution time and resource utilization."
-                    ]
-                },
-                {
-                    "id": "course_rcc",
-                    "qualification": "Bachelor of Technology, Computer Science",
-                    "institute": "RCC Institute of Information Technology",
-                    "time": "August 2012 – June 2016",
-                    "score": "GPA 8.71/10",
-                    "courses": [
-                        "Data Structures",
-                        "DBMS",
-                        "Object Oriented Programming",
-                        "Operating Systems",
-                        "Compiler Design",
-                        "Microprocessors",
-                        "Image Processing"
-                      ],
-                    "projects": [
-                        "Executed the development and management of a suite of four web applications for the annual sports, technical, and cultural festivals of the College. Measured success by enhanced user engagement and seamless festival coordination.",
-                        "Established a new feature selection algorithm to boost supervised learning speeds on specific datasets. Quantified achievement through measured improvements in algorithmic efficiency and overall learning performance."
-                    ]
-                }
-            ],
-            "resume": "./resources/assets/downloads/Prithviraj%20Chaudhuri%20Resume.pdf"
-        },
+                "projects": [
+                    "Executed the development and management of a suite of four web applications for the annual sports, technical, and cultural festivals of the College. Measured success by enhanced user engagement and seamless festival coordination.",
+                    "Established a new feature selection algorithm to boost supervised learning speeds on specific datasets. Quantified achievement through measured improvements in algorithmic efficiency and overall learning performance."
+                ]
+            }
+        ],
         "experience": [
             {
                 "id": "rh_full",
-                "title": "Red Hat, Inc.",
+                "title": "Red Hat",
                 "time": "June 2021 - Present",
-                "role": "Senior Software Applications Engineer",
+                "role": "Principal Software Applications Engineer",
                 "description": "My team maintains and develops a suite of applications used internally within the organization mainly catered towards managing content and logic around content. We build new features and solutions on top of those applications, ensure the solutions provided are optimal and follow best practices as well as resolve any bugs and defects in those applications.",
                 "responsibilities": [
                     "Implement new features on applications as per requirement, ensuring the implementations follow best software engineering practices and are optimal. Requirements can be both for frontend and backend parts of the application.",
@@ -71,13 +91,27 @@
                     "Write and execute any adhoc bash or python scripts as and when required.",
                     "Configure OpenShift containers and pipelines as required for new or existing applications.",
                     "Write infrastructure configuration files in Ansible to build and deploy apps on OpenStack hosts as and when required.",
-                    "After being promoted to Senior Software Applications Engineer my responsibilities also involve peer reviewing work and involving myself with decisions regarding system architectures."
+                    "Peer review and architect software solutions the team delivers."
                 ],
                 "projects": [
                     {
+                        "description": "Build and deploy solutions to accelarate AI adoption throughout the organization",
+                        "tech_used": [
+                            "LangGraph",
+                            "Langchain",
+                            "Gemini Enterprise",
+                            "Python"
+                        ],
+                        "highlights": [
+                            "Implemented text-to-sql bot to return user records from databases to users based on natural language query",
+                            "Designed solution to integrate AEM documents into Gemini enterprise to enable organization wide access to documents and data",
+                            "Review architecture of a RAG implementation for serving documents regarding brand standards with slack integrations"
+                        ]
+                    },
+                    {
                         "description": "Develop, deploy and maintain site(s) and assets hosted on marketing and sales platform Adobe Experience Manager (AEM).",
                         "tech_used": [
-                            "Java Sling",
+                            "Apache Sling",
                             "JCR",
                             "OSGI",
                             "React"
@@ -203,7 +237,7 @@
                 "id": "ncsu_part",
                 "title": "North Carolina State University",
                 "time": "January 2020 - May 2021",
-                "role": "Graduate Research Assistant at <a href='https://www.ieclab.org/'>IEC Lab</a>",
+                "role": "Graduate Research Assistant at IEC Lab",
                 "description": "As a Graduate Research Assistant my primary role in the research group was as a programmer. I was tasked with implementing customizations in OpenEdx (an open-source courseware hosting platform) and research projects that worked along with OpenEdx and building tools to manage these applications.",
                 "responsibilities": [
                     "Implement customizations in OpenEdx as required",
@@ -388,153 +422,168 @@
                         ]
                     }
                 ]
-            },
-            {
-                "id": "os_part",
-                "title": "ObjectSol Technologies Pvt Ltd.",
-                "time": "July 2016 - August 2016",
-                "role": "Intern",
-                "description": "",
-                "responsibilities": [],
-                "projects": [
-                    {
-                        "description": "Sentiment Analysis of Tweets",
-                        "tech_used": [
-                            "Java",
-                            "Java Swing",
-                            "Cassandra",
-                            "REST APIs",
-                            "NLP"
-                        ],
-                        "highlights": [
-                            "Retrieved large counts of tweets from Twitter and stored in a single node Cassandra database",
-                            "Classified Tweets in positive or negative sentiments with OpenNLP Java APIs",
-                            "Leveraged StanfordNLP to find keywords in tweets to improve insights"
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": "gl_part",
-                "title": "Glamoz.com.",
-                "time": "August 2015 - December 2015",
-                "role": "Intern",
-                "description": "",
-                "responsibilities": [],
-                "projects": [
-                    {
-                        "description": "Developed e-commerce and social network websites",
-                        "tech_used": [
-                            "PHP",
-                            "HTML",
-                            "CSS",
-                            "PHP"
-                        ],
-                        "highlights": [
-                            "Created search algorithms for faster and contextual searches of various user profiles while interacting with backend databases",
-                            "Utilized various jQuery plugins to enable users to edit pictures, upload videos etc",
-                            "Incorporated Facebook and Google login options"
-                        ]
-                    }
-                ]
             }
         ],
         "projects": [
             {
+                "type": "AI & Agentic Systems",
+                "list": [
+                    "Built an enterprise-ready MCP server with DCR authentication and Redis backend to enable secure Google Workspace interactions and AI-driven access to organizational data.",
+                    "Developed Gemini Enterprise agents using MCP, A2A, and agent-defined tools to support no-code workflow automation and internal productivity use cases.",
+                    "Created Python-based RAG connectors for AEM and Google Drive content, enabling Gemini Enterprise to answer questions grounded in official documentation and brand assets.",
+                    "Implemented people-search and text-to-SQL agents with LangGraph, Gemini, and FastAPI to help users query records and business information through natural language prompts."
+                ]
+            },
+            {
                 "type": "Systems Projects",
                 "list": [
-                    "Improved performance of simulation algorithm by leveraging parallel device and multithreaded capabilities of CUDA, OpenACC, OpenMP and MPI. Optimized algorithm my carefully managing memory operations",
-                    "Studied performance benefits of the same algorithm by leveraging parallel processing using CUDA, OpenACC, OpenMP and MPI",
-                    "Used OpenMP to implement parallel sorting algorithms for evaluating performance benefits vs overheads"
+                    "Improved performance of simulation algorithm by leveraging parallel device and multithreaded capabilities of CUDA, OpenACC, OpenMP and MPI. Optimized algorithm my carefully managing memory operations.",
+                    "Studied performance benefits of the same algorithm by leveraging parallel processing using CUDA, OpenACC, OpenMP and MPI.",
+                    "Used OpenMP to implement parallel sorting algorithms for evaluating performance benefits versus overheads.",
+                    "Migrated legacy on-prem infrastructure to OpenStack and OpenShift using Linux images, Ansible playbooks, and deployment automation to modernize hosting and improve maintenance."
                 ]
             },
             {
                 "type": "Data Science Projects",
                 "list": [
-                    "Studied performance of various transformer networks,CNNsand word embeddingsin terms of Bleu Score and Cosine similarityon flickr9k dataset. Used python and tensorflow 2.1",
-                    "Performed a study on Multimodal Classification performance (using Python TensorFlow) vs Single mode classification on Yelp dataset to prove whether multimodal performance is better than standard classification",
-                    "Accomplished a Feature Selection algorithm leveraging mutual information and Laplacian scores to select relevant features (R, Matlab)",
-                    "Sentiment Analysis of Tweets (Java, Cassandra, Natural Language Processing)<ul><li>Retrieved large counts of tweets from Twitter and stored in a single node Cassandra database</li><li>Classified Tweets in positive or negative sentiments with OpenNLP Java APIs</li><li>Leveraged StanfordNLP to find keywords in tweets to improve insights</li></ul>"
+                    "Studied performance of various transformer networks, CNNs, and word embeddings in terms of BLEU score and cosine similarity on the Flickr9k dataset using Python and TensorFlow.",
+                    "Performed a study on multimodal classification performance versus single-mode classification on the Yelp dataset to validate the value of richer feature representations.",
+                    "Accomplished a feature-selection algorithm leveraging mutual information and Laplacian scores to select relevant features using R and MATLAB.",
+                    "Built sentiment analysis pipelines for tweet data using Java, Cassandra, and NLP libraries to classify positive and negative sentiment and extract actionable keywords."
                 ]
             },
             {
-                "type": "Web Developement Projects",
+                "type": "Web Development Projects",
                 "list": [
-                    "Created interactive and responsive websites for out annual festivals, enabling increases attention from other Undergraduate colleges",
-                    "Designed and Developed registration portal for festival participants to enroll for events, restulting in streamlining and reduced delay in the process"
+                    "Created interactive and responsive websites for annual college festivals, helping improve engagement and visibility across undergraduate institutions.",
+                    "Designed and developed a registration portal for festival participants to streamline enrollment, reduce delays, and simplify event coordination.",
+                    "Customized Adobe Experience Manager platforms with React, Java, and JCR to enhance asset workflows, personalization, and content authoring experiences."
                 ]
             }
         ],
         "skills": [
             {
-                "type": "Profecient",
+                "type": "Proficient",
                 "list": [
                     {
-                        "skill": "HTML"
+                        "skill": "LangGraph",
+                        "tag": "frameworks",
+                        "icon": "devicon-python-plain"
                     },
                     {
-                        "skill": "CSS"
+                        "skill": "Google ADK",
+                        "tag": "frameworks",
+                        "icon": "devicon-googlecloud-plain"
                     },
                     {
-                        "skill": "JavaScript"
+                        "skill": "FastAPI",
+                        "tag": "frameworks",
+                        "icon": "devicon-python-plain"
                     },
                     {
-                        "skill": "jQuery"
+                        "skill": "Adobe Experience Manager",
+                        "tag": "platforms",
+                        "icon": "devicon-javascript-plain"
                     },
                     {
-                        "skill": "Angular"
+                        "skill": "OpenShift",
+                        "tag": "platforms",
+                        "icon": "devicon-redhat-plain"
                     },
                     {
-                        "skill": "React"
+                        "skill": "Ansible",
+                        "tag": "platforms",
+                        "icon": "devicon-ansible-plain"
                     },
                     {
-                        "skill": "Python"
+                        "skill": "Gemini Enterprise",
+                        "tag": "platforms",
+                        "icon": "devicon-googlecloud-plain"
                     },
                     {
-                        "skill": "Java"
+                        "skill": "EKS",
+                        "tag": "platforms",
+                        "icon": "devicon-kubernetes-plain"
                     },
                     {
-                        "skill": "Java Spring Boot"
+                        "skill": "OpenEdx",
+                        "tag": "platforms",
+                        "icon": "devicon-django-plain"
                     },
                     {
-                        "skill": "PostgreSQL"
+                        "skill": "ServiceNow",
+                        "tag": "platforms",
+                        "icon": "devicon-nodejs-plain"
                     },
                     {
-                        "skill": "MySQL"
+                        "skill": "Langfuse",
+                        "tag": "other",
+                        "icon": "devicon-python-plain"
                     },
                     {
-                        "skill": "Makefiles"
+                        "skill": "MLflow",
+                        "tag": "other",
+                        "icon": "devicon-python-plain"
                     },
                     {
-                        "skill": "Git"
+                        "skill": "MySQL",
+                        "tag": "other",
+                        "icon": "devicon-mysql-plain"
                     },
                     {
-                        "skill": "Gitlab Pipelines"
+                        "skill": "PostgreSQL",
+                        "tag": "other",
+                        "icon": "devicon-postgresql-plain"
                     },
                     {
-                        "skill": "ServiceNow"
+                        "skill": "JCR",
+                        "tag": "other",
+                        "icon": "devicon-java-plain"
                     },
                     {
-                        "skill": "OpenEdx"
+                        "skill": "Redis",
+                        "tag": "other",
+                        "icon": "devicon-redis-plain"
                     },
                     {
-                        "skill": "OpenShift"
+                        "skill": "GitLab CI/CD",
+                        "tag": "other",
+                        "icon": "devicon-gitlab-plain"
                     },
                     {
-                        "level": "Proficient",
-                        "skill": "Docker"
+                        "skill": "GitHub Actions",
+                        "tag": "other",
+                        "icon": "devicon-github-original"
                     },
                     {
-                        "skill": "Kubernetes"
+                        "skill": "Helm Charts",
+                        "tag": "other",
+                        "icon": "devicon-kubernetes-plain"
                     },
                     {
-                        "skill": "OpenStack"
+                        "skill": "Kubernetes",
+                        "tag": "platforms",
+                        "icon": "devicon-kubernetes-plain"
                     },
                     {
-                        "skill": "Adobe Experience Manager"
+                        "skill": "Linux",
+                        "tag": "platforms",
+                        "icon": "devicon-linux-plain"
                     },
                     {
-                        "skill": "AWS"
+                        "skill": "Bash",
+                        "tag": "other",
+                        "icon": "devicon-bash-plain"
+                    },
+                    {
+                        "skill": "APIs",
+                        "tag": "other",
+                        "icon": "devicon-nodejs-plain"
+                    },
+                    {
+                        "skill": "OpenStack",
+                        "tag": "platforms",
+                        "icon": "devicon-redhat-plain"
                     }
                 ]
             },
@@ -542,43 +591,54 @@
                 "type": "Intermediate",
                 "list": [
                     {
-                        "skill": "PHP"
+                        "skill": "Next.js",
+                        "tag": "frameworks",
+                        "icon": "devicon-nextjs-plain"
                     },
                     {
-                        "skill": "C#"
+                        "skill": "Quarkus",
+                        "tag": "frameworks",
+                        "icon": "devicon-java-plain"
                     },
                     {
-                        "skill": "ASP.NET"
+                        "skill": "Docker",
+                        "tag": "platforms",
+                        "icon": "devicon-docker-plain"
                     },
                     {
-                        "skill": "OpenMP"
+                        "skill": "Snowflake",
+                        "tag": "other",
+                        "icon": "devicon-database-plain"
                     },
                     {
-                        "skill": "MPI"
+                        "skill": "MCP",
+                        "tag": "other",
+                        "icon": "devicon-python-plain"
                     },
                     {
-                        "skill": "CUDA"
+                        "skill": "A2A",
+                        "tag": "other",
+                        "icon": "devicon-python-plain"
                     },
                     {
-                        "skill": "OpenMP"
+                        "skill": "R",
+                        "tag": "programming_languages",
+                        "icon": "devicon-r-plain"
                     },
                     {
-                        "skill": "MPI"
+                        "skill": "OpenMP",
+                        "tag": "other",
+                        "icon": "devicon-c-plain"
                     },
                     {
-                        "skill": "R"
+                        "skill": "MPI",
+                        "tag": "other",
+                        "icon": "devicon-cplusplus-plain"
                     },
                     {
-                        "skill": "Matlab"
-                    },
-                    {
-                        "skill": "Java Spring Boot"
-                    },
-                    {
-                        "skill": "Mockito Testing"
-                    },
-                    {
-                        "skill": "Alfresco Document Management"
+                        "skill": "CUDA",
+                        "tag": "other",
+                        "icon": "devicon-nvidia-plain"
                     }
                 ]
             }
