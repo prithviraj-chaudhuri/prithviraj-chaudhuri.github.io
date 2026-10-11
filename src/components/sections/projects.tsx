@@ -20,27 +20,35 @@ interface ProjectProps {
 
 const defaultProjectsData: ProjectCategory[] = [
     {
+        type: "AI & Agentic Systems",
+        list: [
+            "Built an enterprise-ready MCP server with DCR authentication and Redis backend to enable secure Google Workspace interactions and AI-driven access to organizational data.",
+            "Developed Gemini Enterprise agents using MCP, A2A, and agent-defined tools to support no-code workflow automation and internal productivity use cases.",
+            "Created Python-based RAG connectors for AEM and Google Drive content, enabling Gemini Enterprise to answer questions grounded in official documentation and brand assets."
+        ]
+    },
+    {
         type: "Systems Projects",
         list: [
-            "Distributed Cache System - Built a scalable in-memory caching solution with sharding and replication",
-            "Containerization Platform - Developed a lightweight container orchestration system similar to Docker",
-            "High-Performance Message Queue - Implemented a fault-tolerant message broker with guaranteed delivery"
+            "Improved performance of simulation algorithm by leveraging parallel device and multithreaded capabilities of CUDA, OpenACC, OpenMP and MPI.",
+            "Architected infrastructure modernization by migrating legacy hosts to OpenStack and OpenShift using Ansible automation and Linux images.",
+            "Built deployment and maintenance tooling for containerized apps and multi-service infrastructure with GitLab pipelines and Docker-based workflows."
         ]
     },
     {
-        type: "Web Applications",
+        type: "Data Science Projects",
         list: [
-            "Real-time Collaboration Tool - Created a document editing platform with websocket synchronization",
-            "Analytics Dashboard - Built a data visualization portal for tracking user engagement metrics",
-            "Content Management System - Developed a headless CMS with RESTful and GraphQL APIs"
+            "Studied transformer networks, CNNs, and word embeddings on the Flickr9k dataset to compare caption-generation performance with BLEU and cosine similarity metrics.",
+            "Evaluated multimodal versus single-mode classification on the Yelp dataset to validate improvements in prediction quality and model robustness.",
+            "Developed feature-selection and sentiment-analysis experiments with R, MATLAB, Java, and NLP libraries to extract patterns from structured and text data."
         ]
     },
     {
-        type: "Mobile Development",
+        type: "Web Development Projects",
         list: [
-            "Cross-platform Fitness App - Built with React Native featuring workout tracking and social sharing",
-            "Augmented Reality Navigation - iOS application using ARKit for indoor navigation assistance",
-            "Offline-first Note Taking App - Implemented with Flutter and local SQLite database synchronization"
+            "Designed registration and event platforms for annual college festivals to streamline participant onboarding and improve engagement.",
+            "Customized Adobe Experience Manager solutions with React, Java, and JCR to improve asset workflows, personalization, and content authoring.",
+            "Built and maintained containerized and deployment-ready web applications for research and internal business platforms."
         ]
     }
 ];
